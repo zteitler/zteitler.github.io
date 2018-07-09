@@ -1,6 +1,31 @@
 title: Zach Teitler
 description: Zach Teitler web page
 
+email: zteitler@gmail.com
+github_username: zteitler
+
+url: "https://zteitler.github.io"
+baseurl: ""
+# permalink: /:title # not sure what this does
+# markdown: kramdown # not sure about this
+
+# theme: minima # not sure, I think I have a different theme
 theme: jekyll-theme-minimal
 
 logo: images/me_2012_08_17.jpg
+
+# plugins: # not sure what this is
+#   - jekyll-feed
+# excerpt_separator: <!--more--> # not sure if I want this
+
+# main menu
+header_pages:
+  - teaching.md
+  - research.md
+  - events.md
+  - advising.md
+
+# custom vars
+# slides_base: http://math.boisestate.edu/~scoskey/slides
+# docs_base: http://math.boisestate.edu/~scoskey/docs
+# img_base: http://math.boisestate.edu/~scoskey/img
