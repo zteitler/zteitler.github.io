@@ -19,8 +19,8 @@ Office MB 233A
 
 {% for post in site.posts limit: 6 %}
 
-[{{ post.title }}]({% if post.siteurl %}{{ post.siteurl }}{% else %}{{ post.url }}{% endif %})  
-{{ post.excerpt | remove: '<p>' | remove: '</p>' | strip }}  
+[{{ post.title }}]({% if post.siteurl %}{{ post.siteurl }}{% else %}{{ post.url }}{% endif %})
+{% if post.categories contains "courses" %} {% if post.courseprefix %}{{ post.courseprefix }} {% else %} Math {% endif %} {{ post.coursenumber }}, {{ post.semester }} {{ post.year }} {% else %} {{ post.excerpt | remove: '<p>' | remove: '</p>' | strip }} {% endif %}
 <span class="post-meta"><span class="category_name">{{ post.categories }}</span> posted on {{ post.date | date: "%b %-d, %Y" }}</span>
 
 {% endfor %}
@@ -29,5 +29,5 @@ Office MB 233A
 
 # Links
 
-[Boise State topology & algebra research](https://www.boisestate.edu/math/research/topology/) in the BSU math department  
-[Boise math circles](https://www.boisestate.edu/math/circles/) math for secondary students  
+[Boise State Topology & Algebra Research](https://www.boisestate.edu/math/research/topology/) in the BSU math department
+[Boise Math Circles](https://www.boisestate.edu/math/circles/) math for secondary students
