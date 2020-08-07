@@ -1,0 +1,41 @@
+---
+---
+
+@import "minima";
+
+h1.post-title {
+  display: none;
+}
+h1[itemprop].post-title {
+  display: block;
+  font-size: 24px;
+}
+.footer-heading {
+  display: none;
+}
+header.post-header {
+  margin-bottom: 0;
+}
+dt {
+  float: left;
+  clear: left;
+  width: 4.5ch;
+}
+dd {
+  margin-left: 4.5ch;
+}
+
+/* colors */
+header.site-header {
+  border-top-color: #09347A;
+  border-bottom-color: #F1632A;
+}
+a {
+  color: #0169A4;
+}
+a:visited {
+  color: #09347A;
+}
+.category_name {
+  font-weight: bold;
+}

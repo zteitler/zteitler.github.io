@@ -12,17 +12,11 @@ permalink: /courses
 {% for post in site.categories.courses %}
   {% assign postdate = post.date | date: '%s' %}
   {% if postdate >= lower %}
-    {% assign postyear = post.date | date: "%Y" %}
-      {% if postyear != prevyear %}
-        *{{ postyear }}*
-        {% assign prevyear = postyear %}
-      {% else %}
-        &nbsp;
-      {% endif %}
 
-      : [{{ post.title }}]({% if post.siteurl %}{{ post.siteurl }}{% else %}{{ post.url }}{% endif %})
+{% assign postyear = post.date | date: "%Y" %}
+{% if postyear != prevyear %} *{{ postyear }}* {% assign prevyear = postyear %} {% else %} &nbsp; {% endif %}
 
-      {{ post.excerpt | remove: '<p>' | remove: '</p>' }}
+: [{{ post.title }}]({% if post.siteurl %}{{ post.siteurl }}{% else %}{{ post.url }}{% endif %}) {{ post.excerpt | remove: '<p>' | remove: '</p>' }}
 
   {% endif %}
 {% endfor %}

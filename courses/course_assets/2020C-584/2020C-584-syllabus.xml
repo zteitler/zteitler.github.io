@@ -1,0 +1,747 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+% !TEX TS-program = PreTeXt-HTML
+-->
+
+
+<pretext xmlns:xi="http://www.w3.org/2001/XInclude">
+  <docinfo>
+    <document-id>zteitler-2020C-584-syllabus</document-id>
+
+    <html>
+      <favicon/>
+    </html>
+
+  </docinfo>
+
+  <article xml:id="zteitler-2020C-584-syllabus">
+    <title>Math 584, Fall 2020 Syllabus</title>
+
+    <frontmatter xml:id="frontmatter">
+
+      <titlepage>
+
+        <author>
+          <personname>Zach Teitler</personname>
+          <department>Department of Mathematics</department>
+          <institution>
+            <line>Boise State University</line>
+            <line>Boise, Idaho, USA</line>
+          </institution>
+          <email>zteitler@boisestate.edu</email>
+        </author>
+
+      </titlepage>
+
+    </frontmatter>
+
+    <section xml:id="course-info">
+      <title>Course Information</title>
+      <introduction>
+        <p>
+          <dl>
+            <li>
+              <title>Course Number:</title>
+              <p>
+                MATH 584
+              </p>
+            </li>
+            <li>
+              <title>Course Title:</title>
+              <p>
+                Selected Topics: Computational Algebra
+              </p>
+            </li>
+            <li>
+              <!--<title>Catalog Statement:</title>-->
+              <title>Course Description:</title>
+              <p>
+                Introductory algebraic geometry
+                based on computational methods in polynomial rings,
+                particularly methods based on Gröbner bases.
+              </p>
+            </li>
+            <!--<li>
+              <title>Prerequisite:</title>
+              <p>
+                MATH 175
+              </p>
+            </li>-->
+          </dl>
+        </p>
+      </introduction>
+
+      <subsection xml:id="instructor-info">
+        <title>Instructor</title>
+        <p>
+          <dl>
+            <li>
+              <title>Instructor:</title>
+              <p>Zach Teitler</p>
+            </li>
+            <li>
+              <title>Email:</title>
+              <p><email>zteitler@boisestate.edu</email></p>
+            </li>
+            <li>
+              <title>Website:</title>
+              <p><url href="https://sites.google.com/site/zteitler/home" /></p>
+            </li>
+            <li>
+              <title>Office:</title>
+              <p>MB 233A</p>
+            </li>
+            <li>
+              <title>Office Phone:</title>
+              <p>208-426-1086</p>
+            </li>
+          </dl>
+        </p>
+      </subsection>
+
+      <subsection>
+        <title>Section</title>
+        <p>
+          <dl>
+            <li>
+              <title>Section Number:</title>
+              <p>001</p>
+            </li>
+            <li>
+              <title>Meeting Times:</title>
+              <p>MoWeFr 12:00-1:15</p>
+            </li>
+            <li>
+              <title>Meeting Remotely:</title>
+              <p>
+                We will meet remotely using Zoom.
+                Zoom sessions may be recorded for students who are not able to attend.
+              </p>
+            </li>
+            <li>
+              <title>Zoom Room:</title>
+              <p><c>984 1606 8308</c></p>
+            </li>
+            <li>
+              <title>Zoom Link:</title>
+              <p><url href="https://boisestate.zoom.us/j/98416068308" /></p>
+            </li>
+          </dl>
+        </p>
+      </subsection>
+
+    </section>
+
+    <section>
+      <title>Course Learning Outcomes</title>
+      <p>
+        By the end of this course, students will be able to:
+        <ol>
+          <li><p>Demonstrate familiarity with introductory concepts, definitions,
+            and theorems in algebraic geometry, including:
+            <ul>
+              <li>Affine varieties and ideals</li>
+              <li>Regular and rational maps</li>
+              <li>Elimination and projection</li>
+              <li>Hilbert's Nullstellensatz</li>
+            </ul></p></li>
+          <li><p>Demonstrate familiarity with introductory concepts, definitions,
+            and theorems in computational algebra, including:
+            <ul>
+              <li>Computations with multivariable polynomials,
+                including division with remainder</li>
+              <li>Monomial orderings</li>
+              <li>Gröbner bases and Buchberger's algorithm</li>
+            </ul></p></li>
+          <li>Read and write rigorous proofs.</li>
+          <li>Demonstrate good mathematical writing skills and style.</li>
+          <li>Demonstrate familiarity with research and conjectures in algebraic geometry and computational algebra.</li>
+        </ol>
+      </p>
+    </section>
+
+    <section>
+      <title>Textbook</title>
+      <subsection>
+        <title>Required Textbook</title>
+        <p>
+          <ol>
+            <li>
+              <p>
+                Brendan Hassett, <pubtitle>Introduction to Algebraic Geometry</pubtitle>.
+                Cambridge University Press, 2007.
+                <dl>
+                  <li>
+                    <title>ebook:</title>
+                    978-0-511-28529-5
+                  </li>
+                  <li>
+                    <title>hardback:</title>
+                    978-0-521-87094-8
+                  </li>
+                  <li>
+                    <title>paperback:</title>
+                    978-0-521-69141-3
+                  </li>
+                </dl>
+              </p>
+            </li>
+          </ol>
+        </p>
+        <p>
+          We will cover material from the chapters of the textbook
+          listed above the dividing line in the following table;
+          additional material from chapters listed after the dividing line
+          may be covered if time permits:
+
+          <table>
+            <tabular top="major">
+              <row bottom="minor">
+                <cell>Chapter</cell>
+                <cell>Title</cell>
+              </row>
+              <row>
+                <cell>1</cell>
+                <cell>Guiding Problems</cell>
+              </row>
+              <row>
+                <cell>2</cell>
+                <cell>Division Algorithm and Gröbner Bases</cell>
+              </row>
+              <row>
+                <cell>3</cell>
+                <cell>Affine Varieties</cell>
+              </row>
+              <row>
+                <cell>4</cell>
+                <cell>Elimination</cell>
+              </row>
+              <row>
+                <cell>6</cell>
+                <cell>Irreducible Varieties</cell>
+              </row>
+              <row bottom="minor">
+                <cell>7</cell>
+                <cell>Nullstellensatz</cell>
+              </row>
+              <row>
+                <cell>5</cell>
+                <cell>Resultants</cell>
+              </row>
+              <row>
+                <cell>8</cell>
+                <cell>Primary Decomposition</cell>
+              </row>
+              <row bottom="major">
+                <cell>9</cell>
+                <cell>Projective Geometry</cell>
+              </row>
+              </tabular>
+            </table>
+          </p>
+      </subsection>
+      <subsection>
+        <title>Recommended Optional Textbooks</title>
+        <p>
+          <ol>
+            <li>
+              Mateusz Michałek and Bernd Sturmfels, <pubtitle>Invitation to Nonlinear Algebra</pubtitle>.
+              <url href="https://personal-homepages.mis.mpg.de/michalek/NonLinearAlgebra.pdf" /> (pdf).
+            </li>
+            <li>
+              Cox, Little, O'Shea, <pubtitle>Ideals, Varieties, and Algorithms</pubtitle>
+            </li>
+          </ol>
+        </p>
+      </subsection>
+    </section>
+
+    <section>
+      <title>Grading</title>
+
+      <subsection>
+        <title>Components of course grade</title>
+        <p>
+          Graded student work will consist of
+          a short paper and a term paper, midterm and final exams, and written homework.
+          Course grades will be based primarily on term papers and exams,
+          and to a lesser extent on homework.
+        </p>
+      </subsection>
+      <subsection>
+        <title>Papers</title>
+        <p>
+          Each student will write two papers for this class.
+          Each paper is intended to provide:
+          <ul>
+            <li>
+              an opportunity to explore the mathematical research literature
+              and seek a personally appealing research topic
+            </li>
+            <li>
+              an authentic experience of working with the published
+              mathematical literature
+            </li>
+            <li>
+              an authentic experience of writing a substantial mathematical
+              text, well beyond typical homework solutions
+            </li>
+            <li>
+              preparation for writing even an larger text,
+              such as a thesis
+            </li>
+            <li>
+              an authentic experience of receiving feedback on a draft
+              manuscript and responding to that feedback through multiple
+              rounds of revision
+            </li>
+            <li>
+              an authentic experience of writing mathematical exposition
+              at a high level
+            </li>
+          </ul>
+        </p>
+        <p>
+          The details of the two papers are as follows.
+          <ol>
+            <li>
+              A short paper about an open question, unsolved problem,
+              or currently studied research area within algebra,
+              algebraic geometry, or computational algebra,
+              or an application of one of those areas.
+            </li>
+<!--      %The short paper will primarily explain what the question or problem is.
+      %Additionally it may include: motivation for the question and connections to other problems in math or applications;
+      %history of the question and progress on it so far;
+      %relevant examples; heuristic arguments for or against the conjecture;
+      %a discussion of why the problem is challenging; etc.
+      %However these are optional and the page limit is strict.-->
+            <li>
+              A term paper about a topic of the student's choice
+              within algebra, algebraic geometry, or computational algebra,
+              or an application of one of those areas
+              (but emphasizing the algebraic aspect).
+            </li>
+          </ol>
+        </p>
+        <p>
+          Lengths and deadlines of the papers are as follows:
+          <ol>
+            <li>
+              <p>
+                The short paper will be 2–3 pages long,
+                with the following deadlines:
+                <ul>
+                  <li>
+                    A topic and source are due by the end of week 3.
+                  </li>
+                  <li>
+                    A first draft is due by the end of week 4.
+                  </li>
+                  <li>
+                    The short paper is due by the end of week 5.
+                  </li>
+                </ul>
+              </p>
+            </li>
+            <li>
+              <p>
+                The term paper will be 6–15 pages long
+                (it can be shorter or longer if needed; please discuss with me),
+                with the following deadlines:
+                <ul>
+                  <li>
+                    A topic (1–2 pages) is due by the end of week 7.
+                  </li>
+                  <li>
+                    An outline plus one section are due by the end of week 10.
+                  </li>
+                  <li>
+                    A first draft is due by the end of week 13.
+                  </li>
+                  <li>
+                    The term paper is due by the end of week 15.
+                  </li>
+                </ul>
+              </p>
+            </li>
+          </ol>
+        </p>
+        <p>
+          For both papers, highly recommended sources are the recommended
+          additional texts listed above.
+          They contain numerous examples, applications of algebraic geometry,
+          and links to other books and articles.
+          If you find a topic that interests you in one of those texts,
+          you can use it as a starting point for your paper.
+        </p>
+        <p>
+          Additional recommended sources include:
+          <ul>
+            <li>
+              <url href="https://www.maa.org/programs-and-communities/member-communities/maa-awards/writing-awards">MAA Writing Awards</url>
+            </li>
+            <li>
+              <url href="https://www-jstor-org.libproxy.boisestate.edu/journal/amermathmont">American Mathematical Monthly</url>
+            </li>
+            <li>
+              <url href="https://www-jstor-org.libproxy.boisestate.edu/journal/collmathj">College Mathematics Journal</url>
+            </li>
+            <li>
+              <url href="https://www-jstor-org.libproxy.boisestate.edu/journal/mathmaga">Mathematics Magazine</url>
+            </li>
+            <li>
+              <url href="https://www-jstor-org.libproxy.boisestate.edu/journal/mathhorizons">Math Horizons</url>
+            </li>
+            <li>
+              <url href="https://catalog.boisestate.edu/vwebv/holdingsInfo?bibId=358134">What's Happening in the Mathematical Sciences</url>
+            </li>
+          </ul>
+        </p>
+        <p>
+          You should use <term>high-quality published sources</term>.
+          For simplicity, this means the recommended sources listed above,
+          or any publication listed in
+          <url href="https://mathscinet.ams.org">MathSciNet</url>.
+          If you have questions or wish to use other sources,
+          talk to me.
+        </p>
+        <p>
+          Papers for this class may not be about your own research.
+        </p>
+      </subsection>
+      <subsection>
+        <title>Midterm and final exams</title>
+        <p>
+          A midterm exam in the 8th week of the semester, and the final exam,
+          will be individual oral exams.
+          The exams are intended to gauge mastery of course material,
+          but also reflection on the course and its place in a larger context.
+        </p>
+      </subsection>
+      <subsection>
+        <title>Written homework</title>
+        <introduction>
+          <p>
+            You are encouraged to work collaboratively on homework but you must
+            turn in your own solutions.
+          </p>
+          <p>
+            Homework will contribute to course grades,
+            but it is intended primarily to give feedback and guidance
+            to students throughout the semester.
+          </p>
+        </introduction>
+        <subsubsection>
+          <title>Turning in homework</title>
+          <p>
+            Homework submissions and grading will be paperless.
+            You will turn in your homework by uploading PDFs to BlackBoard.
+            PDFs should have filenames in the following format:
+            <blockquote>
+              <c>584-Homework-</c><angles>number</angles><c>-</c><angles>your last name</angles><c>.pdf</c>
+            </blockquote>
+            For example:
+            <c>584-Homework-01-Teitler.pdf</c>.
+          </p>
+        </subsubsection>
+        <subsubsection>
+          <title>Homework formatting</title>
+          <p>
+            Homework must be typed in <latex />.
+            <latex /> tutorials are available online,
+            e.g., <url href="https://www.latex-tutorial.com" /> and
+            <url href="https://www.gnu.org/software/teximpatient/" />.
+            You may wish to use a free online <latex /> system such as
+            <url href="https://overleaf.com" />.
+            (Overleaf includes a <latex /> tutorial.)
+          </p>
+          <p>
+            Use a new page (<c>\newpage</c>) for each problem.
+            State which question you are answering
+            (textbook section and exercise number)
+            and the actual question.
+            Then, start your answer in a new paragraph.
+            Use environments such as <c>proof</c> and <c>theorem</c>
+            (via <c>\begin{proof}</c><ellipsis /><c>\end{proof}</c>)
+            to organize your work and display it clearly.
+          </p>
+          <p>
+            For legibility, use the <c>12pt</c> option
+            (<c>\documentclass[12pt]{amsart}</c>)
+            and <c>\linespread{2.4}</c>.
+            If you use figures,
+            I recommend learning to use <c>TikZ</c> to generate high-quality
+            figures within <latex />.
+            Alternatively you may use figures/plots generated in other programs
+            such as Sage, Mathematica, Maple, or Inkscape, saved to PDF,
+            and included in your document with commands
+            like <c>\includegraphics</c>.
+            It's also fine to include hand-drawn figures that you scanned or
+            photoed.
+          </p>
+        </subsubsection>
+      </subsection>
+    </section>
+
+    <section>
+      <title>Help</title>
+      <subsection>
+        <title>Allowed resources</title>
+        <p>
+          In this 500 level class, I expect you to use the full array of
+          resources at your disposal to learn the material
+          <q>by any means possible.</q>
+          For homework assignments, you are encouraged (in fact, expected)
+          to collaborate with your classmates and to ask me questions.
+          Other resources (books, online sources, people outside the class)
+          are highly recommended for clarifying class topics or for enrichment
+          (but <em>not</em> for getting solutions to problems).
+        </p>
+        <p>
+          You are allowed to use things that you learn from a book,
+          online source, or person outside the class
+          that <em>help you and your classmates to find your own solution</em>
+          for a problem.
+          However, if you read a full solution, so that there's
+          little or nothing left for you and your classmates to figure out,
+          then you <em>may not turn in that solution for credit</em>.
+        </p>
+        <p>
+          The <url href="https://math.stackexchange.com">Mathematics Stack Exchange</url>
+          is a very useful question-and-answer site for undergraduate/graduate
+          level mathematics.
+          You are welcome to browse the Mathematics Stack Exchange
+          and even post questions there.
+          Hopefully it will help you learn and understand the material!
+          However please remember that if you use that site to get a solution
+          to a problem,
+          then you can't turn that solution in for credit.
+          Other helpful websites for basic information include Wikipedia
+          and <url href="http://mathworld.wolfram.com">MathWorld</url>.
+        </p>
+      </subsection>
+      <subsection>
+        <title>A note on collaboration</title>
+        <p>
+          Solving mathematical problems has three parts:
+          <dl>
+            <li>
+              <title>The discovery phase:</title>
+              <p>
+                This is the time you spent trying to figure out how to solve
+                the problems,
+                and it often takes most of the time.
+                You are welcome and encouraged to collaborate
+                with other students in this phase.
+                Collaboration is a healthy practice,
+                and this is how mathematics is done in real life.
+              </p>
+              <p>
+                This phase starts with working to understand what a problem
+                or question is asking for.
+                That might include reviewing material from previous textbook
+                sections.
+              </p>
+            </li>
+            <li>
+              <title>The write-up phase:</title>
+              <p>
+                This consists of writing your solutions once you have an idea
+                of how the problem can be solved.
+                You should do this entirely by yourself.
+                Be alone when you write your solutions.
+                If you collaborate on this part,
+                or you copy part of your solutions from somebody else,
+                or you have notes written by somebody else in front of you
+                when you write your solutions,
+                you are hurting yourself by depriving yourself
+                of an opportunity to learn and practice.
+                <!--%and you may also be engaging in academic misconduct.-->
+              </p>
+              <p>
+                If you need help in the write-up phase, talk to me!
+                I can help you.
+              </p>
+            </li>
+            <li>
+              <title>The editing phase:</title>
+              <p>
+                This consists of editing and revising your write-up for
+                clarity, organization, and presentation.
+                At this stage it can be very helpful to get feedback
+                and suggestions from other students.
+              </p>
+            </li>
+          </dl>
+        </p>
+      </subsection>
+      <subsection>
+        <title>Expectations of lectures</title>
+        <p>
+          Please read
+          <q><url href="http://blogs.ams.org/matheducation/2015/02/10/">Mathematics Professors and Mathematics Majors' Expectations of Lectures in Advanced Mathematics</url></q>.
+        </p>
+      </subsection>
+      <subsection>
+        <title>How to read mathematics</title>
+        <p>
+          Please read the following, especially the first:
+          <ol>
+            <li>
+              <url href="https://www.lboro.ac.uk/media/media/schoolanddepartments/mathematics-education-centre/downloads/research/SE-booklet.pdf" />
+            </li>
+            <li>
+              <url href="https://personal.utdallas.edu/~zweck/SEbooklet.pdf" />
+            </li>
+            <li>
+              <url href="http://web.stonehill.edu/compsci/History_Math/math-read.htm" />
+            </li>
+            <li>
+              <url href="https://brownmath.com/stfa/read.htm" />
+            </li>
+          </ol>
+        </p>
+      </subsection>
+    </section>
+
+    <section>
+      <title>Important Dates</title>
+      <table>
+        <tabular top="major">
+          <row>
+            <cell>Monday</cell> <cell>8/24</cell> <cell>First day of classes.</cell>
+          </row>
+          <row>
+            <cell>Friday</cell> <cell>9/4</cell> <cell>Last day to register/add or to drop without a W.</cell>
+          </row>
+          <row>
+            <cell>Monday</cell> <cell>9/7</cell> <cell>Labor Day. No classes.</cell>
+          </row>
+          <row>
+            <cell>Friday</cell> <cell>9/11</cell> <cell>Short paper topic proposal due.</cell>
+          </row>
+          <row>
+            <cell>Friday</cell> <cell>9/18</cell> <cell>Short paper first draft due.</cell>
+          </row>
+          <row>
+            <cell>Friday</cell> <cell>9/25</cell> <cell>Short paper final version due.</cell>
+          </row>
+          <row>
+            <cell>Friday</cell> <cell>10/9</cell> <cell>Term paper topic proposal due.</cell>
+          </row>
+          <row>
+            <cell> </cell> <cell>10/12-16</cell> <cell>Midterm exam.</cell>
+          </row>
+          <row>
+            <cell>Friday</cell> <cell>10/30</cell> <cell>Term paper outline plus one section due</cell>
+          </row>
+          <row>
+            <cell>Friday</cell> <cell>10/30</cell> <cell>Last day to drop with a W or completely withdraw.</cell>
+          </row>
+          <row>
+            <cell>Friday</cell> <cell>11/20</cell> <cell>Term paper first draft due.</cell>
+          </row>
+          <row>
+            <cell> </cell> <cell>11/23-11/29</cell> <cell>Thanksgiving Holiday. No classes.</cell>
+          </row>
+          <row>
+            <cell>Friday</cell> <cell>12/11</cell> <cell>Term paper final version due.</cell>
+          </row>
+          <row>
+            <cell>Friday</cell> <cell>12/11</cell> <cell>Last day of instruction for regular classes.</cell>
+          </row>
+          <row>
+            <cell>Monday</cell> <cell>12/14</cell> <cell>Final Exam (scheduled), 12:00-2:00.</cell>
+          </row>
+          <row bottom="major">
+            <cell>Tuesday</cell> <cell>12/22</cell> <cell> Grades due. (You will be able to see your grade by this date.)</cell>
+          </row>
+        </tabular>
+      </table>
+    </section>
+
+    <section>
+      <title>Other</title>
+      <p>
+        <dl>
+          <li>
+            <title>Respect for Diversity:</title>
+            <p>
+              Students from all backgrounds and with all perspectives are welcome in this course.
+              It is my intent that all students be well served by this course,
+              that students's learning needs be addressed both in and out of class,
+              and that the diversity that students bring
+              to this class be viewed as a resource, strength, and benefit.
+              It is my intent to maintain a classroom atmosphere that is welcoming and respectful of diversity:
+              gender, sexuality, disability, age, socioeconomic status, ethnicity, race, and culture.
+              Your suggestions are encouraged and appreciated.
+              Please let me know ways to improve the effectiveness of the course for you personally
+              or for other students or student groups.
+              <!--In addition, if any of our class meetings conflict with your religious events,
+              please let me know so that we can make arrangements for you.-->
+            </p>
+          </li>
+          <li>
+            <title>ADA Policy Statement:</title>
+            <p>
+              Students with disabilities needing accommodations to fully participate in this class should contact the EAC.
+              All accommodations must be approved through the EAC prior to being implemented.
+              To learn more about the accommodation process, visit the EAC's website at
+              <url href="https://www.boisestate.edu/eac/new-students/" />.
+            </p>
+          </li>
+          <li>
+            <title>Email:</title>
+            <p>
+              In accordance with
+              <url href="http://boisestate.edu/policy/policy-title-student-e-mail-communications/">Boise State University Policy #2280</url>,
+              it is expected that you will receive and read emails sent to your <c>boisestate.edu</c> email address.
+            </p>
+          </li>
+          <li>
+            <title>Communication:</title>
+            <p>
+              Additional information and updates may be announced in class, sent by email,
+              and/or posted on BlackBoard (<url href="http://blackboard.boisestate.edu/" />).
+            </p>
+          </li>
+          <li>
+            <title>Academic Integrity:</title>
+            <p>
+              Getting answers to homework or exam problems from unauthorized sources is a very serious form of academic misconduct.
+              For this class, <em>all online sources</em> are unauthorized for this purpose.
+              You are allowed to <em>learn and increase your understanding</em> from online sources or other textbooks;
+              you are <em>not</em> allowed to use those sources to find answers to homework or exam problems.
+            </p>
+          </li>
+          <li>
+            <title>Behavioral Expectations:</title>
+            <p>
+              Every student has the right to a respectful learning environment.
+              In order to provide this right to all students, students must take individual responsibility
+              to conduct themselves in a mature and appropriate manner
+              and will be held accountable for their behavior
+              in accordance with
+              <url href="http://boisestate.edu/policy/student-affairs/maintaining-order/">Boise State University Policy #2050</url>.
+            </p>
+          </li>
+        </dl>
+      </p>
+    </section>
+
+
+
+<!--
+%\item[\bf Attendance:]
+%Attendance and participation in in-class discussion and groupwork are mandatory.
+-->
+
+
+
+
+
+
+
+  </article>
+</pretext>
