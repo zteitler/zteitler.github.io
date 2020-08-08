@@ -35,18 +35,23 @@ layout: post
 
 {{ content }}
 
-{%- if page.syllabus_pdf or page.syllabus_html -%}
+{%- if page.syllabus_pdf or page.syllabus_html or page.syllabus_standalone_html -%}
 <em>Syllabus:</em>
 <ul>
-{%- if page.syllabus_html -%}
-  <li>
-    <a href="{{ courseassetsdir }}/{{ syllabusbasename }}-html/{{ syllabusprefix }}-{{ syllabusbasename }}.html">HTML (accessible)</a>
-  </li>
-{%- endif -%}
-{%- if page.syllabus_pdf -%}
-  <li>
-    <a href="{{ courseassetsdir }}/{{ syllabusprefix }}-{{ syllabusbasename }}.pdf">PDF</a>
-  </li>
-{%- endif -%}
+  {%- if page.syllabus_html -%}
+    <li>
+      <a href="{{ courseassetsdir }}/{{ syllabusbasename }}-html/{{ syllabusprefix }}-{{ syllabusbasename }}.html">HTML (accessible)</a>
+    </li>
+  {%- endif -%}
+  {%- if page.syllabus_standalone_html -%}
+    <li>
+      <a href="{{ courseassetsdir }}/{{ syllabusbasename }}-html/{{ syllabusprefix }}-{{ syllabusbasename }}-standalone.html">HTML (accessible, single page)</a>
+    </li>
+  {%- endif -%}
+  {%- if page.syllabus_pdf -%}
+    <li>
+      <a href="{{ courseassetsdir }}/{{ syllabusprefix }}-{{ syllabusbasename }}.pdf">PDF</a>
+    </li>
+  {%- endif -%}
 </ul>
 {%- endif -%}
