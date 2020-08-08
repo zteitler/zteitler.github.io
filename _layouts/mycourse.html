@@ -26,7 +26,7 @@ layout: post
 {% assign year = page.year %}
 
 {% assign courseassetsdir = "/courses/course_assets" %}
-{% assign htmlsyllabusprefix = "zteitler" %}
+{% assign syllabusprefix = "zteitler" %}
 {% capture syllabusbasename %}
 {{ page.shortsemester }}-{{ coursenumber }}-syllabus
 {% endcapture %}
@@ -40,12 +40,12 @@ layout: post
 <ul>
 {%- if page.syllabus_html -%}
   <li>
-    <a href="{{ courseassetsdir }}/{{ syllabusbasename }}-html/{{ htmlsyllabusprefix }}-{{ syllabusbasename }}.html">HTML (accessible)</a>
+    <a href="{{ courseassetsdir }}/{{ syllabusbasename }}-html/{{ syllabusprefix }}-{{ syllabusbasename }}.html">HTML (accessible)</a>
   </li>
 {%- endif -%}
 {%- if page.syllabus_pdf -%}
   <li>
-    <a href="{{ courseassetsdir }}/{{ syllabusbasename }}.pdf">PDF</a>
+    <a href="{{ courseassetsdir }}/{{ syllabusprefix }}-{{ syllabusbasename }}.pdf">PDF</a>
   </li>
 {%- endif -%}
 </ul>
