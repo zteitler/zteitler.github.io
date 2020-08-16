@@ -25,20 +25,32 @@ layout: post
 {% assign semester = page.semester %}
 {% assign year = page.year %}
 
-{% capture courseassetsdir %}
-/courses/course_assets/{{ page.shortsemester }}-{{ coursenumber }}
+{% capture courseassetsdir %}course_assets/{{ page.shortsemester }}-{{ coursenumber }}{% endcapture %}
+
+<div>
+<h2>
+  {% if page.courseprefix %}{{ page.courseprefix }}{% else %} Math {% endif %} {{ coursenumber }}, {{ semester }} {{ year }}
+</h2>
+</div>
+
+{% if page.catalog %}
+<div>
+{% capture cataloginclude %}
+{% include_relative {{courseassetsdir}}/{{ page.shortsemester }}-{{ coursenumber }}-catalog.md %}
 {% endcapture %}
+{{ cataloginclude | markdownify }}
+</div>
+{% endif %}
+
+
 {% assign syllabusprefix = "zteitler" %}
 {% capture syllabusbasename %}
 {{ page.shortsemester }}-{{ coursenumber }}-syllabus
 {% endcapture %}
 
-{% if page.courseprefix %}{{ page.courseprefix }}{% else %} Math {% endif %} {{ coursenumber }}, {{ semester }} {{ year }}
-
-{{ content }}
-
 {%- if page.syllabus_pdf or page.syllabus_html or page.syllabus_standalone_html -%}
-<em>Syllabus:</em>
+<div>
+<h2>Syllabus:</h2>
 <ul>
   {%- if page.syllabus_html -%}
     <li>
@@ -56,4 +68,8 @@ layout: post
     </li>
   {%- endif -%}
 </ul>
+</div>
 {%- endif -%}
+
+
+{{ content }}
