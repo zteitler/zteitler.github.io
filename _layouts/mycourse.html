@@ -25,7 +25,7 @@ layout: post
 {% assign semester = page.semester %}
 {% assign year = page.year %}
 
-{% capture courseassetsdir %}course_assets/{{ page.shortsemester }}-{{ coursenumber }}{% endcapture %}
+{% capture courseassetsdir %}/courses/course_static_assets/{{ page.shortsemester }}-{{ coursenumber }}{% endcapture %}
 
 <div>
 <h2>
@@ -35,10 +35,7 @@ layout: post
 
 {% if page.catalog %}
 <div>
-{% capture cataloginclude %}
-{% include_relative {{courseassetsdir}}/{{ page.shortsemester }}-{{ coursenumber }}-catalog.md %}
-{% endcapture %}
-{{ cataloginclude | markdownify }}
+  {{page.catalog | markdownify}}
 </div>
 {% endif %}
 
