@@ -25,7 +25,9 @@ layout: post
 {% assign semester = page.semester %}
 {% assign year = page.year %}
 
-{% assign courseassetsdir = "/courses/course_assets" %}
+{% capture courseassetsdir %}
+/courses/course_assets/{{ page.shortsemester }}-{{ coursenumber }}/
+{% endcapture %}
 {% assign syllabusprefix = "zteitler" %}
 {% capture syllabusbasename %}
 {{ page.shortsemester }}-{{ coursenumber }}-syllabus
@@ -45,7 +47,7 @@ layout: post
   {%- endif -%}
   {%- if page.syllabus_standalone_html -%}
     <li>
-      <a href="{{ courseassetsdir }}/{{ syllabusbasename }}-html/{{ syllabusprefix }}-{{ syllabusbasename }}-standalone.html">HTML (accessible, single page)</a>
+      <a href="{{ courseassetsdir }}/{{ syllabusprefix }}-{{ syllabusbasename }}-standalone.html">HTML (accessible, single page)</a>
     </li>
   {%- endif -%}
   {%- if page.syllabus_pdf -%}

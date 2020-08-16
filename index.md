@@ -30,4 +30,5 @@ Office MB 233A
 # Links
 
 [Boise State Topology & Algebra Research](https://www.boisestate.edu/math/research/topology/) in the BSU math department
+
 [Boise Math Circles](https://www.boisestate.edu/math/circles/) math for secondary students
