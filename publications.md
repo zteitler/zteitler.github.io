@@ -5,24 +5,23 @@ permalink: /publications
 mathjax: true
 ---
 
-# Publications
+# Publications and other writing
 
-{% assign prevyear = "X" %}
-{% assign lower = "January 1, 2016" | date: '%s' %}
+{% assign thisyear = "now" | date: "%Y" | plus: 0 %}
+{% assign prevdisplaydate = "X" %}
+{% assign pubsbydate = site.categories.publications | sort: "pubdate" | reverse %}
 
-{% for post in site.categories.publications %}
-  {% assign postdate = post.date | date: '%s' %}
-  {% if postdate >= lower %}
+{% for post in pubsbydate %}
 
-{% assign postyear = post.date | date: "%Y" %}
-{% if postyear != prevyear %} *{{ postyear }}* {% assign prevyear = postyear %} {% else %} &nbsp; {% endif %}
+{% if post.pubdate <= thisyear %}
+  {% assign displaydate = post.pubdate %}
+{% else %}
+  {% assign displaydate = "∞" %}
+{% endif %}
 
-: [{{ post.title }}]({% if post.siteurl %}{{ post.siteurl }}{% else %}{{ post.url }}{% endif %})
-{% if post.courseprefix %}{{ post.courseprefix }} {% else %} Math {% endif %} {{ post.coursenumber }}, {{ post.semester }} {{ post.year }}
+{% if displaydate != prevdisplaydate %} *{{ displaydate }}* {% assign prevdisplaydate = displaydate %} {% else %} &nbsp; {% endif %}
 
-  {% endif %}
+: [{{ post.title }}]({% if post.siteurl %}{{ post.siteurl }}{% else %}{{ post.url }}{% endif %})  
+{{ post.excerpt | remove: '<p>' | remove: '</p>' }}
+
 {% endfor %}
-
-([View all publications](/allpublications))
-
-Testing MathJax: $ xy = \frac{1}{4} (x+y)^2 - \dfrac{1}{4} (x-y)^2 $

@@ -1,0 +1,67 @@
+---
+layout: post
+---
+
+<div class="citation">
+<span class="authors">
+{{ page.authors }}.
+</span>
+<span class="title">
+  <em>{{ page.title }}</em>.
+</span>
+<span class="journal">
+{% if page.journal %}
+  {{ page.journal }}
+{% endif %}
+</span>
+<span class="volume">
+{% if page.volume %}
+  <strong>{{ page.volume }}</strong>
+{% endif %}
+</span>
+<span class="pubdate">
+{% if page.pubdate %}
+  ({{ page.pubdate }}),
+{% endif %}
+</span>
+<span class="issue">
+{% if page.issue %}
+  no. {{ page.issue }},
+{% endif %}
+</span>
+<span class="pagenos">
+{% if page.pagenos %}
+  {{ page.pagenos }}
+{% endif %}
+</span>
+</div>
+
+<dl>
+{% if page.abstract %}
+<dt class="abstract">
+  <em>Abstract</em>:
+</dt>
+<dd>
+  {{page.abstract | markdownify}}
+</dd>
+{% endif %}
+
+{% if page.arxiv %}
+<dt class="arxivlink">
+  arXiv:
+</dt>
+<dd>
+  <a href="https://arxiv.org/abs/{{ page.arxiv }}">https://arxiv.org/abs/{{ page.arxiv }}</a>
+</dd>
+{% endif %}
+
+{% if page.doi %}
+<dt class="doilink">
+  doi:
+</dt>
+<dd>
+  <a href="https://dx.doi.org/{{ page.doi }}">{{ page.doi }}</a>
+</dd>
+{% endif %}
+
+{{ content }}
