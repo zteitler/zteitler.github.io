@@ -1,16 +1,25 @@
 title: Zach Teitler
-email: zteitler@gmail.com
-github_username: zteitler
+email: "zteitler@gmail.com"
 description: >
-  Department of Mathematics, Boise State University, 1910 University Dr,
+  Department of Mathematics,
+  Boise State University,
+  1910 University Dr,
   Boise, ID 83725-1555.
 url: "https://zteitler.github.io"
 baseurl: ""
+github_username: zteitler
+
+repository: "zteitler/zteitler.github.io"
 permalink: /:categories/:title/
-markdown: kramdown
+
 theme: minima
-plugins:
-  - jekyll-feed
+markdown: kramdown
+kramdown:
+  parse_block_html: true
+
+#plugins:
+#  - jekyll-feed
+#  - jekyll-sitemap
 excerpt_separator: <!--more-->
 
 # main menu
@@ -18,8 +27,14 @@ header_pages:
   - courses.md
   - publications.md
   - presentations.md
-  - students.md
+  - advising.md
   - vitae.md
+
+collections:
+  courses:
+    output: true
+  publications:
+    output: true
 
 defaults:
   - scope:
@@ -27,3 +42,7 @@ defaults:
       type: "posts"
     values:
       layout: mypost
+
+exclude:
+  - Gemfile
+  - Gemfile.lock

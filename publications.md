@@ -9,7 +9,7 @@ mathjax: true
 
 {% assign thisyear = "now" | date: "%Y" | plus: 0 %}
 {% assign prevdisplaydate = "X" %}
-{% assign pubsbydate = site.categories.publications | sort: "pubdate" | reverse %}
+{% assign pubsbydate = site.publications | sort: "pubdate" | reverse %}
 
 {% for post in pubsbydate %}
 
