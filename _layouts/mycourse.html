@@ -2,34 +2,23 @@
 layout: post
 ---
 
-{% comment %}
-
-{%- assign basenameparts = page.name | remove: ".md" | split: "-" | reverse -%}
-
-{%- assign coursenumber = basenameparts[0] -%}
-{%- assign shortsemester = basenameparts[1] -%}
-
-{%- if shortsemester contains "A" -%}
-  {%- assign semester = "Spring" -%}
-{%- elsif shortsemester contains "B" -%}
-  {%- assign semester = "Summer" -%}
-{%- elsif shortsemester contains "C" -%}
-  {%- assign semester = "Fall" -%}
-{%- endif -%}
-
-{%- assign year = shortsemester | slice: 0, 4 -%}
-
-{% endcomment %}
-
 {% assign coursenumber = page.coursenumber %}
 {% assign semester = page.semester %}
 {% assign year = page.year %}
+
+{%- if page.combinedsection -%}
+  {%- capture printcoursenumber -%}
+    {{- page.coursenumber -}}/{{- page.combinedsection -}}
+    {%- endcapture %}
+{%- else -%}
+  {%- assign printcoursenumber = page.coursenumber -%}
+{%- endif %}
 
 {% capture courseassetsdir %}/courses/course_static_assets/{{ page.shortsemester }}-{{ coursenumber }}{% endcapture %}
 
 <div>
 <h2>
-  {% if page.courseprefix %}{{ page.courseprefix }}{% else %} Math {% endif %} {{ coursenumber }}, {{ semester }} {{ year }}
+  {% if page.courseprefix %}{{ page.courseprefix }}{% else %} Math {% endif %} {{ printcoursenumber }}, {{ semester }} {{ year }}
 </h2>
 </div>
 
