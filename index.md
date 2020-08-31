@@ -1,5 +1,6 @@
 ---
 layout: page
+mathjax: true
 ---
 
 #### Associate Professor, [Department of Mathematics](https://www.boisestate.edu/math/), [Boise State University](https://www.boisestate.edu/)
@@ -20,7 +21,9 @@ Fax: +1-208-426-1356
 
 <div style="clear:both"></div>
 
-# Current courses
+## [Teaching](teaching)
+
+*Current courses:*
 
 {% assign currentyear = "now" | date:"%Y" %}
 {% assign last_day_of_spring = currentyear | append:"-05-15" | date:"%s" %}
@@ -45,7 +48,9 @@ Fax: +1-208-426-1356
 {% endfor %}
 
 
-# Recent publications
+## [Research](research)
+
+*Recent publications:*
 
 {% for pub in site.publications limit: 6 %}
 
@@ -57,7 +62,7 @@ Fax: +1-208-426-1356
 
 {% endfor %}
 
-# [TATERS](https://sites.google.com/boisestate.edu/taters/)
+## [TATERS](https://sites.google.com/boisestate.edu/taters/)
 
 I am a co-organizer of the [Topics in Algebra, Topology, Etc., Research Seminar: TATERS](https://sites.google.com/boisestate.edu/taters/).  
 See also the [Set Theory Seminar](https://www.boisestate.edu/math/research/seminars/settheory/),
@@ -66,7 +71,7 @@ and the [Computing Colloquium](https://www.boisestate.edu/computing/colloquium/)
 
 [Weekly schedule](weekly) | [Travel](travel)
 
-# Links
+### Links
 
 [Boise State Topology & Algebra Research](https://www.boisestate.edu/math/research/topology/) in the BSU math department
 

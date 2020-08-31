@@ -3,6 +3,9 @@ layout: post
 ---
 
 <div class="citation">
+{%- if page.bespokecitation -%}
+  {{- page.bespokecitation | markdownify -}}
+{%- else -%}
 <span class="authors">
 {{ page.authors }}.
 </span>
@@ -11,7 +14,7 @@ layout: post
 </span>
 <span class="journal">
 {% if page.journal %}
-  {{ page.journal }}
+  {{ page.journal | markdownify | remove: '<p>' | remove: '</p>' }}
 {% endif %}
 </span>
 <span class="volume">
@@ -34,6 +37,7 @@ layout: post
   {{ page.pagenos }}
 {% endif %}
 </span>
+{%- endif -%}
 </div>
 
 <dl>
@@ -42,7 +46,7 @@ layout: post
   <em>Abstract</em>:
 </dt>
 <dd>
-  {{page.abstract | markdownify}}
+  {{page.abstract | markdownify | remove: '<p>' | remove: '</p>' }}
 </dd>
 {% endif %}
 

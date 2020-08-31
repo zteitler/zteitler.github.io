@@ -1,10 +1,9 @@
 ---
 layout: page
-title: Courses
-permalink: /courses
+title: Teaching
 ---
 
-# Courses
+# Teaching
 
 {% assign currentyear = "now" | date:"%Y" %}
 {% assign last_day_of_spring = currentyear | append:"-05-15" | date:"%s" %}

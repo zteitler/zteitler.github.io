@@ -24,9 +24,8 @@ excerpt_separator: <!--more-->
 
 # main menu
 header_pages:
-  - courses.md
-  - publications.md
-  - presentations.md
+  - research.md
+  - teaching.md
   - advising.md
   - vitae.md
 
@@ -35,6 +34,9 @@ collections:
     output: true
   publications:
     output: true
+  unpublished:
+    output: true
+  software:
 
 defaults:
   - scope:
