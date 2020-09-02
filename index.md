@@ -23,8 +23,6 @@ Fax: +1-208-426-1356
 
 ## [Teaching](teaching)
 
-*Current courses:*
-
 {% assign currentyear = "now" | date:"%Y" %}
 {% assign last_day_of_spring = currentyear | append:"-05-15" | date:"%s" %}
 {% assign last_day_of_summer = currentyear | append:"-08-15" | date:"%s" %}
@@ -40,11 +38,13 @@ Fax: +1-208-426-1356
   {% assign currentshortsemester = currentyear | append:"C" %}
 {% endif %}
 
+*Current courses, {{ currentsemester }} {{ currentyear }}:*
+
 {% assign currentcourses = site.courses | where:"shortsemester", currentshortsemester | sort:"coursenumber" %}
 
 {% for course in currentcourses %}
 [{{ course.title }}]({% if course.siteurl %}{{ course.siteurl }}{% else %}{{ course.url }}{% endif %})
-{% if course.courseprefix %}{{ course.courseprefix }} {% else %} Math {% endif %} {{ course.coursenumber }}, {{ course.semester }} {{ course.year }}
+{% if course.courseprefix %}{{ course.courseprefix }} {% else %} Math {% endif %} {{ course.coursenumber }}
 {% endfor %}
 
 

@@ -3,8 +3,18 @@ layout: post
 ---
 
 {% assign coursenumber = page.coursenumber %}
-{% assign semester = page.semester %}
-{% assign year = page.year %}
+{% assign year = page.shortsemester | slice: 0, 4 %}
+{% assign semesterabbrev = page.shortsemester | slice: -1 %}
+{%- case semesterabbrev -%}
+  {%- when "A" -%}
+    {%- assign semester="Spring" -%}
+  {%- when "B" -%}
+    {%- assign semester="Summer" -%}
+  {%- when "C" -%}
+    {%- assign semester="Fall" -%}
+  {%- else -%}
+    {%- assign semester="Other" -%}
+{%- endcase -%}
 
 {%- if page.combinedsection -%}
   {%- capture printcoursenumber -%}

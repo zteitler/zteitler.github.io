@@ -48,12 +48,23 @@ In Spring 2021 I will be teaching (subject to change):
 {% capture newLine %}
 {% endcapture %}
 
-{% assign semesters = "Spring,Summer,Fall" | split:"," | reverse -%}
+{% assign semesters = "A,B,C" | split:"," -%}
 {%- assign years = site.courses | group_by: "year" | sort:"name" | reverse -%}
 {% for year in years %}
-  {% for semester in semesters -%}
+  {% for semesterabbrev in semesters -%}
+  {%- case semesterabbrev -%}
+    {%- when "A" -%}
+      {%- assign semester="Spring" -%}
+    {%- when "B" -%}
+      {%- assign semester="Summer" -%}
+    {%- when "C" -%}
+      {%- assign semester="Fall" -%}
+    {%- else -%}
+      {%- assign semester="Other" -%}
+  {%- endcase -%}
   {%- unless year.name == currentyear and semester == currentsemester -%}
-    {%- assign courselist = site.courses | where:"year", year.name | where:"semester", semester | sort: "coursenumber" -%}
+    {%- assign thissemester = year.name | append:semesterabbrev -%}
+    {%- assign courselist = site.courses | where:"shortsemester", thissemester | sort: "coursenumber" -%}
     {% if courselist.size > 0 %}
       {% for course in courselist %}
         {% if forloop.first == true %}
