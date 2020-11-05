@@ -47,6 +47,11 @@ Fax: +1-208-426-1356
 {% if course.courseprefix %}{{ course.courseprefix }} {% else %} Math {% endif %} {{ course.coursenumber }}
 {% endfor %}
 
+{% comment %}
+I wonder if I can add upcoming courses here?
+Or would that be too much info? They are listed on the Teaching page, maybe that's enough.
+{% endcomment %}
+
 
 ## [Research](research)
 

@@ -11,14 +11,19 @@ title: Teaching
 {% assign currentdate = "now" | date:"%s" %}
 {% if currentdate < last_day_of_spring %}
   {% assign currentsemester = "Spring" %}
-  {% assign currentshortsemester = currentyear | append:"A" %}
+  {% assign currentsemesterabbrev = "A" %}
 {% elsif currentdate < last_day_of_summer %}
   {% assign currentsemester = "Summer" %}
-  {% assign currentshortsemester = currentyear | append:"B" %}
+  {% assign currentsemesterabbrev = "B" %}
 {% else %}
   {% assign currentsemester = "Fall" %}
-  {% assign currentshortsemester = currentyear | append:"C" %}
+  {% assign currentsemesterabbrev = "C" %}
 {% endif %}
+{% assign currentshortsemester = currentyear | append:currentsemesterabbrev %}
+
+{% capture newLine %}
+{% endcapture %}
+
 
 ### Current semester ({{ currentsemester }} {{ currentyear }}):
 
@@ -34,20 +39,6 @@ title: Teaching
 
 ### Upcoming semesters:
 
-In Spring 2021 I will be teaching (subject to change):
-- Math 301, Introduction to Linear Algebra
-- Math 414/514, Real Analysis
-- Math 599, Graduate Seminar II: Professional Preparation
-
----
-
-### Previous semesters:
-
-#### At Boise State University (2010-present):
-
-{% capture newLine %}
-{% endcapture %}
-
 {% assign semesters = "A,B,C" | split:"," -%}
 {%- assign years = site.courses | group_by: "year" | sort:"name" | reverse -%}
 {% for year in years %}
@@ -62,7 +53,8 @@ In Spring 2021 I will be teaching (subject to change):
     {%- else -%}
       {%- assign semester="Other" -%}
   {%- endcase -%}
-  {%- unless year.name == currentyear and semester == currentsemester -%}
+  {%- if year.name >= currentyear -%}
+  {%- if year.name > currentyear or semesterabbrev > currentsemesterabbrev -%}
     {%- assign thissemester = year.name | append:semesterabbrev -%}
     {%- assign courselist = site.courses | where:"shortsemester", thissemester | sort: "coursenumber" -%}
     {% if courselist.size > 0 %}
@@ -98,7 +90,74 @@ In Spring 2021 I will be teaching (subject to change):
 
     {% endif %}
 
-  {% endunless %}
+  {%- endif -%}
+  {%- endif -%}
+  {% endfor %}
+
+{% endfor %}
+
+Upcoming courses are tentative (subject to change).
+
+
+---
+
+### Previous semesters:
+
+#### At Boise State University (2010-present):
+
+{% assign semesters = "A,B,C" | split:"," -%}
+{%- assign years = site.courses | group_by: "year" | sort:"name" | reverse -%}
+{% for year in years %}
+  {% for semesterabbrev in semesters -%}
+  {%- case semesterabbrev -%}
+    {%- when "A" -%}
+      {%- assign semester="Spring" -%}
+    {%- when "B" -%}
+      {%- assign semester="Summer" -%}
+    {%- when "C" -%}
+      {%- assign semester="Fall" -%}
+    {%- else -%}
+      {%- assign semester="Other" -%}
+  {%- endcase -%}
+  {%- if year.name <= currentyear -%}
+  {%- if year.name < currentyear or semesterabbrev < currentsemesterabbrev -%}
+    {%- assign thissemester = year.name | append:semesterabbrev -%}
+    {%- assign courselist = site.courses | where:"shortsemester", thissemester | sort: "coursenumber" -%}
+    {% if courselist.size > 0 %}
+      {% for course in courselist %}
+        {% if forloop.first == true %}
+*{{ semester }} {{ year.name }}*
+        {%- else %}
+&nbsp;
+        {%- endif -%}
+
+        {%- if course.courseprefix -%}
+          {%- assign printprefix = course.courseprefix -%}
+        {%- else -%}
+          {%- assign printprefix = "Math" -%}
+        {%- endif %}
+
+        {%- if course.coursenumber == "*" -%}
+          {%- assign printcoursenumber = "" -%}
+        {%- elsif course.combinedsection -%}
+          {%- capture printcoursenumber -%}
+            {{- printprefix }} {{ course.coursenumber -}}/{{- course.combinedsection -}},
+          {%- endcapture %}
+        {%- else -%}
+          {%- capture printcoursenumber -%}
+            {{- printprefix }} {{ course.coursenumber -}},
+          {%- endcapture %}
+        {%- endif -%}
+
+        {{ newLine -}}
+        : {{ printcoursenumber }} [{{ course.title }}]({%- if course.siteurl -%}{{ course.siteurl }}{%- else -%}{{ course.url }}{%- endif -%})
+
+      {% endfor %}
+
+    {% endif %}
+
+  {%- endif -%}
+  {%- endif -%}
   {% endfor %}
 
 {% endfor %}
