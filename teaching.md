@@ -105,7 +105,7 @@ Upcoming courses are tentative (subject to change).
 
 #### At Boise State University (2010-present):
 
-{% assign semesters = "A,B,C" | split:"," -%}
+{% assign semesters = "A,B,C" | split:"," | reverse -%}
 {%- assign years = site.courses | group_by: "year" | sort:"name" | reverse -%}
 {% for year in years %}
   {% for semesterabbrev in semesters -%}
