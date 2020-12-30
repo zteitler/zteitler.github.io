@@ -91,7 +91,7 @@ layout: post
       <td rowspan="3" style="border:none"> </td>
       <td rowspan="3" style="border:none"> </td>
       <td rowspan="2" style="border-color:black;background-color:LightGreen">
-        Math 598
+        Math 599
       </td>
       <td style="border-color:black">1:30</td>
     </tr>
