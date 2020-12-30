@@ -65,13 +65,9 @@ layout: post
     </tr>
     <tr>
       <td style="border-color:black">12:00</td>
-      <td rowspan="3" style="border-color:black;background-color:LightGreen">
-        Math 584
-      </td>
       <td rowspan="3" style="border:none"> </td>
-      <td rowspan="3" style="border-color:black;background-color:LightGreen">
-        Math 584
-      </td>
+      <td rowspan="3" style="border:none"> </td>
+      <td rowspan="3" style="border:none"> </td>
       <td rowspan="3" style="border:none"> </td>
       <td rowspan="3" style="border:none"> </td>
       <td style="border-color:black">12:00</td>
