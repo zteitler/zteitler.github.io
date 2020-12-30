@@ -3,11 +3,9 @@ title: "Weekly schedule"
 layout: post
 ---
 
-#### Spring 2021
+#### Fall 2020
 
-<table xmlns="http://www.w3.org/1999/xhtml"
-  border="1" cellpadding="8" cellspacing="2"
-  style="border-collapse:collapse;border-color:black">
+<table xmlns="http://www.w3.org/1999/xhtml" border="1" cellpadding="8" cellspacing="2" style="border-color:black">
   <tbody>
     <tr>
       <th style="border-color:black" width="10%"> </th>
@@ -21,9 +19,7 @@ layout: post
     <tr>
       <td style="border-color:black">9:00</td>
       <td rowspan="3" style="border:none"> </td>
-      <td rowspan="2" style="border-color:black;background-color:Orange">
-        PBC
-      </td>
+      <td rowspan="3" style="border:none"> </td>
       <td rowspan="3" style="border:none"> </td>
       <td rowspan="3" style="border:none"> </td>
       <td rowspan="3" style="border:none"> </td>
@@ -35,24 +31,23 @@ layout: post
     </tr>
     <tr>
       <td style="border-color:black">10:00</td>
-      <td rowspan="1" style="border:none"> </td>
       <td style="border-color:black">10:00</td>
     </tr>
     <tr>
       <td style="border-color:black">10:30</td>
       <td rowspan="3" style="border-color:black;background-color:LightGreen">
-        Math 301
+        Math 333
+      </td>
+      <td rowspan="2" style="border-color:black;background-color:Orange">
+        PBC
       </td>
       <td rowspan="3" style="border-color:black;background-color:LightGreen">
-        Math 414/514
-      </td>
-      <td rowspan="3" style="border-color:black;background-color:LightGreen">
-        Math 301
-      </td>
-      <td rowspan="3" style="border-color:black;background-color:LightGreen">
-        Math 414/514
+        Math 333
       </td>
       <td rowspan="3" style="border:none"> </td>
+      <td rowspan="3" style="border-color:black;background-color:LightGreen">
+        Math 333
+      </td>
       <td style="border-color:black">10:30</td>
     </tr>
     <tr>
@@ -61,6 +56,7 @@ layout: post
     </tr>
     <tr>
       <td style="border-color:black">11:30</td>
+      <td rowspan="1" style="border:none"> </td>
       <td style="border-color:black">11:30</td>
     </tr>
     <tr>
