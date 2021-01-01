@@ -21,6 +21,24 @@ Fax: +1-208-426-1356
 
 <div style="clear:both"></div>
 
+
+## [Research](research)
+
+### Recent publications
+
+{% for pub in site.publications limit: 6 %}
+
+[{{ pub.title }}]({% if pub.siteurl %}{{ pub.siteurl }}{% else %}{{ pub.url }}{% endif %})
+{{ pub.excerpt | remove: '<p>' | remove: '</p>' | strip }}
+{% comment %}
+<span class="post-meta"><span class="category_name">{{ pub.categories }}</span> posted on {{ pub.date | date: "%b %-d, %Y" }}</span>
+{% endcomment %}
+
+{% endfor %}
+
+
+
+
 ## [Teaching](teaching)
 
 {% assign currentyear = "now" | date:"%Y" %}
@@ -53,19 +71,8 @@ Or would that be too much info? They are listed on the Teaching page, maybe that
 {% endcomment %}
 
 
-## [Research](research)
+## [Advising](advising)
 
-*Recent publications:*
-
-{% for pub in site.publications limit: 6 %}
-
-[{{ pub.title }}]({% if pub.siteurl %}{{ pub.siteurl }}{% else %}{{ pub.url }}{% endif %})
-{{ pub.excerpt | remove: '<p>' | remove: '</p>' | strip }}
-{% comment %}
-<span class="post-meta"><span class="category_name">{{ pub.categories }}</span> posted on {{ pub.date | date: "%b %-d, %Y" }}</span>
-{% endcomment %}
-
-{% endfor %}
 
 ## [TATERS](https://sites.google.com/boisestate.edu/taters/)
 
@@ -76,11 +83,16 @@ and the [Computing Colloquium](https://www.boisestate.edu/computing/colloquium/)
 
 [Weekly schedule](weekly) | [Travel](travel)
 
-### Links
+
+## [Boise Math Circles](https://www.boisestate.edu/math/circles/)
+
+A math community for teachers and for secondary students
+
+
+## Links
+
 
 [Boise State Topology & Algebra Research](https://www.boisestate.edu/math/research/topology/) in the BSU math department
-
-[Boise Math Circles](https://www.boisestate.edu/math/circles/) Math for teachers and for secondary students
 
 [BSU Academic Calendars](https://www.boisestate.edu/registrar/boise-state-academic-calendars/)
 

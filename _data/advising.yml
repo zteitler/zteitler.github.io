@@ -1,0 +1,171 @@
+
+- key: graduateadvising
+  header: "Graduate advising"
+  order: 1
+  students:
+    - name: "Max Sullivan"
+      degree: "M.S. Mathematics, Boise State University"
+      year: 2022
+      expected: true
+      thesistitle:
+      thesisurl:
+      postdegree:
+      
+    - name: "Stuart Nygard"
+      degree: "M.S. Mathematics, Boise State University"
+      year: 2016.3
+      thesistitle: "The density topology on the reals and other spaces"
+      thesisurl: https://scholarworks.boisestate.edu/td/1143/
+      postdegree: Micron
+      
+    - name: "Monica Josue Agana"
+      degree: "M.S. Mathematics, Boise State University"
+      year: 2016.2
+      coadvisor: "Andres Eduardo Caicedo"
+      thesistitle: "Classical theory of rearrangements"
+      thesisurl: https://scholarworks.boisestate.edu/td/1039/
+      postdegree: Vacasa
+      
+    - name: "Anna Marie Megale"
+      degree: "M.S. Mathematics, Boise State University"
+      year: 2016.1
+      thesistitle: "The Frobenius problem"
+      thesisurl: https://scholarworks.boisestate.edu/td/1048/
+      postdegree: "Clearwater Analytics"
+
+- key: seniorthesisadvising
+  header: "Undergraduate senior thesis advising"
+  order: 2
+  students:
+    - name: "Sarah Hall"
+      degree: "B.S. Applied Mathematics, Boise State University"
+      year: 2021
+      expected: true
+      
+    - name: "Tyler Ware"
+      degree: "B.S. Applied Mathematics, Boise State University"
+      year: 2021
+      expected: true
+      
+    - name: "Bailey Fadden"
+      degree: "B.S. Applied Mathematics, Boise State University"
+      year: 2020
+      thesistitle: Using the Chi-Square Test to Analyze Voter Behavior
+      thesisurl: https://scholarworks.boisestate.edu/mss_2020/5/
+      postdegree:
+      
+    - name: "Kayla Neal"
+      degree: "B.S. Mathematics, Boise State University"
+      year: 2018
+      thesistitle: "The Cayley-Bacharach Theorem"
+      postdegree: "Mathematics M.S. program at Boise State University"
+      
+    - name: "Amanda Aydelotte"
+      degree: "B.S. Mathematics, Boise State University"
+      year: 2017.4
+      thesistitle: "An Exploration of the Chromatic Polynomial"
+      thesisurl: https://scholarworks.boisestate.edu/math_undergraduate_theses/7/
+      postdegree: "Mathematics Ph.D. program at University of Idaho"
+      
+    - name: "Karly Reid"
+      degree: "B.S. Mathematics, Boise State University"
+      year: 2017.3
+      thesistitle: "Hyperbolic Geometry: History, Models, and Art"
+      
+    - name: "Kyle Auble"
+      degree: "B.S. Mathematics, Boise State University"
+      year: 2017.2
+      thesistitle: "From Rings to Graphs: A Different Look at Structure"
+      
+    - name: "Brandon Sams"
+      degree: "B.S. Mathematics, Boise State University"
+      year: 2017.1
+      thesistitle: "Complementary Coffee Cups"
+      thesisurl: https://scholarworks.boisestate.edu/math_undergraduate_theses/6/
+      
+    - name: "Stacia Orr"
+      degree: "B.S. Mathematics, Boise State University"
+      year: 2016
+      thesistitle: Cubik Mathemagic
+      
+    - name: "Brent El-Bakri"
+      degree: "B.S. Mathematics, Boise State University"
+      year: 2014
+      thesistitle: "A brief encounter with linear codes"
+      thesisurl: https://scholarworks.boisestate.edu/math_undergraduate_theses/3/
+      postdegree: Teaching at Bishop Kelly High School
+
+- key: graduatecommittees
+  header: "Graduate committees"
+  order: 3
+  students:
+    - name: "Milan Zanussi"
+      degree: "M.S. Mathematics, Boise State University"
+      year: 2021
+      expected: true
+      advisor: "Sam Coskey"
+      
+    - name: "Kennedy Courtney"
+      degree: "M.S. Mathematics, Boise State University"
+      year: 2020
+      advisor: "Jens Harlander"
+      
+    - name: "Mitchell Scofield"
+      degree: "M.S. Mathematics, Boise State University"
+      year: 2019
+      advisor: "Jens Harlander"
+      thesistitle: "On the Fundamental Group of Plane Curve Complements"
+      thesisurl: https://scholarworks.boisestate.edu/td/1538/
+      
+    - name: "Khoi Le"
+      degree: "M.S. Mathematics, Boise State University"
+      year: 2018
+      
+    - name: "Kyle Beserra"
+      degree: "M.S. Mathematics, Boise State University"
+      year: 2016
+      advisor: "Sam Coskey"
+      thesistitle: "On the Conjugacy Problem for Automorphisms of Trees"
+      thesisurl: https://scholarworks.boisestate.edu/td/1083/
+      postdegree: "Mathematics Ph.D. program at University of North Texas"
+      
+    - name: "Phillip W. Hart"
+      degree: "M.S. Mathematics, Boise State University"
+      year: 2015
+      advisor: "Uwe Kaiser"
+      thesistitle: "Monodromy representation of the braid group"
+      thesisurl: https://scholarworks.boisestate.edu/td/989/
+      
+    - name: "Tyler Allyn"
+      degree: "M.S. Mathematics, Boise State University"
+      year: 2014.2
+      advisor: "Jens Harlander"
+      thesistitle: "Diagrammatically reducible 2-complexes"
+      thesisurl: https://scholarworks.boisestate.edu/td/815/
+      postdegree: "Professional and competitive kayaking; Altai Visuals"
+      
+    - name: "Uri Rogers"
+      degree: "Ph.D. Electrical and Computer Engineering, Boise State University"
+      year: 2014.1
+      advisor: "Hao Chen"
+      thesistitle: "On uniformly most powerful decentralized detection"
+      thesistype: "Dissertation"
+      thesisurl: https://scholarworks.boisestate.edu/td/805/
+      postdegree: "Assistant Professor, Eastern Washington University, Electrical Engineering"
+      
+    - name: "Summer Lynne Kisner"
+      degree: "M.S. Mathematics, Boise State University"
+      year: 2013
+      advisor: "Andres Eduardo Caicedo"
+      thesistitle: "Schur's theorem and related topics in Ramsey theory"
+      thesisurl: https://scholarworks.boisestate.edu/td/376/
+      postdegree: "Clearwater Analytics"
+      
+    - name: "Katherine Kylee Zebedeo"
+      degree: "M.S. Mathematics, Boise State University"
+      year: 2012
+      advisor: "Uwe Kaiser"
+      thesistitle: "Regular homotopy of closed curves on surfaces"
+      thesisurl: https://scholarworks.boisestate.edu/td/326/
+      postdegree: "Clearwater Analytics"
+
