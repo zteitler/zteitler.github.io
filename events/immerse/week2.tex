@@ -1,0 +1,451 @@
+\documentclass{amsart}
+
+%\usepackage{doublespace}
+\usepackage{amsmath, amsfonts, amssymb, amsthm, amscd}
+
+%\usepackage[all]{xy}
+\usepackage{enumerate}
+\usepackage{graphicx}
+%\usepackage{pdfsync}
+
+\usepackage{vmargin}
+\setpapersize{USletter}
+\setmargrb{0.8in}{1in}{1in}{0.8in}
+
+
+\setlength{\parindent}{0in}
+\setlength{\parskip}{2mm}
+
+
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{principle}[theorem]{Principle}
+\newtheorem{claim}[theorem]{Claim}
+
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}[section]
+\newtheorem{example}[theorem]{Example}
+\newtheorem{answer}[theorem]{Answer}
+\newtheorem{remark}[theorem]{Remark}
+
+
+\newtheorem{exercise}[theorem]{Exercise}
+\newtheorem{paperexercise}[theorem]{Paper Exercise}
+
+
+
+\theoremstyle{definition}
+%\newtheorem{Definition}[Theorem][section]
+
+%\newtheorem{example}{Example}[section]
+%\newtheorem{definition}[theorem]{Definition}
+
+%\input xy
+%\xyoption{all}
+
+
+
+\newcommand{\defining}[1]{\textbf{#1}}
+
+
+\newcommand{\sse}{\subseteq}
+%\newcommand{\ssne}{\subsetneq}
+%\renewcommand{\colon}[3]{\ensuremath{\left(#1:_{#2} #3\right)}}
+%\newcommand{\rad}[1]{\ensuremath{\operatorname{rad}\left(#1\right)}}
+\DeclareMathOperator{\radname}{rad}
+\newcommand{\rad}[1]{\radname(#1)}
+
+\newcommand{\m}{\mathfrak{m}}
+
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\R}{\mathbb{R}}
+
+
+\DeclareMathOperator{\interior}{int}
+\newcommand{\boundary}{\partial}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+\setcounter{page}{3}
+
+\centerline{\large{\bf IMMERSE 2007}}
+\vskip.25in
+
+\centerline{\large{Algebra Exercises}}
+\vskip.25in
+
+\setcounter{section}{1}
+\section{Week 2}
+
+
+Unless otherwise noted, the letters $R$ and $A$ denote commutative rings with unity,
+the letters $I$ and $J$ denote ideals, the letter $k$ denotes a field,
+and letters like $X_i$ denote variables.
+
+
+\begin{definition}
+Let $\sigma: \R^n \to \R$ be a linear function and let $s$ be a real number.
+The \defining{closed half space} in $\R^n$ corresponding to $\sigma$ and $s$
+is the set  $\{ v \in \R^n: \sigma(v) \geq s \}$.
+The \defining{open half space} in $\R^n$ corresponding to $\sigma$ and $s$
+is the set $\{ v \in \R^n: \sigma(v) > s \}$.
+\end{definition}
+
+\begin{exercise}
+Let $\sigma: \R^n \to \R$ be a linear function and let $s$ be a real number.
+Let $\Sigma$ be the corresponding closed half space
+and let $\Sigma^\circ$ be the corresponding open half space.
+\begin{enumerate}[a.]
+\item Show that $\Sigma$ and $\Sigma^\circ$ are convex.
+\item Show that $\Sigma$ is the topological closure of $\Sigma^\circ$
+and $\Sigma^\circ$ is the topological interior of $\Sigma$.
+\end{enumerate}
+\end{exercise}
+
+\begin{paperexercise} \label{paperex:lemma1example}
+For the the monomial ideal $I = (X_0^4, X_0^3X_1^3, X_1^4)$ (as on page 3772 of the H\"ubl paper),
+determine $C$, $K$, $\sigma_i$, $s_i$, and $\Sigma_i$, as in Lemma 1.
+\end{paperexercise}
+
+
+
+
+\begin{exercise}
+For each of the sets in Exercise~1.15 %was: \ref{Exercise:IsAnIdeal?} from weekly1.tex
+that is an ideal, find a finite generating set.
+Prove that the set actually generates the ideal.
+\end{exercise}
+
+
+\begin{exercise}
+Prove that an ideal $I$ of $R$ is maximal if and only if $R/I$ is a field.
+\end{exercise}
+
+\begin{exercise}
+Prove that $R$ is a field if and only
+if the only ideals of $R$ are $(0_{R})$ and $R$.
+\end{exercise}
+
+\begin{exercise}
+Show that if $R$ is a commutative ring, then $R[x]$ is never a field.
+%HINT: if $x^{-1}$ exists, what is its degree?
+\end{exercise}
+
+\begin{exercise} 
+
+\begin{enumerate}[a.]
+
+\item Say $R$ is a domain. Show that if a polynomial in $R[x]$ is a unit, then it is a nonzero constant.
+
+\item Say $R=k$ is a field. Then the converse is true: if a polynomial in $k[x]$ is a nonzero constant,
+it is a unit.
+
+\item Show that $(2x+1)^2 = 1$ in $(\Z/4)[x]$.
+Conclude that the hypothesis in part (a) that $R$ be a domain cannot be removed in general.
+\end{enumerate}
+\end{exercise}
+
+
+\begin{definition}
+Let $A$ be a domain. An element $f \in A$ is called \defining{irreducible}
+if $f \neq 0$, $f$ is not a unit, and for any factorization $f = gh$, either $g$ or $h$ is a unit.
+\end{definition}
+
+\begin{exercise}
+Let $f \in k[x]$ be a non-constant polynomial in one variable.
+Prove that the following are equivalent:
+(1) $k[x] / \langle f \rangle$ is a field.
+(2) $k[x] / \langle f \rangle$ is an integral domain.
+(3) $f$ is irreducible.
+\end{exercise}
+
+
+\begin{exercise}
+Let $f = Y^2 - X^3 \in k[X,Y]$.
+Show $f$ is irreducible.
+Is $k[X,Y] / \langle f \rangle$ a field, an integral domain, or neither?
+\end{exercise}
+
+
+\begin{definition}
+Let $R$ be a commutative ring with identity and let $I$ be an ideal of $R$.
+The \defining{radical} of $I$ is the following set:
+$\rad{I} = \left\{ x \in R \mid x^{n} \in I \text{ for some } n > 0  \right\}$.
+Other common notations include $\sqrt{I}$ and $\text{r}(I)$.
+\end{definition}
+
+
+\begin{exercise}
+Let $R = \mathbb{Z}$.
+Find the radicals of the ideals: $(12)$, $(14)$, $(16)$, $(18)$.
+\end{exercise}
+
+
+\begin{exercise}
+%Let $R$ be a commutative ring with identity, let
+%Let $n$ be a positive integer, and let
+%$I$, $J$, and
+%$I_{1}, I_{2}, \ldots, I_{n}$ be ideals of $R$.
+Prove the following statements:
+\begin{enumerate}[a.]
+\item $\rad{I}$ is an ideal of $R$.
+[HINT: To show closure under addition, use the binomial theorem.]
+
+\item $I \sse \rad{I}$.
+
+\item $\rad{I} = \rad{\rad{I}}$.
+
+\item $\rad{I J} = \rad{I \cap J} = \rad{I} \cap \rad{J}$.
+
+\item $\rad{I} = R$ if and only if $I = R$. [HINT: Use $1 \in R$.]
+
+\item $\rad{I + J} = \rad{\rad{I} + \rad{J}}$.
+
+\item $I \sse J$ implies $\rad{I} \sse \rad{J}$.
+
+\item Suppose $I = (f_{1}, \ldots, f_{m})$.  Then $\rad{I} \sse
+\rad{J}$ if and only if for each $i = 1, 2, \ldots, m$ there exists a positive
+integer $n_{i}$ such that $f_{i}^{n_{i}} \in J$.
+
+\item Suppose $I = (f_{1}, \ldots, f_{s})$ and $J = (g_{1}, \ldots, g_{t})$.
+Then $\rad{I} = \rad{J}$ if and only if for each $i = 1, 2, \ldots, s$ there exists a
+positive integer $n_{i}$ such that $f_{i}^{n_{i}} \in J$, and for each $j = 1, 2,
+\ldots, t$ there exists a positive integer $m_{j}$ such that $g_{j}^{m_{j}} \in I$.
+
+\item Suppose $I \sse J$ and that $J = (g_{1}, \ldots, g_{t})$.
+Then $\rad{I} = \rad{J}$ if and only if for each $j = 1, 2, \ldots, t$ there exists an integer
+$m_{j}$ such that $g_{j}^{m_{j}} \in I$.
+%
+%\item \rad{I} is the intersection of all the prime ideals that contain $I$.
+\end{enumerate}
+\end{exercise}
+
+
+
+
+
+
+
+
+\begin{exercise} \label{exer:product ideal} % [M.~Artin]
+Let $I$ and $J$ be ideals of $R$.
+\begin{enumerate}[a.]
+\item Prove that $I \cap J$ is an ideal.
+
+\item Show by example that the set of products $\{xy : x \in I, y \in J \}$ need not be an ideal.
+
+\item But show that the set of finite sums
+of products of elements of $I$ and $J$ is an ideal.
+That is, show the set
+$\{ \sum_{k=1}^{n} x_k y_k : \text{$n \geq 0$, and for each $k$, $x_k \in I, y_k \in J$} \}$
+is an ideal.
+
+It is called the \defining{product ideal of $I$ and $J$} and denoted $IJ$.
+
+\item Prove that $IJ \subseteq I \cap J$.
+
+\item Show by example that $IJ$ and $I \cap J$ need not be equal.
+\end{enumerate}
+\end{exercise}
+
+
+
+\begin{exercise} \label{exer:generating sets}
+Say $I$ is generated by the set $S$ and $J$ is generated by the set $T$.
+True or false:
+\begin{enumerate}[a.]
+\item $I \cap J$ is generated by $S \cap T$.
+\item $I J$ is generated by $\{ s t : s \in S, t \in T \}$.
+\item $I^2 = II$ is generated by $\{ s^2 : s \in S \}$.
+\end{enumerate}
+(For ``true'', give a proof; for ``false'', give a counterexample.)
+\end{exercise}
+
+
+
+\begin{paperexercise}
+Let $I$ be the same ideal as in exercise~\ref{paperex:lemma1example}.
+Find a generating set for $I^2$.
+Repeat exercise~\ref{paperex:lemma1example} for $I^2$.
+\end{paperexercise}
+
+
+
+%\begin{exercise} [RS]
+%Let $I$ be a monomial ideal in $R=A[x_1,\ldots,x_d]$ where $d\geq 2$.
+%Let $f$ be a monomial in $R$.
+%\begin{enumerate}[a.]
+%\item If $x_i\mid f$, then $\rad{fI}\subseteq \rad{(x_i)R}$.
+%\item If $f\neq 1_A$, then $\rad{fI}\subsetneq\rad{X}$.
+%\end{enumerate}
+%\end{exercise}
+
+Let $X_1, \dots, X_d$ be variables.
+For any vector of non-negative integers $\alpha \in \R^d$
+we may write $X^\alpha$ to denote $X_1^{\alpha_1} \cdots X_d^{\alpha_d}$.
+Also, we may write $k[X]$ to denote $k[X_1,\dots,X_d]$,
+provided it is clear from context whether $X$ denotes a single variable
+or the collection of variables $X_1,\dots,X_d$.
+
+
+\begin{exercise}
+Let $X_1, \dots, X_d$ be variables. We use the notation above, so $X$ denotes
+the collection of variables.
+Let $c_{\alpha}X^{\alpha}$ be a nonzero monomial,
+and let $f(X), g(X) \in k[X]$ be polynomials
+none of whose terms is divisible by $c_{\alpha}X^{\alpha}$.
+Prove that none of the terms of $f(X) - g(X)$
+is divisible by $c_{\alpha}X^{\alpha}$. 
+\end{exercise}
+
+
+\begin{exercise} 
+Let $R=k[x_1,\ldots,x_d]$ and $\m=(x_1,\ldots,x_d)R$. Show the following.
+\begin{enumerate}[a.]
+\item If $I$ is a monomial ideal such that $I\neq R$, then $\rad{I}=\m$ if and
+only if for each $i=1,\ldots,d$ there exists an integer $n_i>0$ such
+that $x_i^{n_i}\in I$.
+\item The ideal $\m$ is radical, that is, $\rad{\m} = \m$.
+\end{enumerate}
+\end{exercise}
+
+
+\begin{exercise} 
+Let $I_1,\ldots,I_n$ be monomial ideals in $R=k[x_1,\ldots,x_d]$ and
+set $\m=(x_1,\ldots,x_d)R$.
+\begin{enumerate}[a.]
+\item Prove that the sum $I_1+\cdots+ I_n$ is a monomial ideal.
+\item If $\rad{I_1}=\cdots=\rad{I_n}=\m$, show that $\rad{I_1+\cdots+ I_n}=\m$.
+\item Prove or disprove:  If $\rad{I_1+\cdots+ I_n}=\m$, then $\rad{I_1}=\cdots=\rad{I_n}=\m$.
+\end{enumerate}
+\end{exercise}
+
+
+\begin{exercise} 
+Let $I_1,\ldots,I_n$ be monomial ideals in $R=k[x_1,\ldots,x_d]$ and
+set $\m=(x_1,\ldots,x_d)R$.
+\begin{enumerate}[a.]
+\item Prove that the product $I_1\cdots I_n$ is a monomial ideal.
+\item If $\rad{I_1}=\cdots=\rad{I_n}=\m$, show that $\rad{I_1\cdots I_n}=\m$.
+\item Prove or disprove:  If $\rad{I_1\cdots I_n}=\m$, then $\rad{I_1}=\cdots=\rad{I_n}=\m$.
+\end{enumerate}
+\end{exercise}
+
+
+
+%\begin{exercise} Let $A$ be a ring and $f = \sum_{|\alpha| \geq 0} a_{\alpha}x^{\alpha} \in A[x_1, \dots, x_n]$.  Prove the following statements:
+%
+%\begin{enumerate}
+%\item $f$ is nilpotent $\Leftrightarrow a_{\alpha}$ is nilpotent for all $\alpha$.
+%[HINT: choose a monomial ordering and argue by induction on the number of summands.]
+%In particular, $A[x_1, \dots, x_n]$ is reduced if and only if $A$ is reduced.
+
+%\item $f$ is a unit in $A[x_1, \dots, x_n]$ if and only if $A_{0, \dots, 0}$ is a unit in $A$
+%and $A_{\alpha}$ are nilpotent for $\alpha \neq 0$.
+%[HINT: Remember the geometric series for $1/(a-g)$ and use part (1).]
+%In particular, $(A[x_1, \dots, x_n])* = A*$ if and only if $A$ is reduced.
+
+%\item $f$ is a zero divisor in $A[x_1, \dots, x_n]$ if and only if
+%there exists some $a \neq 0$ in $A$ such that $af = 0$.
+%Give two proofs: one by induction on $n$, the other by using a monomial ordering.
+%[HINT: Choose a monomial ordering and $g \in A[x_1, \dots, x_n]$
+%with minimal number of terms so that $f \cdot g = 0$, consider the biggest term
+%and conclude that $g$ must be monomial.]
+
+%\item $A[x_1, \dots, x_n]$ is an integral domain if and only if
+%$\deg(fg) = \deg(f) + \deg(g)$ for all $f, g, \in A[x_1, \dots, x_n]$.
+%In particular, $A[x_1, \dots, x_n]$ is an integral domain if and only if $A$ is an integral domain.
+%\end{enumerate}
+%\end{exercise}
+
+
+
+%\begin{definition}
+%Let $R$ be a commutative ring with unity.
+%The \defining{Jacobson radical} of $R$ is the intersection of all the maximal ideals of $R$.
+%The \defining{nilradical} of $R$ is the radical of the zero ideal, that is, $\rad{0}$.
+%\end{definition}
+
+%\begin{exercise}
+%Let $A$ be a commutative ring with unity.
+%In the ring $R=A[x]$, the Jacobson radical is equal to the nilradical.
+%\end{exercise}
+
+\begin{definition}
+An \defining{ascending chain} of ideals is an infinite sequence
+$I_1 \subseteq I_2 \subseteq I_3 \subseteq \cdots$.
+An ascending chain is said to \defining{stabilize} if there is some $N$ such that
+for $n \geq N$, $I_n = I_N$.
+A ring $R$ is called \defining{Noetherian} if every ascending chain of ideals in $R$ stabilizes
+(the ``ascending chain condition'').
+\end{definition}
+
+
+\begin{exercise}
+Let $I_1 \subseteq I_2 \subseteq \cdots$ be an ascending chain of ideals.
+Then $I = \bigcup I_i = I_1 \cup I_2 \cup \cdots$ is an ideal.
+\end{exercise}
+
+
+\begin{exercise}
+Let $A$ be a Noetherian ring. Show the following.
+\begin{enumerate}[a.]
+\item Every field $k$ is Noetherian. [HINT: What ideals are there? What chains are possible?]
+\item If $I \subset A$ is an ideal, then $A/I$ is Noetherian.
+\item If $I \subset A$ is an ideal, then there is a finite generating set for $I$.
+[HINT: Consider the set of all finitely generated ideals contained in $I$.
+Use the Noetherian condition plus Zorn's Lemma to show that among all finitely
+generated ideals contained in $I$ there is a maximal one.
+Now that must be $I$, otherwise adding one more element to the generating set of the ideal
+would give a larger ideal, still finitely generated, violating maximality.]
+\item Conversely, if every ideal in $R$ is finitely generated, then $R$ is Noetherian.
+[HINT: Given a chain, the union of the chain is an ideal and hence finitely generated.
+The members of the generating set must lie in some ideals in the chain. Take a maximum.]
+
+Hence: \textit{A ring $R$ is Noetherian if and only if every ideal of $R$
+is finitely generated.}
+\item (Hilbert's Basis Theorem) The ring $A[X]$ is Noetherian.
+[HINT: Given an ideal $I \subset A[X]$, show that the set of leading coefficients of polynomials in $I$
+forms an ideal in $A$. By part (c), that ideal is finitely generated.
+For each of those generators $a_i$, pick a lowest-degree polynomial $f_i$ with leading coefficient $a_i$.
+Show the $f_i$ generate $I$ by considering a lowest-degree member of $I$
+outside the ideal generated by the $f_i$ and obtaining a contradiction.]
+
+Hence: \textit{For a field $k$, every ideal in a polynomial ring $k[X_1,\dots,X_d]$ is finitely generated.}
+\item The previous part implies that $k[X,Y]$ is Noetherian.
+Let $R \subset k[X,Y]$ be the subset of polynomials whose terms are of the form
+either $c X^a Y^b$ with $b \leq a \sqrt{2}$ and $c \in k$.
+(Note that constant terms, $a=b=0$, meet this condition, so they are allowed.)
+For example, $X \in R$ but $Y \notin R$.
+
+Now, show that $R$ is a subring. Then show that $R$ is not Noetherian.
+
+
+Thus a subring of a Noetherian ring is not necessarily Noetherian.
+\end{enumerate}
+\end{exercise}
+
+
+
+%\begin{exercise}
+%Determine whether or not the following polynomials $f$ are contained in the respective ideals~$I$:
+
+%\begin{enumerate}
+%\item $f = xy^3 - z^2 + y^5 - z^3, I = \langle -x^3+y, x^2y-z \rangle$ in $\Q[x,y,z]$
+
+%\item $f = x^3z - 2y^2, I = \langle yz + 2z^2, y-z \rangle$ in $\Q[x,y,z]$
+%\end{enumerate}
+%\end{exercise}
+
+
+
+
+
+\end{document}

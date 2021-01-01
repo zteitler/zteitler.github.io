@@ -1,0 +1,348 @@
+\documentclass{amsart}
+
+%\usepackage{doublespace}
+\usepackage{amsmath, amsfonts, amssymb, amsthm, amscd}
+
+%\usepackage[all]{xy}
+\usepackage{enumerate}
+\usepackage{graphicx}
+%\usepackage{pdfsync}
+
+\usepackage{vmargin}
+\setpapersize{USletter}
+\setmargrb{1in}{1in}{1in}{1in}
+
+
+\setlength{\parindent}{0in}
+\setlength{\parskip}{2mm}
+
+
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{principle}[theorem]{Principle}
+\newtheorem{claim}[theorem]{Claim}
+
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{answer}[theorem]{Answer}
+\newtheorem{remark}[theorem]{Remark}
+
+
+\newtheorem{exercise}[theorem]{Exercise}
+\newtheorem{chexercise}[theorem]{Challenge Exercise}
+\newtheorem{paperexercise}[theorem]{Paper Exercise}
+
+
+
+\theoremstyle{definition}
+%\newtheorem{Definition}[Theorem][section]
+
+%\newtheorem{example}{Example}[section]
+%\newtheorem{definition}[theorem]{Definition}
+
+%\input xy
+%\xyoption{all}
+
+
+
+\newcommand{\defining}[1]{\textbf{#1}}
+
+
+%\newcommand{\sse}{\subseteq}
+%\newcommand{\ssne}{\subsetneq}
+\renewcommand{\colon}[3]{\ensuremath{\left(#1:_{#2} #3\right)}}
+%\newcommand{\rad}[1]{\ensuremath{\operatorname{rad}\left(#1\right)}}
+\DeclareMathOperator{\radname}{rad}
+\newcommand{\rad}[1]{\radname(#1)}
+
+\newcommand{\m}{\mathfrak{m}}
+
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\R}{\mathbb{R}}
+
+
+\DeclareMathOperator{\interior}{int}
+\newcommand{\boundary}{\partial}
+
+\newcommand{\tropicalsemiring}{\textbf{T}}
+\newcommand{\troplus}{\oplus}
+\newcommand{\tromult}{\odot}
+
+\DeclareMathOperator{\aff}{aff}
+\DeclareMathOperator{\conv}{conv}
+\DeclareMathOperator{\relint}{relint}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+\centerline{\large{\bf IMMERSE 2007}}
+\vskip.25in
+
+\centerline{\large{Algebra Exercises}}
+\vskip.25in
+
+\setcounter{page}{12}
+\setcounter{section}{5}
+\section{Supplemental Exercises}
+
+
+
+\begin{exercise}
+This exercise goes back to review the definition of a ring, and explore an object that is ``almost a ring''.
+It should be significantly more elementary than most of the other exercises in the whole course.
+
+The \defining{tropical semiring} $\tropicalsemiring$, also called the \defining{min-plus algebra}, is defined as follows.
+As a set, $\tropicalsemiring = \R \cup \{\infty\}$.
+There are two operations, denoted $\troplus$ (tropical addition) and $\tromult$ (tropical multiplication),
+and defined by the following formulas:
+\[ a \troplus b = \min\{ a , b \} , \qquad a \tromult b = a + b \text{ (ordinary addition)} \]
+Show the following:
+\begin{enumerate}[a.]
+\item Find $3 \troplus 7$ and $3 \tromult 7$.
+\item Show $\troplus$ and $\tromult$ are associative.
+\item Show $\troplus$ and $\tromult$ are commutative.
+\item Show $\tromult$ distributes over $\troplus$.
+\item Is there an identity element for $\troplus$? Are there tropical additive inverses? Explain.
+\item Is there an identity element for $\tromult$? Are there tropical multiplicative inverses? Explain.
+\item In $\R^2$, graph the tropical linear polynomial $y = (3 \tromult x) \troplus 7$.
+\item In $\R^2$, graph the tropical quadratic polynomial
+$y = (3 \tromult x \tromult x) \troplus (7 \tromult x) \troplus 12$.
+The expression $x \tromult x$ can be abbreviated $x^{\tromult 2}$ or simply $x^2$.
+\item Show the ``freshman's dream'' holds for all powers in tropical geometry:
+$(x \troplus y)^{\tromult n} = x^{\tromult n} \troplus y^{\tromult n}$.
+\item What is the ``characteristic'' of $\tropicalsemiring$?
+\end{enumerate}
+\end{exercise}
+
+
+%\begin{exercise}
+%Another ``almost ring''.
+%Let $G$ be a group, written additively, but not necessarily abelian.
+%Let $N(G)$ be the set of functions from $G$ (arbitrary functions, not just homomorphisms),
+%with the two operations $+$ and $\circ$ defined as follows.
+%The addition $+$ is defined by pointwise addition:
+%$(f+g)(x) = f(x) + g(x)$.
+%The composition $\circ$ is $(f \circ g)(x) = f(g(x))$.
+%This structure is called the \defining{near-ring of functions on $G$}.
+%\begin{enumerate}[a.]
+%\item Show $+$ and $\circ$ are associative.
+%\item Show there are identity and inverses for $+$,
+%and an identity for $\circ$ but not necessarily inverses.
+%\item Show $\circ$ is right-distributive over $+$,
+%that is, $(f+g)\circ h = (f\circ h) + (g\circ h)$.
+%\item A structure $(N,+,\circ)$ satisfying the above properties
+%is called a \defining{near-ring}.
+%Show $(\R[x], + , \circ)$ is a near-ring, with $+$ commutative.
+%\item An element of a near-ring is called distributive
+%if it distributes on the left (as well as the right).
+%In $N(G)$, an element is distributive if and only if
+%it is a homomorphism on $G$.
+%\end{enumerate}
+%\end{exercise}
+
+
+
+
+
+
+
+
+\begin{exercise}
+Determine all subsets $S$ of $\R^1$ such that
+both $S$ and its complement are convex;  do the same for $\R^2$ and $\R^3$.
+(For simplicity, you may want to just take $S$ to be closed and its complement open.)
+\end{exercise}
+
+
+
+
+
+
+
+
+
+
+
+\begin{definition}
+Let $R$ be a commutative ring with identity and let $I$ and $J$ be ideals of $R$.
+The \defining{quotient ideal of $I$ and $J$}, or \defining{colon ideal}, is
+\[
+\colon{I}{R}{J} = \left\{ r \in R \mid r J \subseteq I \right\}.
+\]
+It is often written simply $\colon{I}{}{J}$ if the ring $R$ is clear from the context.
+\end{definition}
+
+\begin{exercise}\label{exer:colon}
+Let $I, J, K$ be ideals of $R$
+and let $\left\{ I_{\lambda} \right\}_{\lambda \in \Lambda}$ be a collection of ideals
+of $R$. Prove the following statements:
+\begin{enumerate}[a.]
+\item \colon{I}{}{J} is an ideal of $R$.
+
+\item $\colon{I}{}{J} = R$ if and only if $J \subseteq I$.
+
+\item $I \subseteq \colon{I}{}{J}$.
+
+\item $\colon{I}{}{J} J \subseteq I$.
+
+\item $\colon{\colon{I}{}{J}}{}{K} = \colon{I}{}{JK} =
+\colon{\colon{I}{}{K}}{}{J}$.
+
+\item $\colon{\bigcap_{\lambda \in \Lambda} I_{\lambda}}{}{J} = \bigcap_{\lambda \in \Lambda}
+\colon{I_{\lambda}}{}{J}$.
+
+\item $\colon{J}{}{\sum_{\lambda \in \Lambda} I_{\lambda}} = \bigcap_{\lambda \in \Lambda}
+\colon{J}{}{I_{\lambda}}$. [HINT: Use the fact that $\sum I_{\lambda}$ is the ideal generated by
+$\bigcup I_{\lambda}$, which you proved in Exercise~1.11 and Exercise~1.12.]
+\end{enumerate}
+\end{exercise}
+
+
+\begin{exercise}
+Let $I$ be a radical ideal and $J$ an arbitrary ideal.
+Prove that $\colon{I}{}{J}$ is radical.
+\end{exercise}
+
+\begin{exercise} % [HS 1.4]
+Let $I$ be an integrally closed ideal and $J$ an arbitrary ideal.
+Prove that $\colon{I}{}{J}$ is integrally closed.
+\end{exercise}
+
+\begin{exercise}
+Let $I$ and $J$ be monomial ideals.
+Show that $\colon{I}{}{J}$ is a monomial ideal.
+%(Do Exercise~\ref{exer:colon} first.)
+Also, show that if $I$ and $J$ are homogeneous ideals, so is $\colon{I}{}{J}$.
+\end{exercise}
+
+\begin{exercise}
+Let $I$ and $J$ be ideals in $R$.
+Show the following.
+\begin{enumerate}[a.]
+\item We have $\colon{ \colon{I}{}{J^a} }{}{J} = \colon{I}{}{J^{a+1}}$.
+\item If $a \leq b$ then $\colon{I}{}{J^a} \subseteq \colon{I}{}{J^b}$.
+By the previous part, if we keep coloning by $J$, the ideal just keeps growing.
+\item The \defining{saturation of $I$ with respect to $J$},
+\[ \colon{I}{}{J^{\infty}} = \bigcup_{a \geq 0} \colon{I}{}{J^a} , \]
+is an ideal containing $I$, and such that
+$\colon{ \colon{I}{}{J^{\infty}} } {} {J^a} = \colon{I}{}{J^{\infty}}$ for all $a$.
+(This justifies the name ``saturated'': putting more $J$s doesn't change it any more.)
+\item If $I$ and $J$ are monomial, so is $\colon{I}{}{J^{\infty}}$.
+\item If $I$ and $J$ are homogeneous, so is $\colon{I}{}{J^{\infty}}$.
+\item If $I$ is a homogeneous ideal, we define the \defining{saturation of $I$}
+to be $I^{\text{sat}} = \colon{I}{}{\m^{\infty}}$.
+Show this is a homogeneous ideal containing $I$ and that $(I^{\text{sat}})^{\text{sat}} = I^{\text{sat}}$.
+\item If $I \subset J$ are homogeneous then $I^{\text{sat}} \subset J^{\text{sat}}$.
+\item For $I$ homogeneous we have $I \subset I^{\text{sat}} \subset \rad{I}$.
+Show a radical homogeneous ideal is saturated.
+\item For $I$ homogeneous, $I^{\text{sat}}$ is the unique smallest saturated
+ideal containing $I$. (A homogeneous ideal is saturated if it equals its saturation.
+Here, ``smallest'' means $I^{\text{sat}}$ is contained in any saturated ideal containing $I$.)
+\item Let $I$ be homogeneous and $d \geq 0$.
+The \defining{degree $d$ piece of $I$}, denoted $I_d$, is the set of homogeneous forms
+of degree $d$ in $I$ (together with $0$).
+Show that each $I_d$ is a vector space over $k$, contained in $\m_d$.
+Show that $\m_d$ is finite dimensional, and hence so is $I_d$.
+\item For $I$ homogeneous, $I_d = (I^{\text{sat}})_d$ for $d \gg 0$.
+[HINT: Use the Noetherian property. It says $I^{\text{sat}}$ is finitely generated.
+So there is a maximum degree $a$ of the generators, and a $b$
+such that all the generators multiply $\m^b$ into $I$
+(taking the maximum of the $b$'s of the various generators).
+Show that $I_d = (I^{\text{sat}})_d$ for $d \geq a+b$.]
+\item For $I$ and $J$ homogeneous, $I^{\text{sat}} = J^{\text{sat}}$
+if and only if $I_d = J_d$ for $d \gg 0$.
+\end{enumerate}
+\end{exercise}
+
+
+\begin{exercise}
+Let $I_1 \subset I_2 \subset \dots$ be an ascending chain of ideals
+and $J = \bigcup I_i$ be their union.
+Show the following.
+\begin{enumerate}[a.]
+\item If each $I_i$ is prime, so is $J$.
+\item If each $I_i$ is radical, so is $J$.
+\item If each $I_i$ is homogeneous (in a polynomial ring), so is $J$.
+Ditto, monomial. Ditto, homogeneous and saturated.
+\item (Harder): If each $I_i$ is integrally closed, so is $J$.
+\end{enumerate}
+\end{exercise}
+
+
+\begin{exercise}
+Let $A$ be any commutative ring with $1$ (not necessarily Noetherian)
+and let $R = A[x_1,\dots,x_n]$.
+Let $I \subset R$ be an ideal generated by a set of monomials.
+(Here, a monomial is a polynomial with one term and coefficient $1$.)
+Then show $I$ is generated by a finite set of monomials.
+[HINT: Imitate the proof given in class that the lexicographic order
+is a well-ordering.]
+
+Thus, even though $R$ is not Noetherian if $A$ is not, at least all
+ideals generated by monomials are actually finitely generated by monomials.
+\end{exercise}
+
+
+\begin{exercise}
+Prove the statement in H\"ubl's Remark~4, (ii): that $K = F + \R_{\geq 0}^{d+1}$.
+\end{exercise}
+
+
+
+\begin{chexercise}
+Let $I \subset R = k[x_1,\dots,x_n]$ be a monomial ideal and $\m = (x_1,\dots,x_n)$.
+Prove or disprove the following.
+\begin{enumerate}[a.]
+\item If $I$ satisfies \textbf{NN}, then so does $I^2$. (What about higher powers?)
+\item If $I$ satisfies \textbf{NN}, then so does $\m I$.
+\item If $I^2$ satisfies \textbf{NN}, then so does $I$.
+\item If $\m I$ satisfies \textbf{NN}, then so does $I$.
+\end{enumerate}
+If possible, salvage those which are false---that is, change the statement so it becomes true.
+For example, strengthen the hypothesis or weaken the conclusion.
+(I have no idea if these are true or false; trivial or impossible.)
+\end{chexercise}
+
+\begin{chexercise}
+For those of you who like polyhedra:
+Define property \textbf{NN} for polyhedra.
+You may want to restrict to bounded polyhedra (i.e., polytopes),
+or lattice polytopes (i.e., convex hull of points in $\Z^n$), or polyhedra $P$
+such that $P + v \subseteq P$ if and only if $v \in \R_{\geq 0}^n$,
+or possibly other reasonable restrictions.
+Once you have a good definition of property \textbf{NN},
+rewrite H\"ubl's paper, proving all the analogous theorems for polyhedra.
+Write and publish it collaboratively with your IMMERSE classmates
+and/or teachers.
+\end{chexercise}
+
+\begin{chexercise}
+For those of you who like algebra:
+Study $I^{p/q} = \{ r : r^q \in I^p \}$
+and $\tilde{I}^{p/q} = \bigcup \{ I^{r/s} : \frac{r}{s} = \frac{p}{q} \}$.
+Relate them to the better-known ideals
+$\overline{I}^{p/q} = \{ r : r^q \in \overline{I^p} \}$.
+Write and publish your results collaboratively with your IMMERSE classmates
+and/or teachers.
+(Warning: Results are not guaranteed. This may lead nowhere.)
+\end{chexercise}
+
+
+
+\begin{chexercise}
+Generalize H\"ubl's Corollary~6 to higher dimensions, that is, more than $2$ variables.
+
+Suggestion: In $\R^2$, a line $ax+by=c$ with $a,b \in \Z$ and $\gcd(a,b)=1$
+has slope equal to an integer or the reciprocal of an integer if and only if $a=1$ or $b=1$.
+Perhaps rephrasing Corollary~6 using this idea would allow for a nice generalization.
+\end{chexercise}
+
+
+\end{document}

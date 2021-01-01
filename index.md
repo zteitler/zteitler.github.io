@@ -24,6 +24,21 @@ Fax: +1-208-426-1356
 
 ## [Research](research)
 
+My area of research is
+[commutative algebra](https://en.wikipedia.org/wiki/Commutative_algebra)
+and [algebraic geometry](https://en.wikipedia.org/wiki/Algebraic_geometry)
+([MSC](https://mathscinet.ams.org/mathscinet/msc/msc2020.html) 13 and 14).
+
+I am interested in a range of problems involving commutative algebra and
+algebraic geometry, usually with a combinatorial or computational flavor,
+such as:
+computing rank (especially **Waring rank**), [**secant varieties**](https://en.wikipedia.org/wiki/Secant_variety),
+and [Hilbert functions](https://en.wikipedia.org/wiki/Hilbert_series_and_Hilbert_polynomial);
+arrangements (of [hyperplanes](https://en.wikipedia.org/wiki/Arrangement_of_hyperplanes),
+[lines](https://en.wikipedia.org/wiki/Arrangement_of_lines), points, etc);
+[**multiplier ideals**](https://en.wikipedia.org/wiki/Multiplier_ideal) (computation, applications to commutative algebra);
+and computer experimentation in mathematics.
+
 ### Recent publications
 
 {% for pub in site.publications limit: 6 %}
@@ -73,6 +88,8 @@ Or would that be too much info? They are listed on the Teaching page, maybe that
 
 ## [Advising](advising)
 
+Graduate and undergraduate students I have advised.
+
 
 ## [TATERS](https://sites.google.com/boisestate.edu/taters/)
 
@@ -87,6 +104,12 @@ and the [Computing Colloquium](https://www.boisestate.edu/computing/colloquium/)
 ## [Boise Math Circles](https://www.boisestate.edu/math/circles/)
 
 A math community for teachers and for secondary students
+
+
+## [Events](events)
+
+Research workshops and conference special sessions that I have organized, co-organized,
+or been involved in.
 
 
 ## Links

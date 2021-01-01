@@ -1,0 +1,259 @@
+\documentclass{amsart}
+
+%\usepackage{doublespace}
+\usepackage{amsmath, amsfonts, amssymb, amsthm, amscd}
+
+%\usepackage[all]{xy}
+\usepackage{enumerate}
+\usepackage{graphicx}
+%\usepackage{pdfsync}
+
+\usepackage{vmargin}
+\setpapersize{USletter}
+\setmargrb{1in}{1in}{1in}{1in}
+
+
+\setlength{\parindent}{0in}
+\setlength{\parskip}{2mm}
+
+
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{principle}[theorem]{Principle}
+\newtheorem{claim}[theorem]{Claim}
+
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{answer}[theorem]{Answer}
+\newtheorem{remark}[theorem]{Remark}
+
+
+\newtheorem{exercise}[theorem]{Exercise}
+\newtheorem{chexercise}[theorem]{Challenge Exercise}
+\newtheorem{paperexercise}[theorem]{Paper Exercise}
+
+
+
+\theoremstyle{definition}
+%\newtheorem{Definition}[Theorem][section]
+
+%\newtheorem{example}{Example}[section]
+%\newtheorem{definition}[theorem]{Definition}
+
+%\input xy
+%\xyoption{all}
+
+
+
+\newcommand{\defining}[1]{\textbf{#1}}
+
+
+%\newcommand{\sse}{\subseteq}
+%\newcommand{\ssne}{\subsetneq}
+\renewcommand{\colon}[3]{\ensuremath{\left(#1:_{#2} #3\right)}}
+%\newcommand{\rad}[1]{\ensuremath{\operatorname{rad}\left(#1\right)}}
+\DeclareMathOperator{\radname}{rad}
+\newcommand{\rad}[1]{\radname(#1)}
+
+\newcommand{\m}{\mathfrak{m}}
+
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\R}{\mathbb{R}}
+
+
+\DeclareMathOperator{\interior}{int}
+\newcommand{\boundary}{\partial}
+
+\newcommand{\tropicalsemiring}{\textbf{T}}
+\newcommand{\troplus}{\oplus}
+\newcommand{\tromult}{\odot}
+
+\DeclareMathOperator{\aff}{aff}
+\DeclareMathOperator{\conv}{conv}
+\DeclareMathOperator{\relint}{relint}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+\centerline{\large{\bf IMMERSE 2007}}
+\vskip.25in
+
+\centerline{\large{Algebra Exercises}}
+\vskip.25in
+
+\setcounter{page}{10}
+\setcounter{section}{4}
+\section{Week 5}
+
+\begin{definition}
+Let $R$ be a ring, and $S$ be another ring with $R \subset S$.
+An element of $S$ is \defining{integral over $R$} if it satisfies a monic
+polynomial with coefficients in $R$.
+\end{definition}
+
+\begin{exercise}
+\begin{enumerate}
+%\item Show $\sqrt{2}+\sqrt{3}$ is integral over $\Z$.
+\item Show $(1 + \sqrt{5})/2$ is integral over $\Z$.
+\item Show $(1+\sqrt{7})/2$ is not integral over $\Z$.
+\end{enumerate}
+\end{exercise}
+
+\begin{exercise}
+Let $R = k[x,y]/(y^2-x^3)$.
+Show $y/x$ is integral over $R$.
+%Answer: t=y/x satisfies t^2-x=0
+\end{exercise}
+
+\begin{definition}
+Let $R$ be a ring and $I$ be an ideal of $R$.
+An element $r \in R$ is \defining{integral over $I$} if it satisfies
+an equation of the form
+\[ r^n + a_1 r^{n-1} + \dots + a_n = 0 \]
+with $a_j \in I^j$, the $j$\textsuperscript{th} power of $I$, for each $j$.
+Such an equation is called \defining{an equation of integral dependence over $I$}.
+The \defining{integral closure of $I$ in $R$}, denoted $\overline{I}$,
+is the set of all elements which are integral over $I$.
+The ideal $I$ is \defining{integrally closed in $R$} if $I = \overline{I}$.
+\end{definition}
+
+\begin{exercise}
+Show that $\overline{I}$ is closed under taking additive inverse
+and absorbs products. Show that $I \subset \overline{I}$.
+Show that if $I \subset J$ then $\overline{I} \subset \overline{J}$.
+\end{exercise}
+
+It is a theorem that $\overline{I}$ is an ideal (closed under addition)
+and $\overline{\overline{I}} = \overline{I}$.
+See for example [Huneke--Swanson, Corollary~1.3.1].
+
+
+\begin{exercise}
+In $R = \Z$, find the integral closure of $(2)$, of $(4)$, and of $(6)$.
+\end{exercise}
+
+\begin{exercise} % [Eisenbud, 4.15]
+If $R$ is a domain, show that every radical ideal
+is integrally closed in $R$.
+Show that in a principal ideal domain, every ideal is integrally closed.
+\end{exercise}
+
+
+
+
+
+\begin{exercise}
+Let $I$ be a monomial ideal and let $m = x^{\alpha}$ be a monomial.
+Show that $m \in \overline{I}$ if and only if $m^r \in I^r$ for some $r \geq 1$.
+By Exercise~4.11, $m \in \overline{I}$ if and only if $\alpha \in K(I)$.
+\end{exercise}
+
+
+\begin{exercise}  Find the integral closure of $I = (x^4, y^3)$ in $k[x,y]$.
+
+For each monomial $m \in \overline{I} \setminus I$, give an explicit equation
+of integral dependence for $m$ over $I$.
+%ANSWER: $\overline{I} = (x^4, y^3, x^2y^2, x^3y)$
+\end{exercise}
+
+\begin{exercise} Find the integral closure of $I = (x^4, y^{11}, x^2y^6)$ in $k[x,y]$.
+%ANSWER: $\overline{I} = (x^4, y^{11}, x^2y^6, x^3y^3, xy^9)$
+\end{exercise}
+
+
+\begin{exercise}
+Let $I, J \subset R = k[x_1,\dots,x_n]$ be monomial ideals.
+Show that $\overline{I} = \overline{J}$ if and only if $K(I) = K(J)$.
+Answer the following true/false questions (giving proofs or counterexamples as appropriate):
+\begin{enumerate}[a.]
+\item (i) If $K(I) \subset K(J)$ then $I \subset J$. (ii) If $I \subset J$ then $K(I) \subset K(J)$.
+\item (i) If $C(I) \subset C(J)$ then $I \subset J$. (ii) If $I \subset J$ then $C(I) \subset C(J)$.
+\item (i) If $I \subset J$ and $K(I) = K(J)$ and $I$ satisfies \textbf{NN}, then so does $J$.
+(ii) If $I \subset J$ and $K(I) = K(J)$ and $J$ satisfies \textbf{NN}, then so does $I$.
+\end{enumerate}
+\end{exercise}
+
+
+
+\begin{definition}
+A monomial $m = x_1^{a_1} \dots x_n^{a_n}$ is called \defining{squarefree}
+if every $a_i < 2$, that is, $m$ is not divisible by any squares.
+Let $I \subset R = k[x_1, \dots, x_n]$ be a monomial ideal.
+Then $I$ is called \defining{squarefree} if $I$ is generated by a set of squarefree monomials.
+\end{definition}
+
+\begin{paperexercise}
+\begin{enumerate}[a.]
+\item Show that a monomial ideal $I$ is squarefree if and only if it is radical.
+\item H\"ubl's paper begins with the conjecture that all radical ideals have property \textbf{NN}.
+Has he proved this conjecture for radical monomial ideals? Explain. (Look at Corollary~5.)
+\end{enumerate}
+\end{paperexercise}
+
+\begin{exercise} In the ring $\Z$,
+\begin{enumerate}[a.]
+\item Which ideals are radical?
+\item Show: If $a \in \Z$, $a^n \in (2)^{n+1}$ for some $n \geq 1$, then $a \in (4)$.
+\item Show: If $a \in \Z$, $p \in \Z$ is prime, and $a^n \in (p)^{n+1}$ for some $n \geq 1$, then $a \in (p^2)$.
+This holds more generally for any squarefree $p$.
+\item If $a \in \Z$, $a^n \in (4)^{n+1}$ for some $n \geq 1$, then what ideal must $a$ lie in?
+Give the strongest possible conclusion; prove your conclusion and prove it is the strongest possible, ie, no smaller ideal will do.
+\end{enumerate}
+\end{exercise}
+
+\begin{definition}
+Let $I \subset R = k[x_1,\dots,x_n]$ be an ideal (not necessarily monomial).
+Let $\m = (x_1,\dots,x_d)$.
+Then $I$ is called \defining{$\m$-primary} if $I \subseteq \m$ and $I$ contains a power of $\m$,
+that is, $\m^n \subseteq I$ for some $n \geq 1$.
+\end{definition}
+
+\begin{exercise}
+Show the following.
+\begin{enumerate}[a.]
+\item The ideal $\m^n$ is a monomial ideal.
+A monomial is in $\m^n$ if and only if its total degree is equal to or greater than $n$.
+In particular, $x_1^n \in \m^n$, \dots, $x_d^n \in \m^n$.
+%\item I want to order pizzas for a party. I want to get at least $3$ eggplant pizzas
+%OR at least $2$ zucchini pizzas (or both would be okay).
+%Unfortunately the pizza delivery place is completely disorganized; they deliver the
+%number of pizzas you ask for, but the types of the pizzas is totally random.
+%How many pizzas should I order to guarantee that no matter which types they deliver,
+%I will get at least $3$ eggplant or $2$ zucchini pizzas?
+\item Show $I = (x^3,y^2) \subset R = k[x,y]$ is $\m$-primary (in this example, $d=2$).
+\item Show that an ideal $I$ is $\m$-primary if and only if it contains a power of each of the variables;
+that is, for each $j = 1, \dots, d$ we have $x_j^{a_j} \in I$ for some $a_j \geq 1$.
+[HINT: Repeat Exercise~2.16, but don't assume $I$ is monomial.]
+\item An ideal $I$ is $\m$-primary if and only if its radical $\rad{I} = \m$.
+\item Finally, suppose $I$ is a monomial ideal and let $S$ denote the set of monomials in $R\setminus I$.
+Show that $S$ is a finite set if and only if $\rad{I}=\m$.
+\end{enumerate}
+\end{exercise}
+
+
+\begin{exercise}
+Prove H\"ubl's Corollary~1.
+(Use the fact that every face of $\boundary K$ is closed,
+so a face is compact if and only if it is bounded.
+Show that every bounded face is an $F_j$; equivalently,
+every face on a $\boundary \Sigma_i$ with $i>S$ is unbounded.)
+\end{exercise}
+
+\begin{exercise}
+Finish the proof of H\"ubl's Corollary~3.
+\end{exercise}
+
+
+\begin{exercise}
+Finish the proof of H\"ubl's Corollary~6.
+\end{exercise}
+
+\end{document}
+

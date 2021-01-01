@@ -1,0 +1,525 @@
+% Writeup of AMS-MRC working group on Boij-Soderberg conjectures
+% Snowbird, Utah
+% begun 6/23/08 Zach Teitler
+
+
+\documentclass[12pt]{amsart}
+
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{vmargin}
+\setpapersize{USletter}
+\setmargrb{1in}{1in}{1in}{1in} % --- top, left, right, bottom margins
+% --- (leaves additional room for header/footer)
+
+
+\theoremstyle{plain}
+\newtheorem{thm}{Theorem}
+\newtheorem{proposition}[thm]{Proposition}
+
+\theoremstyle{definition}
+\newtheorem{question}[thm]{Question}
+\newtheorem{definition}[thm]{Definition}
+\newtheorem{notation}[thm]{Notation}
+
+\theoremstyle{remark}
+\newtheorem{example}[thm]{Example}
+\newtheorem{remark}[thm]{Remark}
+
+
+\DeclareMathOperator{\mult}{mult}
+\DeclareMathOperator{\Zeros}{Zeros}
+\renewcommand{\O}{\mathcal{O}}
+\newcommand{\ZZ}{\mathbb{Z}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\pr}[1]{\mathbb{P}^{#1}}
+
+\newcommand{\field}{\mathbb{K}}
+
+\newcommand{\defining}[1]{\textbf{#1}}
+
+
+
+\title{The Boij--S\"{o}derberg conjectures}
+\author{AMS-MRC working group on Computation Algebra and Convexity}
+\date{June 23, 2008}
+
+
+\begin{document}
+
+\bibliographystyle{amsalpha}
+
+\maketitle
+
+\section{Introduction}
+The Boij--S\"{o}derberg conjectures, which are now theorems,
+concern a description of the cone of Betti tables of modules.
+In this section we recall the notion of a Betti table,
+then provide an outline of the description of the cone.
+
+We fix a polynomial ring $R = \field[x_1,\dots,x_n]$ over a field $\field$.
+\subsection{Free resolutions}
+Let $M$ be an $R$-module.
+A \defining{free resolution} of $M$ is an exact sequence
+\[
+  \cdots \to F_2 \to F_1 \to F_0 \to M \to 0 ,
+\]
+each $F_i$ a free $R$-module.
+
+Now $R$ is graded in the usual way by degree.
+If $M$ is a graded module, we may require the resolution to respect this structure.
+A \defining{graded free resolution} is a free resolution as above,
+in which each $F_i$ is a graded free $R$-module
+and each map $F_{i+1} \to F_i$ has degree zero.
+
+\begin{example}
+Let $R = \field[x,y]$ and $I = (x^2,y^3)$.
+Let $M = R/I$.
+A graded free resolution of $M$ is given by
+\[
+  0 \to R(-5) \overset{\begin{pmatrix} y^3 & -x^2 \end{pmatrix}}{\longrightarrow}
+           R(-2) \oplus R(-3) \overset{\begin{pmatrix} x^2 & y^3 \end{pmatrix}}{\longrightarrow}  R \to R/I \to 0 .
+\]
+\end{example}
+
+There is not a unique graded free resolutions of $M$,
+but there is a unique (up to non-canonical isomorphism)
+\defining{minimal} graded free resolution of $M$,
+that is a resolution which does not admit any map to a graded free resolution
+which is not an isomorphism of complexes.
+
+\subsection{Betti tables}
+The \defining{graded Betti numbers} $\beta_{i,j} = \beta_{i,j}(M)$
+are a device to keep track of which shifts appear in the minimal graded free resolution of $M$.
+To be precise, $\beta_{i,j}$ is the multiplicity of the summand $R(-j)$
+in the $i$th step $F_i$ of the minimal graded free resolution of $M$.
+
+For the example above, $M = \field[x,y]/(x^2,y^3)$, we have
+$\beta_{0,0} = \beta_{1,2} = \beta_{1,3} = \beta_{2,5} = 1$ and all other $\beta_{i,j} = 0$.
+
+The graded Betti numbers do not capture all the information of the resolution;
+indeed, non-isomorphic modules can have the same graded Betti numbers.
+Still, they are important invariants which do capture some important information about the module.
+
+Now, it is tempting to arrange the $\beta_{i,j}$ in a table by simply placing $\beta_{i,j}$
+in the position at the $i$th row and $j$th column.
+It is conventional, however, to re-index the table's entries as follows:
+First, the columns correspond to the steps in the resolution, indexed by $i$.
+In the position at row $x$ and column $y$, where $x,y \geq 0$, we place the Betti number $\beta_{y,x+y}$.
+Equivalently, $\beta_{i,j}$ is placed into the entry of the table at row $j-i$ and column $i$.
+
+For the example above, the Betti table is:
+
+\begin{center}
+\begin{tabular}{ c | c c c }
+    & 0 & 1 & 2 \\
+\hline
+0 & 1 & 0 & 0 \\
+1 & 0 & 1 & 0 \\
+2 & 0 & 1 & 0 \\
+3 & 0 & 0 & 1
+\end{tabular}
+\end{center}
+
+We write $\beta(M)$ for this table.
+
+\subsection{Fundamental question}
+Consider the collection of graded $R$-modules $M$ such that all the nonzero entries
+of $\beta(M)$ lie in some fixed region, say the rectangle consisting of the first $a$ rows and $b$ columns.
+(This is a simplifying assumption to avoid dealing with tables with infinitely many rows and columns.)%
+\footnote{We will not use any of the following information, but the curious reader may
+ask what conditions we are imposing on $M$ by requiring $\beta(M)$ to fit into $a$ rows and $b$ columns.
+That $\beta(M)$ fits into $a$ rows is the condition that $M$ have regularity at most $a$,
+and that $\beta(M)$ fits into $b$ columns is the condition that $M$ have projective dimension $b$.
+If $M$ is Cohen--Macaulay then the projective dimension of $M$ is equal to its codimension.}
+Then we may regard $\beta(M)$ as a vector in the vector space $\Q^{a \times b}$
+of $a\times b$ matrices with rational entries.
+Two things are apparent: Every entry of $\beta(M)$ is nonnegative, and every entry is an integer.
+
+It is natural to ask if the converse is true: Given a vector $T$ in $\Q^{a \times b}$, regarded as a table,
+with nonnegative integer entries, is there necessarily an $R$-module $M$ with $\beta(M) = T$?
+The answer is no.
+One then asks, which such $T$ are realized as Betti tables?
+This is a much harder question.
+
+It is a fact that $\beta(M \oplus N) = \beta(M) + \beta(N)$, the sum on the right being the usual
+entry-by-entry sum of matrices.
+So the set of $T$ which are realized as Betti tables is closed under sums.
+Then it is a commutative semigroup.
+It is torsion-free: no positive multiple of $T \neq 0$ is zero.
+One difficulty is that this semigroup is far from saturated.
+That is, there may be a table $T$ which is not realized as a Betti table, but some positive multiple
+$mT$, $m \in \ZZ_{\geq 0}$, is equal to some $\beta(M)$.
+
+It has been conjectured that if $mT = \beta(M)$ for some $M$, then $(m+1)T = \beta(M')$ for some $M'$.
+This is supported by some examples and computations of Eisenbud--Schreyer, etc, etc.
+
+We turn our attention to a somewhat more tractable problem: We set aside the problem
+of saturation (that is, which lattice points along each ray are actually realized),
+and consider the problem of determining which rays contain a $\beta(M)$.
+
+\subsection{The cone of Betti tables}
+Let us consider the (rational) convex cone generated by all the tables $\beta(M)$,
+for all graded $R$-modules $M$ such that $\beta(M)$ fits in the fixed $a \times b$ rectangle.
+
+Equivalently, we may consider the union of the set of rays which contain a $\beta(M)$.
+Indeed, this union is certainly closed under multiplication by positive rational scalars,
+and one sees that it is convex (over $\Q$) as follows.
+Let $\beta(M)$, $\beta(N)$ be Betti tables on two rays
+and let $t = p/q \in \Q \cap [0,1]$.
+Then we have
+\[
+  t \beta(M) + (1-t) \beta(N) = \frac{1}{q} \Big( p \beta(M) + (q-p) \beta(N) \Big) = \frac{1}{q} \beta(M^{\oplus p} \oplus N^{\oplus q-p}) ,
+\]
+so the corresponding ray again lies in the union we are considering.
+
+Therefore the convex cone generated by all the tables $\beta(M)$ is exactly the union
+of all the rays which contain at $\beta(M)$.
+
+Since every entry of each $\beta(M)$ is nonnegative, this cone lies in the positive orthant
+and so the cone is pointed; that is, it does not contain any positive-dimensional linear subspace.
+
+The Boij--Soderberg conjectures give a detailed combinatorial description of this cone.
+
+\subsection{Pure tables}
+The cone of Betti tables may not be finitely generated; that is, there may be infinitely many
+extremal rays.
+It seems rather difficult to directly try to describe that cone.
+In order to manage these complexities, one introduces the so-called \defining{pure Betti tables}.
+
+One begins by considering Betti tables (as always fitting into the $a \times b$ rectangle)
+which have at most one nonzero entry in each column.
+These tables are determined by specifying for each column, the row in which that column
+has a nonzero entry and the value of that entry.
+
+It is a theorem of Herzog--Kuhl that if $M$ is a module whose Betti table has at most
+one nonzero entry in each column, then the nonzero entries and their rows satisfy
+certain equations.
+In fact, given the sequence $(d_0,\dots,d_s)$ of integers such that the column $i$
+has its nonzero entry in row $d_i-i$, then $d_0 < d_1 < \dots < d_s$
+and there is a constant $c = c_M \in \Q_{> 0}$ such that
+\[
+  \beta_{i,d_i} = c \prod_{j \neq i} \frac{1}{|d_i - d_j|} .
+\]
+That is, the table $\beta(M)$ is determined up to positive rational multiple by the
+degree sequence $(d_0,\dots,d_s)$.
+
+We now define a \defining{pure Betti table} as follows.
+Given a degree sequence $(d_0,\dots,d_s)$ with $d_0 < \dots < d_s$,
+the associated pure table has entries given by the formulas above, with $c=1$.
+
+The first Boij--Soderberg conjecture is that each pure table is realized as the Betti table of a module.
+Thus the rays through the pure tables lie in the cone spanned by the Betti tables.
+It follows that the pure tables span a subcone of the Betti cone.
+
+A priori this subcone may be strictly smaller, and still not finitely generated.
+In fact, however, the second Boij--Soderberg conjecture states that the cone generated by the Betti tables
+is equal to the cone generated by the pure tables.
+
+In order to approach this statement, one defines a partial order on the collection of degree sequences
+and studies the combinatorics of the resulting partially ordered set.
+This yields a combinatorially described simplicial decomposition of the cone generated by the pure tables.
+
+The second Boij--Soderberg conjecture states more precisely that each Betti table lies in a unique simplicial
+piece of this decomposition of the pure cone.
+
+
+\section{Construction of modules with pure resolutions}
+
+\section{Decomposition of pure cone}
+
+Throughout the next two sections, we work entirely by example, with
+3$\times$3 Betti tables.  The proofs will extend naturally to the
+general case.  The Betti tables under consideration will have the form
+
+\begin{tabular}{ccc}
+*&*&*\\
+*&*&*\\
+*&*&*
+\end{tabular}.
+
+These appear to form a nine-dimensional vector space, but we are
+interested only in Betti tables of modules with codimension 3-1=2;
+this imposes two linearly independent conditions on the possible
+tables, so we are actually considering only a seven-dimensional vector
+space.
+
+The pure degree sequences all lie between (0,1,2) and (2,3,4) in the
+componentwise partial order (i.e., if $d=(d_1,d_2,d_3)$ and
+$d'=(d_1',d_2',d_3')$, we say that $d\leq d'$ if $d_i\leq d_i'$ for
+all $i$).  The poset of such degree sequences is complicated, but at
+least we can say that every maximal chain begins with (0,1,2), ends
+with (2,3,4), and has length (2-0)+(3-1)+(4-2)=6.  Since the number of
+terms in such a chain is equal to the dimension of the vector space,
+we might hope that the pure diagrams in any chain form a basis for the
+space of codimension-two tables.  This will turn out to be the case.  
+
+Consider the chain $\pi$ of degree sequences and pure diagrams given
+in Table~\ref{table:chain}.
+
+\begin{table}
+\begin{tabular}{|c|c|}\hline
+(0,1,2)&$\pi_0=\begin{array}{ccc}1&2&1\\.&.&.\\.&.&.\end{array}$\\\hline
+(0,1,3)&$\pi_1=\begin{array}{ccc}2&3&.\\.&.&1\\.&.&.\end{array}$\\\hline
+(0,1,4)&$\pi_2=\begin{array}{ccc}3&4&.\\.&.&.\\.&.&1\end{array}$\\\hline
+(0,2,4)&$\pi_3=\begin{array}{ccc}1&.&.\\.&2&.\\.&.&1\end{array}$\\\hline
+(1,2,4)&$\pi_4=\begin{array}{ccc}.&.&.\\2&3&.\\.&.&1\end{array}$\\\hline
+(1,3,4)&$\pi_5=\begin{array}{ccc}.&.&.\\1&.&.\\.&3&2\end{array}$\\\hline
+(2,3,4)&$\pi_6=\begin{array}{ccc}.&.&.\\.&.&.\\1&2&1\end{array}$\\\hline
+\end{tabular}
+\caption{A chain of Betti tables}\label{table:chain}
+\end{table}
+
+
+\begin{table}
+\begin{tabular}{|c|c|c|c|c|c|c|}
+\hline
+(0,1,2) & (0,1,3) & (0,1,4) & (0,2,4) & (1,2,4) & (1,3,4) & (2,3,4) \\
+\hline
+$\pi_0 =$ & $\pi_1 =$ & $\pi_2 =$ & $\pi_3 =$ & $\pi_4 =$ & $\pi_5 =$ & $\pi_6 =$ \\
+$ \begin{array}{ccc}1&2&1\\.&.&.\\.&.&.\end{array}$ &
+$ \begin{array}{ccc}2&3&.\\.&.&1\\.&.&.\end{array}$ &
+$ \begin{array}{ccc}3&4&.\\.&.&.\\.&.&1\end{array}$ &
+$ \begin{array}{ccc}1&.&.\\.&2&.\\.&.&1\end{array}$ &
+$ \begin{array}{ccc}.&.&.\\2&3&.\\.&.&1\end{array}$ &
+$ \begin{array}{ccc}.&.&.\\1&.&.\\.&3&2\end{array}$ &
+$ \begin{array}{ccc}.&.&.\\.&.&.\\1&2&1\end{array}$ \\
+\hline
+\end{tabular}
+\end{table}
+
+
+
+\begin{proposition}The tables $\{\pi_0,\dots,\pi_6\}$ are linearly
+  independent.  
+\end{proposition}
+\begin{proof}  Each successive table introduces a nonzero Betti number
+  in a new position, e.g., $b_{1,2}(\pi_3)\neq 0$ while
+  $b_{1,2}(\pi_0)=b_{1,2}(\pi_1)=b_{1,2}(\pi_2)=0$.  
+\end{proof}
+
+Thus, every Betti table of a CM module is a linear combination of the
+pure Betti tables coming from a maximal chain.  It is not the case,
+though, that everything may be expressed as a \emph{positive} linear
+combination of these tables.  Every chain generates a cone; we will
+show that these cones fit together into a simplicial fan.
+
+\begin{proposition} Let $C$ and $C'$ be the cones generated by chains
+  $\rho$ and $\rho'$.  Then $C$ and $C'$ intersect in a common face.
+\end{proposition}
+
+\begin{proof}  
+Consider the maximal chains $\pi$ (as above) and $\rho$ given below:
+\begin{tabular}{c|c}
+$\pi_0=\begin{array}{ccc}1&2&1\\.&.&.\\.&.&.\end{array}$&$\rho_0=\begin{array}{ccc}1&2&1\\.&.&.\\.&.&.\end{array}$\\\hline
+$\pi_1=\begin{array}{ccc}2&3&.\\.&.&1\\.&.&.\end{array}$&$\rho_1=\begin{array}{ccc}2&3&.\\.&.&1\\.&.&.\end{array}$\\\hline
+$\pi_2=\begin{array}{ccc}3&4&.\\.&.&.\\.&.&1\end{array}$&$\rho_2=\begin{array}{ccc}1&.&.\\.&3&2\\.&.&.\end{array}$\\\hline
+$\pi_3=\begin{array}{ccc}1&.&.\\.&2&.\\.&.&1\end{array}$&$\rho_3=\begin{array}{ccc}1&.&.\\.&2&.\\.&.&1\end{array}$\\\hline
+$\pi_4=\begin{array}{ccc}.&.&.\\2&3&.\\.&.&1\end{array}$&$\rho_4=\begin{array}{ccc}1&.&.\\.&.&.\\.&4&3\end{array}$\\\hline
+$\pi_5=\begin{array}{ccc}.&.&.\\1&.&.\\.&3&2\end{array}$&$\rho_5=\begin{array}{ccc}.&.&.\\1&.&.\\.&3&2\end{array}$\\\hline
+$\pi_6=\begin{array}{ccc}.&.&.\\.&.&.\\1&2&1\end{array}$&$\rho_6=\begin{array}{ccc}.&.&.\\.&.&.\\1&2&1\end{array}$\\\hline
+\end{tabular}
+We will show that the cones $C(\pi)$ and $C(\rho)$, generated by the
+tables of $\pi$ and $\rho$, respectively, intersect in a common face
+(namely, the cone on $\{\pi_0,\pi_1,\pi_3,\pi_5,\pi_6\}$, the diagrams
+common to the two chains).  The proof will generalize to any pair of
+chains.
+
+Let $\beta$ be a Betti table in both $C(\pi)$ and $C(\rho)$, so that
+we can write $\beta=\sum a_{i}\pi_{i}=\sum b_{i}\rho_{i}$, with all
+$a_{i}$ and all $b_{i}$ nonnegative.  Choose $\beta$ so that the total
+number nonzero coefficients in these expressions is minimal, and let
+$i$ be the first index where either $a_{i}$ or $b_{i}$ is nonzero.  By
+symmetry, we may assume that $a_{i}$ is nonzero.
+
+If $i=0$, we have $\pi_{0}=\rho_{0}$; thus, by the minimality
+assumption, $b_{0}=0$.  (If not, and supposing $a_{0}\geq b_{0}$, we
+could replace $\beta$ with $\beta-b_{0}\rho_{0}$.)  Thus,
+$\beta=\sum_{i>0}b_{i}\rho_{i}$, so $\beta$ must have the form
+$\begin{array}{ccc}*&*&-\\*&*&*\\*&*&*\end{array}$.  On the other
+hand, $\beta_{2,2}\geq a_{0}$, contradicting the assumption that
+$a_{0}\neq 0$.
+
+If $i=2$, we have $\pi_{2}\neq \rho_{2}$, so we have no information
+about $b_{2}$.  However, we still have $\beta=\sum_{i\geq
+  2}b_{i}\rho_{i}$, so $\beta$ has the form
+$\begin{array}{ccc}*&-&-\\*&*&*\\*&*&*\end{array}$.  On the other
+hand, $\beta_{1,1}\geq 4a_{2}$, contradicting the assumption that
+$a_{2}=0$.
+
+If $i$ is anything else, we apply one of the above arguments,
+depending on whether or not $\pi_{i}=\rho_{i}$.  
+\end{proof}
+
+Thus the union of the cones generated by the maximal chains is a
+simplicial fan.  Because it is convex, this fan is the cone on all the
+pure diagrams.
+
+\begin{question}  Why is it convex?
+\end{question}
+
+
+
+\section{Facet equations for pure cone}
+
+
+We can describe the cone on the pure diagrams in terms of its facets.
+Since this is a simplicial fan, the facets all occur as ``exterior''
+facets of the cones $C(\rho)$ arising from the maximal chains in the
+previous sections.  Thus, it suffices to examine these facets.  Again,
+we restrict our attention to the chain $\pi$.  
+
+Since $C(\pi)$ is a simplicial cone on seven points, its facets are the
+cones generated by any six of these points, i.e., by removing one
+term from the chain.  The facet is \emph{interior} if it is a facet of
+more than one such cone, i.e., if there are two or more ways to extend
+the resulting chain to a maximal one, and \emph{exterior} if there is
+only one such way (i.e., if $\pi$ is the only chain above it).  
+
+We need some more notation.
+
+\begin{definition}
+We say that stepping from $\pi_k$ to $\pi_{k+1}$ \emph{drops the
+  $i,j^{\mathrm{th}}$ Betti number} if $b_{i,j}(\pi_{k})\neq 0$ but
+$b_{i,j}(\pi_{k+1})=0$.  
+\end{definition}
+
+The chain $\pi$ drops Betti numbers in the following order:
+
+\begin{tabular}{c|c}
+$\pi_{k}$&Betti number dropped between $\pi_{k-1}$ and
+$\pi_{k}$.\\\hline
+$\pi_{0}=\begin{array}{ccc}1&2&1\\.&.&.\\.&.&.\end{array}$&\\\hline
+$\pi_1=\begin{array}{ccc}2&3&.\\.&.&1\\.&.&.\end{array}$&$\begin{array}{ccc}.&.&*\\.&.&.\\.&.&.\end{array}$\\\hline
+$\pi_{2}=\begin{array}{ccc}3&4&.\\.&.&.\\.&.&1\end{array}$&$\begin{array}{ccc}.&.&.\\.&.&*\\.&.&.\end{array}$\\\hline
+$\pi_3=\begin{array}{ccc}1&.&.\\.&2&.\\.&.&1\end{array}$&$\begin{array}{ccc}.&*&.\\.&.&.\\.&.&.\end{array}$\\\hline
+$\pi_4=\begin{array}{ccc}.&.&.\\2&3&.\\.&.&1\end{array}$&$\begin{array}{ccc}*&.&.\\.&.&.\\.&.&.\end{array}$\\\hline
+$\pi_5=\begin{array}{ccc}.&.&.\\1&.&.\\.&3&2\end{array}$&$\begin{array}{ccc}.&.&.\\.&*&.\\.&.&.\end{array}$\\\hline
+$\pi_6=\begin{array}{ccc}.&.&.\\.&.&.\\1&2&1\end{array}$&$\begin{array}{ccc}.&.&.\\{}*&.&.\\.&.&.\end{array}$\end{tabular}
+
+\begin{notation}The facet $\tau_{k}$ is the cone spanned by
+  $\{\pi_0,\dots,\hat{\pi_k},\dots,\pi_6\}$.  
+\end{notation}
+
+The facet $\tau_{k}$ is exterior if $\pi_{k}$ is the only diagram that
+can be inserted to create a maximal chain.  
+
+Thus, $\tau_0$ and $\tau_6$ are exterior, since $\pi_0$ and $\pi_6$
+have the unique degree sequences below $\pi_1$ and above $\pi_5$,
+respectively.  
+
+Every other facet $\tau_{k}$ corresponds to dropping two consecutive
+Betti numbers around $\pi_k$.  For example, $\tau_1$ corresponds to
+dropping the Betti numbers $\begin{array}{ccc}.&.&*\\.&.&*\\.&.&.\end{array}$.
+
+  $\tau_k$ is exterior if the two dropped Betti numbers are in the
+  same row or the same column, and interior otherwise.  (For example,
+  $\tau_2$ is interior because $\pi_2$ could be replaced with
+  $\begin{array}{ccc}1&.&.\\.&3&2\\.&.&.\end{array}$) to make a different maximal
+    chain.  On the other hand, $\tau_3$ and $\tau_1$ are exterior.
+
+The facet equation for $\tau_0$ is $b_{2,2}$, and the equation for
+$\tau_6$ is $b_{0,2}$.  When the drops are in the same column, the
+removed diagram is the only one with a nonzero Betti number in that
+column; the equation for $\tau_1$ is $b_{2,3}$.  
+
+When the drops occur in the same row, the equation is more
+complicated.  We express it in terms of a dot product with another
+diagram by the procedure demonstrated below.
+
+The equation $f$ for $\tau_3$ should evaluate to a positive number on
+$\pi_3$ and to zero on $\pi_k$ for all other $k$.  To ensure that we
+get zero on all $\pi_k, k>3$, we fill in zeroes in the positions where
+any of these diagrams are nonzero:
+
+\begin{tabular}{|c|c|c|}
+\hline
+&&\\
+\hline
+0&0&\\
+\hline
+0&0&0\\
+\hline
+\end{tabular}
+
+Dotting $f$ with $\pi_3$ yields $f_{0,0}+0+0$, which should be
+positive; we fill in any positive number for $f_{0,0}$ to ensure
+this.  (We choose 24 here because it is very divisible, which will be
+handy later.):
+
+\begin{tabular}{|c|c|c|}
+\hline
+24&&\\
+\hline
+0&0&\\
+\hline
+0&0&0\\
+\hline
+\end{tabular}
+
+Dotting $f$ with $\pi_2$ yields $72+4*f_{1,1}+0$, which should be
+zero; thus $f_{1,1}=-18$:
+
+
+\begin{tabular}{|c|c|c|}
+\hline
+24&-18&\\
+\hline
+0&0&\\
+\hline
+0&0&0\\
+\hline
+\end{tabular}
+
+Dotting $f$ with $\pi_1$ yields $48-54+f_{2,3}$, which should be zero;
+thus $f_{2,3}=6$:
+
+
+\begin{tabular}{|c|c|c|}
+\hline
+24&-18&\\
+\hline
+0&0&6\\
+\hline
+0&0&0\\
+\hline
+\end{tabular}
+
+Dotting $f$ with $\pi_0$ yields $24-36+f_{2,2}$, which should be zero;
+thus $f_{2,2}=12$:
+
+
+\begin{tabular}{|c|c|c|}
+\hline
+24&-18&\\
+\hline
+0&0&6\\
+\hline
+0&0&0\\
+\hline
+\end{tabular}
+
+
+
+\begin{remark}
+The facet equation $f$ derived above is not unique; since all Betti
+diagrams of CM modules satisfy the Herzog-Kuhl equations, it is only
+defined modulo these equations.  In particular, the equation we have
+derived is called the \emph{upper facet equation}.  There is also a
+\emph{lower facet equation} which is defined by filling in zeroes at
+the top of the diagram and filling in the other positions by working
+down the chain.
+\end{remark}
+
+
+
+
+
+
+\section{Facet equations for Betti cone}
+
+\end{document}
+
+
+

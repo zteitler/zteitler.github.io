@@ -1,0 +1,326 @@
+\documentclass{amsart}
+
+%\usepackage{doublespace}
+\usepackage{amsmath, amsfonts, amssymb, amsthm, amscd}
+
+%\usepackage[all]{xy}
+\usepackage{enumerate}
+\usepackage{graphicx}
+%\usepackage{pdfsync}
+
+\usepackage{vmargin}
+\setpapersize{USletter}
+\setmargrb{1in}{1in}{1in}{1in}
+
+
+\setlength{\parindent}{0in}
+\setlength{\parskip}{2mm}
+
+
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{principle}[theorem]{Principle}
+\newtheorem{claim}[theorem]{Claim}
+
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{answer}[theorem]{Answer}
+\newtheorem{remark}[theorem]{Remark}
+
+
+\newtheorem{exercise}[theorem]{Exercise}
+\newtheorem{paperexercise}[theorem]{Paper Exercise}
+
+
+
+\theoremstyle{definition}
+%\newtheorem{Definition}[Theorem][section]
+
+%\newtheorem{example}{Example}[section]
+%\newtheorem{definition}[theorem]{Definition}
+
+%\input xy
+%\xyoption{all}
+
+
+
+\newcommand{\defining}[1]{\textbf{#1}}
+
+
+%\newcommand{\sse}{\subseteq}
+%\newcommand{\ssne}{\subsetneq}
+\renewcommand{\colon}[3]{\ensuremath{\left(#1:_{#2} #3\right)}}
+%\newcommand{\rad}[1]{\ensuremath{\operatorname{rad}\left(#1\right)}}
+\DeclareMathOperator{\radname}{rad}
+\newcommand{\rad}[1]{\radname(#1)}
+
+\newcommand{\m}{\mathfrak{m}}
+
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\R}{\mathbb{R}}
+
+
+\DeclareMathOperator{\interior}{int}
+\newcommand{\boundary}{\partial}
+
+\newcommand{\tropicalsemiring}{\textbf{R}}
+\newcommand{\troplus}{\oplus}
+\newcommand{\tromult}{\odot}
+
+\DeclareMathOperator{\aff}{aff}
+\DeclareMathOperator{\conv}{conv}
+\DeclareMathOperator{\relint}{relint}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+\setcounter{page}{8}
+
+\centerline{\large{\bf IMMERSE 2007}}
+\vskip.25in
+
+\centerline{\large{Algebra Exercises}}
+\vskip.25in
+
+\setcounter{section}{3}
+\section{Week 4}
+
+For the following exercise set, the ``Newton polytope (unbounded) of $I$'' is the UNBOUNDED convex hull
+of all the monomials in $I$. It is what H\"ubl denotes $K(I)$.
+
+
+\begin{exercise}
+Show that if $I$ and $J$ are monomial ideals,
+then so are: $I+J$, $I \cap J$, $IJ$, and $\rad{I}$.
+\end{exercise}
+
+
+
+\begin{exercise}
+Let $I=(X^3,Y^2)$. Let $\m=(X,Y)$.
+Find the set of monomials that are in $I$ and not in $\m I$.
+(That is, the set of monomials in $I \setminus \m I$.)
+Repeat for $I=(X^3,X^2Y,Y^2)$.
+\end{exercise}
+
+\begin{exercise}
+Let $I \subset R = k[x_1,\dots,x_d]$ be a monomial ideal.
+Let $\m = (x_1,\dots,x_d)$.
+In Exercise~3.6 you showed that there is one and only one
+irredundant generating set for $I$ consisting of monomials.
+Show that this irredundant monomial generating set is given by
+the set of monomials that are in $I$ but not in $\m I$.
+\end{exercise}
+
+
+\begin{exercise}
+Let $I$ be an ideal (not necessarily monomial).
+Show that for $a, b \geq 1$, we have $I^a I^b = I^{a+b}$.
+The zeroth power is defined as $I^0 = (1)$, the unit ideal.
+Show that $I^0 I^b = I^b = I^b I^0$.
+\end{exercise}
+
+
+
+
+
+%\begin{exercise}  Set $I = (X_0^4, X_0^3X_1^3, X_1^4) \subseteq k[X_0, X_1]$.
+%Graph the Newton polytope (unbounded) of $I$ in $\mathbb R^2$.  
+%\end{exercise}
+
+\begin{exercise}  Set $I = (X_0^3X_1^5, X_0^4X_1^4, X_0^5X_1^2) \subseteq k[X_0, X_1]$.
+Graph the Newton polytope (unbounded) of $I$ in $\mathbb R^2$.  
+\end{exercise}
+
+\begin{exercise}  Set $I =   (X_0^3X_1^5, X_0^4X_1^4, X_0^5X_1^2) \subseteq k[X_0, X_1, X_2]$.
+Graph the Newton polytope (unbounded) of $I$ in $\mathbb R^3$.  
+\end{exercise}
+
+
+
+
+
+\begin{paperexercise}  For the the monomial ideal $I = (X_0^3X_1^5, X_0^4X_1^4, X_0^5X_1^2) \subseteq k[X_0, X_1, X_2]$, determine the following
+
+(i) $C$, $K$, $\sigma_i$, $s_i$, $\Sigma_i$, and $\boundary K$, as in Lemma 1.
+
+(ii) $S$, $A_j$, $\boundary \Sigma_i$, and $A_j \cap \boundary \Sigma_i$ as in Lemma 2.
+
+(iii) $F_i$ as in the definition on page 3775.
+\end{paperexercise}
+
+
+
+
+
+
+\begin{exercise}
+For this exercise, let $V$ be a vector space over the real numbers $\R$.
+
+Recall the following definition: an \defining{affine subspace} $A \subset V$ is a translation of a vector
+subspace, $A = L + b$ for some linear subspace (aka vector subspace) $L\subset V$ and some vector $b \in V$.
+
+Show the following:
+\begin{enumerate}[a.]
+%\item For an affine subspace $A = L+b$, the subspace $L$ is unique.
+%That is, if $A = L+b = L'+b'$, then $L=L'$.
+%\item For an affine subspace $A = L+b$, we have $b \in A$.
+%Conversely if $a \in A$ is any element, then $A = L+a$.
+%Thus $A = L+x$ if and only if $x \in A$.
+\item The Minkowski sum of two affine subspaces is again an affine subspace.
+So is their convex hull.
+\item An arbitrary intersection of affine subspaces is again an affine subspace; or empty.
+\item Let $S \subset V$ be any nonempty subset. The \defining{affine hull of $S$} is defined as:
+\[ \aff(S) = \{ v \in V : v = t_1 s_1 + \dots + t_d s_d, d \geq 1, s_i \in S, t_i \in \R, \sum t_i = 1 \} \]
+%First, for $S = \{(1,0),(0,1)\} \subset \R^2$, find $\aff(S)$.
+Show $\aff(S)$ is an affine subspace.
+\item Let $S \subset V$ be any nonempty subset. Show that $\aff(S)$ as defined above
+is equal to the intersection of all the affine subspaces of $V$ containing $S$.
+\item Let $S \subset V$ be any nonempty subset and let $s \in S$.
+Let $S - s$ be the translation of $S$ by $-s$. Let $L$ be the linear span of $S-s$.
+Show that $\aff(S) = L+s$.
+\end{enumerate}
+\end{exercise}
+
+
+%\begin{exercise}
+%We defined ``the ideal generated by $S$'' to be the set of certain finite sums, and showed it is
+%the intersection of all the ideals containing $S$.
+%We defined ``the convex hull of $S$'' to be the set of certain finite sums, and showed it is
+%the intersection of all the convex sets containing $S$.
+%We defined ``the affine hull of $S$'' to be the set of certain finite sums, and showed it is
+%the intersection of all the affine subspaces containing $S$.
+%In each case, there is an ``internal description'' (in terms of certain sums that build the set up using $S$)
+%and an ``external description'' (in terms of intersections of things that contain $S$)
+%
+%No exercise here, just wanted to point this out.
+%\end{exercise}
+
+
+\begin{exercise}
+Recall we defined the dimension of an affine subspace $\dim A$ to be $\dim L$.
+Show the following.
+\begin{enumerate}[a.]
+\item If there is a chain of affine subspaces
+\[ A_0 \subsetneq A_1 \subsetneq \dots \subsetneq A_r = A, \]
+then $\dim A \geq r$.
+\item Furthermore, $\dim A = r$ where $r$ is the largest integer
+such that there exists a chain of length $r$, as written above.
+\item If $S \subset \R^n$ is a finite set with $p$ elements, then $\dim \aff(S) < p$.
+\item We say $S$ is \defining{affinely independent} if $S$ is a finite set
+with $p$ elements and $\dim \aff(S) = p-1$.
+Now, if $A \subset \R^n$ is an affine subspace, show that $\dim A$
+is one less than the size of the largest affinely independent subset of $A$.
+\end{enumerate}
+\end{exercise}
+
+
+\begin{definition}
+Let $R$ be a commutative ring with $1$.
+A \defining{monic polynomial} with coefficients in $R$ is a polynomial
+whose leading coefficient is $1$, that is, a polynomial
+$ f = x^n + r_1 x^{n-1} + \dots + r_n $.
+\end{definition}
+
+\begin{exercise}
+This exercise is an introduction to the theory of ``integral closure'' that we will talk about
+in class soon. For this exercise, let $R = \Z$, the ring of integers with the usual operations.
+\begin{enumerate}[a.]
+\item Let $f(x) = x^n + r_1 x^{n-1} + \dots + r_n$ be a monic polynomial with coefficients $r_i \in \Z$.
+Suppose $a/b \in \Q$ is a rational number such that $f(a/b) = 0$.
+Then show $a/b \in \Z$.
+[HINT: Say $a/b$ is written in lowest terms, ie, $a$ and $b$ have no common factors.
+Say $p$ is a prime factor of $b$. Clear denominators in the equation $f(a/b)=0$,
+then show $p$ is also a prime factor of $a$. Now, what is $b$?]
+\item On the other hand, there are lots of irrational real numbers that satisfy monic polynomials with
+integer coefficients. Show that $\sqrt{2}$ and $\sqrt{2+\sqrt[5]{3}}$ satisfy this condition.
+Show that $i = \sqrt{-1}$ satisfies this condition.
+Show that $\sqrt{2}+\sqrt{3}$ satisfies this condition.
+[That is, find monic polynomials that these numbers satisfy.]
+\item Show that $1/\sqrt{2}$ does NOT satisfy any monic polynomial with integer coefficients.
+%(By the way, it turns out $\pi$ and $e$ do NOT satisfy monic polynomials with integer coefficients,
+%so numbers like $\sqrt{2}$ are special in a way.
+%If you are curious you can learn about this
+%in books such as ``Making Transcendence Transparent'' by Edward Burger and Robert Tubbs.)
+\end{enumerate}
+\end{exercise}
+
+
+\begin{exercise}
+Show the following.
+\begin{enumerate}[a.]
+\item Show $(x^2 y^2)^r \in (x^4,x^3 y^3, y^4)^r$ for some $r > 0$.
+\item Say $I$ is a monomial ideal generated by $m_1, \dots, m_t$,
+with corresponding exponent vectors $v_1, \dots, v_t$.
+Say $n$ is a monomial with exponent vector $w$.
+Suppose $n^r \in I^r$ for some $r > 0$.
+Then show $w \in K(I)$.
+[HINT: Write $n^r = g \cdot m_1^{a_1} \dots m_t^{a_t}$
+for some $g \in R$ and $\sum a_i = r$.
+Show $g$ is a monomial; say its exponent vector is $u$.
+Then $rw = u + a_1 v_1 + \dots + a_t v_t$. Divide by $r$.]
+\item Let $I$, $m_i$, $v_i$, $n$, and $w$ be as before.
+Suppose $w \in K(I)$.
+Then show $n^r \in I^r$ for some $r > 0$.
+[HINT: Use the fact that we can write $w = c_1 v_1 + \dots + c_t v_t$
+with \textbf{rational} $c_i$, $\sum c_i \geq 1$.
+Then clear denominators.]
+\item For a monomial ideal $I$ and a monomial $n$,
+we have $n^r \in I^r$ for some $r > 0$
+if and only if $n \in K(I)$.
+\end{enumerate}
+\end{exercise}
+
+
+
+\begin{definition}
+A polynomial $f \in k[x_1,\dots,x_n]$ is called \defining{homogeneous of degree $d$}
+if every term in $f$ has degree $d$.
+For a polynomial $f$, we write $f = f_0 + f_1 + \dots + f_n$, where $f_d$ is the sum of all the
+terms of degree $d$ in $f$; we say $f_d$ is the \defining{degree $d$ part of $f$}.
+An ideal $I \subset k[x_1,\dots,x_n]$ is called a \defining{homogeneous ideal}
+if there is a generating set for $I$ consisting of homogeneous polynomials.
+\end{definition}
+
+\begin{exercise}
+Let $R = k[x_1,\dots,x_n]$.
+Show the following.
+\begin{enumerate}[a.]
+%\item $f$ is homogeneous of degree $d$ if and only if
+%$f( t x_1 , \dots , t x_n ) = t^d f(x_1, \dots, x_n)$ for all $t$.
+%%%% Is that even true? What if k = F_p and d=p? Then t^d=t^p=t for all t... hmmm Or what if d=p-1?
+\item If $f$ is homogeneous of degree $d$ then
+ $d \cdot f = \sum_{i=1}^n x_i \frac{\partial f}{\partial x_i}$.
+ Also $f(tx_1,\dots,tx_n) = t^d f(x_1,\dots,x_n)$.
+%(But the converse fails: e.g., $x^p-x \in (\Z/p\Z)[x]$ satisfies this condition, but is not homogeneous.)
+\item If $f$ is homogeneous of degree $d$ and $g$ is homogeneous of degree $e$,
+then $fg$ is homogeneous of degree $d+e$.
+\item If $I$ and $J$ are homogeneous ideals, then so are $I+J$, $I \cap J$, and $IJ$.
+And so is $\rad{I}$.
+\item Show that an ideal $I$ is homogeneous if and only if for every $f \in I$ and for every $d$,
+the degree $d$ part $f_d \in I$. [Compare with Exercise~3.5.]
+Show $f$ is homogeneous if and only if $(f)$ is homogeneous.
+\item Let $I$ be a homogeneous ideal. Show that either $I = (1)$ or $I \subseteq (x_1,\dots,x_n)$.
+\end{enumerate}
+\end{exercise}
+
+
+
+%\begin{exercise}
+%Let $S \subset \R^n$ be a non-empty convex set.
+%The \defining{recession cone of $S$} is the set $RC(S)$ defined by
+%$ RC(S) = \{ v : S+v \subseteq S \} $.
+%Show that $0 \in RC(S)$, that $RC(S)$ is closed under addition, and that $RC(S)$ is closed under scalar multiplication.
+%Show $RC(S)$ is convex.
+
+%For $I$ a monomial ideal, show that the recession cone of the Newton polytope of $I$ is the positive orthant.
+%\end{exercise}
+
+\end{document}
