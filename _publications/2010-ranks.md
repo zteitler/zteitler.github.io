@@ -2,7 +2,7 @@
 title: On the ranks and border ranks of tensors and symmetric tensors
 layout: mypub
 selected: true
-pubdate: 2010
+pubdate: 2010.1
 arxiv: 
 doi: 
 authors: J. M. Landsberg and Zach Teitler

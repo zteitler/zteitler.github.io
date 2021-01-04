@@ -13,13 +13,54 @@ Boise State University
 1910 University Dr  
 Boise, ID 83725-1555, USA  
 
-<{{ site.email }}>, <zteitler@boisestate.edu>  
+<zteitler@boisestate.edu>  
 Office: [MB 233A](https://maps.boisestate.edu/?id=715#!m/89068)  
 Phone: +1-208-426-1086  
-Fax: +1-208-426-1356
+Fax: +1-208-426-1356  
 
 
 <div style="clear:both"></div>
+
+
+
+## [Teaching](teaching)
+
+I teach a range of courses,
+mostly proof-based (or "pure math") courses for undergraduate and graduate math majors.
+I also frequently teach multivariable calculus and introduction to proofs,
+and occasionally other classes: differential equations, linear algebra, and so on.
+
+{% assign currentyear = "now" | date:"%Y" %}
+{% assign last_day_of_spring = currentyear | append:"-05-15" | date:"%s" %}
+{% assign last_day_of_summer = currentyear | append:"-08-15" | date:"%s" %}
+{% assign currentdate = "now" | date:"%s" %}
+{% if currentdate < last_day_of_spring %}
+  {% assign currentsemester = "Spring" %}
+  {% assign currentshortsemester = currentyear | append:"A" %}
+{% elsif currentdate < last_day_of_summer %}
+  {% assign currentsemester = "Summer" %}
+  {% assign currentshortsemester = currentyear | append:"B" %}
+{% else %}
+  {% assign currentsemester = "Fall" %}
+  {% assign currentshortsemester = currentyear | append:"C" %}
+{% endif %}
+
+### Current courses, {{ currentsemester }} {{ currentyear }}
+
+{% assign currentcourses = site.courses | where:"shortsemester", currentshortsemester | sort:"coursenumber" %}
+
+{% for course in currentcourses %}
+[{{ course.title }}]({% if course.siteurl %}{{ course.siteurl }}{% else %}{{ course.url }}{% endif %})
+{% if course.courseprefix %}{{ course.courseprefix }} {% else %} Math {% endif %} {{ course.coursenumber }}
+{% endfor %}
+
+{% comment %}
+I wonder if I can add upcoming courses here?
+Or would that be too much info? They are listed on the Teaching page, maybe that's enough.
+{% endcomment %}
+
+
+
 
 
 ## [Research](research)
@@ -41,9 +82,11 @@ and computer experimentation in mathematics.
 
 ### Recent publications
 
-{% for pub in site.publications limit: 6 %}
+{% assign pubs_sorted = site.publications | sort:"pubdate" | reverse %}
+{% for pub in pubs_sorted limit: 6 %}
 
-[{{ pub.title }}]({% if pub.siteurl %}{{ pub.siteurl }}{% else %}{{ pub.url }}{% endif %})
+[{{ pub.title }}]({% if pub.siteurl %}{{ pub.siteurl }}{% else %}{{ pub.url }}{% endif -%})
+{%- if pub.journal %}, {{ pub.journal }}{% endif %}, {{ pub.pubdate | floor }}
 {{ pub.excerpt | remove: '<p>' | remove: '</p>' | strip }}
 {% comment %}
 <span class="post-meta"><span class="category_name">{{ pub.categories }}</span> posted on {{ pub.date | date: "%b %-d, %Y" }}</span>
@@ -52,38 +95,6 @@ and computer experimentation in mathematics.
 {% endfor %}
 
 
-
-
-## [Teaching](teaching)
-
-{% assign currentyear = "now" | date:"%Y" %}
-{% assign last_day_of_spring = currentyear | append:"-05-15" | date:"%s" %}
-{% assign last_day_of_summer = currentyear | append:"-08-15" | date:"%s" %}
-{% assign currentdate = "now" | date:"%s" %}
-{% if currentdate < last_day_of_spring %}
-  {% assign currentsemester = "Spring" %}
-  {% assign currentshortsemester = currentyear | append:"A" %}
-{% elsif currentdate < last_day_of_summer %}
-  {% assign currentsemester = "Summer" %}
-  {% assign currentshortsemester = currentyear | append:"B" %}
-{% else %}
-  {% assign currentsemester = "Fall" %}
-  {% assign currentshortsemester = currentyear | append:"C" %}
-{% endif %}
-
-*Current courses, {{ currentsemester }} {{ currentyear }}:*
-
-{% assign currentcourses = site.courses | where:"shortsemester", currentshortsemester | sort:"coursenumber" %}
-
-{% for course in currentcourses %}
-[{{ course.title }}]({% if course.siteurl %}{{ course.siteurl }}{% else %}{{ course.url }}{% endif %})
-{% if course.courseprefix %}{{ course.courseprefix }} {% else %} Math {% endif %} {{ course.coursenumber }}
-{% endfor %}
-
-{% comment %}
-I wonder if I can add upcoming courses here?
-Or would that be too much info? They are listed on the Teaching page, maybe that's enough.
-{% endcomment %}
 
 
 ## [Advising](advising)
@@ -112,7 +123,8 @@ Research workshops and conference special sessions that I have organized, co-org
 or been involved in.
 
 
-## Links
+
+<br style="margin-bottom:1ex" />
 
 
 [Boise State Topology & Algebra Research](https://www.boisestate.edu/math/research/topology/) in the BSU math department
@@ -120,3 +132,5 @@ or been involved in.
 [BSU Academic Calendars](https://www.boisestate.edu/registrar/boise-state-academic-calendars/)
 
 [About me](about)
+
+[Links](links)

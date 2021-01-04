@@ -2,7 +2,7 @@
 title: The Monodromy Conjecture for hyperplane arrangements
 layout: mypub
 selected: true
-pubdate: 2011
+pubdate: 2011.2
 arxiv: 
 doi: 
 authors: Nero Budur, Mircea Mustață, and Zach Teitler

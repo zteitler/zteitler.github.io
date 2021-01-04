@@ -2,7 +2,7 @@
 title: Experimentation at the Frontiers of Reality in Schubert Calculus
 layout: mypub
 selected: true
-pubdate: 2010
+pubdate: 2010.2
 arxiv: 
 doi: 
 authors: >-

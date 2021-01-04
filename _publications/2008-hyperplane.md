@@ -2,7 +2,7 @@
 title: A note on Mustață's computation of multiplier ideals of hyperplane arrangements
 layout: mypub
 selected: true
-pubdate: 2008
+pubdate: 2008.1
 arxiv: 
 doi: 
 authors: Zach Teitler

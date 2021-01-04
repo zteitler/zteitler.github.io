@@ -8,8 +8,9 @@
 
 {% for post in pubsbydate %}
 
-{% if post.pubdate <= thisyear %}
-  {% assign displaydate = post.pubdate %}
+{% assign thisyearplusone = thisyear | plus: 1 %}
+{% if post.pubdate < thisyearplusone %}
+  {% assign displaydate = post.pubdate | floor %}
 {% else %}
   {% assign displaydate = "∞" %}
 {% endif %}

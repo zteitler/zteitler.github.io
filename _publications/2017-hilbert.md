@@ -10,7 +10,7 @@ authors: >-
   Joachim Jelisiejew,
   Bernt Ivar Utstøl Nødland,
   Zach Teitler
-journal:
+journal: "in: *Combinatorial Algebraic Geometry*"
 volume:
 issue:
 pagenos:

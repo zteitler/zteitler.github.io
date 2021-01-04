@@ -2,7 +2,7 @@
 title: Multiplier ideals of general line arrangements in $\mathbb{C}^3$
 layout: mypub
 selected: true
-pubdate: 2007
+pubdate: 2007.2
 arxiv: 
 doi: 
 authors: "Zachariah C. Teitler"
