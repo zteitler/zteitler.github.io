@@ -1,6 +1,7 @@
 ---
 title: The Hilbert scheme of $11$ points in $\mathbb{A}^3$ is irreducible
 layout: mypub
+mathjax: true
 selected: true
 pubdate: 2017
 arxiv: 1604.07691
