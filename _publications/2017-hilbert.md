@@ -4,7 +4,7 @@ layout: mypub
 mathjax: true
 selected: true
 pubdate: 2017
-arxiv: 1604.07691
+arxiv: 1701.03089
 doi:
 authors: >-
   Theodosios Douvropoulos,
