@@ -20,21 +20,29 @@ layout: post
     </tr>
     <tr>
       <td style="border-color:black">9:00</td>
-      <td rowspan="3" style="border:none"> </td>
+      <td rowspan="1" style="border:none"> </td>
       <td rowspan="2" style="border-color:black;background-color:Orange">
         PBC
       </td>
-      <td rowspan="3" style="border:none"> </td>
-      <td rowspan="3" style="border:none"> </td>
-      <td rowspan="3" style="border:none"> </td>
+      <td rowspan="1" style="border:none"> </td>
+      <td rowspan="1" style="border:none"> </td>
+      <td rowspan="1" style="border:none"> </td>
       <td style="border-color:black">9:00</td>
     </tr>
     <tr>
       <td style="border-color:black">9:30</td>
+      <td rowspan="1" style="border:none"> </td>
+      <td rowspan="1" style="border:none"> </td>
+      <td rowspan="1" style="border:none"> </td>
+      <td rowspan="1" style="border:none"> </td>
       <td style="border-color:black">9:30</td>
     </tr>
     <tr>
       <td style="border-color:black">10:00</td>
+      <td rowspan="1" style="border:none"> </td>
+      <td rowspan="1" style="border:none"> </td>
+      <td rowspan="1" style="border:none"> </td>
+      <td rowspan="1" style="border:none"> </td>
       <td rowspan="1" style="border:none"> </td>
       <td style="border-color:black">10:00</td>
     </tr>
@@ -52,40 +60,53 @@ layout: post
       <td rowspan="3" style="border-color:black;background-color:LightGreen">
         Math 414/514
       </td>
-      <td rowspan="3" style="border:none"> </td>
+      <td rowspan="1" style="border:none"> </td>
       <td style="border-color:black">10:30</td>
     </tr>
     <tr>
       <td style="border-color:black">11:00</td>
+      <td rowspan="1" style="border:none"> </td>
       <td style="border-color:black">11:00</td>
     </tr>
     <tr>
       <td style="border-color:black">11:30</td>
+      <td rowspan="1" style="border:none"> </td>
       <td style="border-color:black">11:30</td>
     </tr>
     <tr>
       <td style="border-color:black">12:00</td>
-      <td rowspan="3" style="border:none"> </td>
-      <td rowspan="3" style="border:none"> </td>
-      <td rowspan="3" style="border:none"> </td>
-      <td rowspan="3" style="border:none"> </td>
-      <td rowspan="3" style="border:none"> </td>
+      <td rowspan="1" style="border:none"> </td>
+      <td rowspan="1" style="border:none"> </td>
+      <td rowspan="1" style="border:none"> </td>
+      <td rowspan="1" style="border:none"> </td>
+      <td rowspan="1" style="border:none"> </td>
       <td style="border-color:black">12:00</td>
     </tr>
     <tr>
       <td style="border-color:black">12:30</td>
+      <td rowspan="1" style="border:none"> </td>
+      <td rowspan="1" style="border:none"> </td>
+      <td rowspan="1" style="border:none"> </td>
+      <td rowspan="1" style="border:none"> </td>
+      <td rowspan="1" style="border:none"> </td>
       <td style="border-color:black">12:30</td>
     </tr>
     <tr>
       <td style="border-color:black">1:00</td>
+      <td rowspan="1" style="border:none"> </td>
+      <td rowspan="2" style="border-color:black;background-color:Orange">
+        Chairs
+      </td>
+      <td rowspan="1" style="border:none"> </td>
+      <td rowspan="1" style="border:none"> </td>
+      <td rowspan="1" style="border:none"> </td>
       <td style="border-color:black">1:00</td>
     </tr>
     <tr>
       <td style="border-color:black">1:30</td>
-      <td rowspan="3" style="border:none"> </td>
-      <td rowspan="3" style="border:none"> </td>
-      <td rowspan="3" style="border:none"> </td>
-      <td rowspan="3" style="border:none"> </td>
+      <td rowspan="1" style="border:none"> </td>
+      <td rowspan="1" style="border:none"> </td>
+      <td rowspan="1" style="border:none"> </td>
       <td rowspan="2" style="border-color:black;background-color:LightGreen">
         Math 599
       </td>
@@ -93,18 +114,26 @@ layout: post
     </tr>
     <tr>
       <td style="border-color:black">2:00</td>
+      <td rowspan="1" style="border:none"> </td>
+      <td rowspan="1" style="border:none"> </td>
+      <td rowspan="1" style="border:none"> </td>
+      <td rowspan="1" style="border:none"> </td>
       <td style="border-color:black">2:00</td>
     </tr>
     <tr>
       <td style="border-color:black">2:30</td>
+      <td rowspan="1" style="border:none"> </td>
+      <td rowspan="1" style="border:none"> </td>
+      <td rowspan="1" style="border:none"> </td>
+      <td rowspan="1" style="border:none"> </td>
       <td rowspan="1" style="border-color:black;background-color:Gray"> </td>
       <td style="border-color:black">2:30</td>
     </tr>
     <tr>
       <td style="border-color:black">3:00</td>
-      <td rowspan="3" style="border:none"> </td>
-      <td rowspan="2" style="border:none"> </td>
-      <td rowspan="3" style="border:none"> </td>
+      <td rowspan="1" style="border:none"> </td>
+      <td rowspan="1" style="border:none"> </td>
+      <td rowspan="1" style="border:none"> </td>
       <td rowspan="2" style="border-color:black;background-color:Orange">
         Math Dept Faculty Meeting
       </td>
@@ -115,10 +144,15 @@ layout: post
     </tr>
     <tr>
       <td style="border-color:black">3:30</td>
+      <td rowspan="1" style="border:none"> </td>
+      <td rowspan="1" style="border:none"> </td>
+      <td rowspan="1" style="border:none"> </td>
       <td style="border-color:black">3:30</td>
     </tr>
     <tr>
       <td style="border-color:black">4:00</td>
+      <td rowspan="1" style="border:none"> </td>
+      <td rowspan="1" style="border:none"> </td>
       <td rowspan="2" style="border-color:black;background-color:aqua">
         <a href="https://www.boisestate.edu/math/research/colloquium/">Math Dept Colloquium</a>
       </td>
