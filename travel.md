@@ -3,6 +3,10 @@ title: "Travel"
 layout: post
 ---
 
+**Spring 2021**
+: *May 1-2*
+    : AMS Western Sectional in San Francisco (virtual)
+
 **Fall 2020**
 : *October 24-25*
     : ~~AMS Sectional in SLC (tentative)~~
