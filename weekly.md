@@ -151,10 +151,10 @@ layout: post
     <tr>
       <td style="border-color:black">4:00</td>
       <td rowspan="1" style="border:none"> </td>
-      <td rowspan="1" style="border:none"> </td>
       <td rowspan="2" style="border-color:black;background-color:aqua">
         <a href="https://www.boisestate.edu/math/research/colloquium/">Math Dept Colloquium</a>
       </td>
+      <td rowspan="1" style="border:none"> </td>
       <td rowspan="3" style="border-color:black;background-color:Gray"> </td>
       <td rowspan="3" style="border-color:black;background-color:Gray"> </td>
       <td style="border-color:black">4:00</td>
