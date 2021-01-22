@@ -27,7 +27,7 @@ header_pages:
   - research.md
   - teaching.md
   - advising.md
-  - vitae.md
+  - cv.md
 
 collections:
   courses:
