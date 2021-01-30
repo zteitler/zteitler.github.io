@@ -70,6 +70,9 @@ My area of research is
 and [algebraic geometry](https://en.wikipedia.org/wiki/Algebraic_geometry)
 ([MSC](https://mathscinet.ams.org/mathscinet/msc/msc2020.html) 13 and 14).
 
+I study algebraic geometry with actual polynomials,
+especially **Waring rank**.
+{% comment %}
 I am interested in a range of problems involving commutative algebra and
 algebraic geometry, usually with a combinatorial or computational flavor,
 such as:
@@ -79,6 +82,7 @@ arrangements (of [hyperplanes](https://en.wikipedia.org/wiki/Arrangement_of_hype
 [lines](https://en.wikipedia.org/wiki/Arrangement_of_lines), points, etc);
 [**multiplier ideals**](https://en.wikipedia.org/wiki/Multiplier_ideal) (computation, applications to commutative algebra);
 and computer experimentation in mathematics.
+{% endcomment %}
 
 ### Recent publications
 
