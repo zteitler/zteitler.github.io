@@ -113,8 +113,6 @@ See also the [Set Theory Seminar](https://www.boisestate.edu/math/research/semin
 the [Mathematics Department Colloquium](https://www.boisestate.edu/math/research/colloquium/),
 and the [Computing Colloquium](https://www.boisestate.edu/computing/colloquium/).
 
-[Weekly schedule](weekly) | [Travel](travel)
-
 
 ## [Boise Math Circles](https://www.boisestate.edu/math/circles/)
 
@@ -127,13 +125,20 @@ Research workshops and conference special sessions that I have organized, co-org
 or been involved in.
 
 
-
 <br style="margin-bottom:1ex" />
+
+
+[Weekly schedule](weekly) | [Travel](travel)
+
 
 
 [Boise State Topology & Algebra Research](https://www.boisestate.edu/math/research/topology/) in the BSU math department
 
 [BSU Academic Calendars](https://www.boisestate.edu/registrar/boise-state-academic-calendars/)
+
+[BSU Math Master's Theses](https://scholarworks.boisestate.edu/math_gradproj/) |
+[BSU Math Senior Theses](https://scholarworks.boisestate.edu/math_undergraduate_theses/) |
+[BSU Math Senior Showcase](https://scholarworks.boisestate.edu/math_senior_showcase/)
 
 [About me](about)
 
