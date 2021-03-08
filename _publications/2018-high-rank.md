@@ -4,7 +4,7 @@ layout: mypub
 selected: true
 pubdate: 2018
 arxiv: "1703.02829"
-doi: "10.1016/j.laa.2019.11.007"
+doi: "10.1007/s40879-017-0172-2"
 authors: >-
   Jarosław Buczyński,
   Kangjin Han,
