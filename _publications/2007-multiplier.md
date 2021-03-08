@@ -3,8 +3,8 @@ title: Multiplier ideals of general line arrangements in $\mathbb{C}^3$
 layout: mypub
 selected: true
 pubdate: 2007.2
-arxiv: 
-doi: 
+arxiv: "math/0508308"
+doi: "10.1080/00927870701247005"
 authors: "Zachariah C. Teitler"
 journal: Comm. Alg.
 volume: 35

@@ -59,6 +59,15 @@ layout: post
 </dd>
 {% endif %}
 
+{% if page.puburl %}
+<dt class="publink">
+  publication:
+</dt>
+<dd>
+  <a href="{{ page.puburl }}">{{ page.puburl }}</a>
+</dd>
+{% endif %}
+
 {% if page.doi %}
 <dt class="doilink">
   doi:
@@ -67,5 +76,6 @@ layout: post
   <a href="https://dx.doi.org/{{ page.doi }}">{{ page.doi }}</a>
 </dd>
 {% endif %}
+</dl>
 
 {{ content }}

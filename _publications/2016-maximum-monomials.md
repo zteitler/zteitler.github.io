@@ -4,7 +4,7 @@ layout: mypub
 selected: true
 pubdate: 2016
 arxiv: 1309.7834
-doi: 
+doi: "10.1080/00927872.2015.1087534"
 authors: Erik Holmes, Paul Plummer, Jeremy Siegert, and Zach Teitler
 journal: Comm. Alg.
 volume: 44

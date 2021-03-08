@@ -4,7 +4,7 @@ layout: mypub
 selected: true
 pubdate: 2015
 arxiv: 1109.3436
-doi:
+doi: "10.1080/10586458.2014.980044"
 authors: >-
   Nickolas Hein,
   Christopher J. Hillar,

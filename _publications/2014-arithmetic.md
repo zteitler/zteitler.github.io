@@ -3,8 +3,8 @@ title: Arithmetic toric varieties
 layout: mypub
 selected: true
 pubdate: 2014
-arxiv: 
-doi: 
+arxiv: "1003.5141"
+doi: "10.1002/mana.201200305"
 authors: >-
   Javier Elizondo,
   Paulo Lima-Filho,

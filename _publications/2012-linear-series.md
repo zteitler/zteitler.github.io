@@ -3,8 +3,8 @@ title: Recent developments and open problems in linear series
 layout: mypub
 selected: true
 pubdate: 2012
-arxiv: 
-doi: 
+arxiv: "1101.4363"
+doi: "10.4171/114-1/4"
 authors: >-
   Thomas Bauer,
   Cristiano Bocci,
