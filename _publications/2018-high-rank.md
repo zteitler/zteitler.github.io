@@ -3,8 +3,8 @@ title: On the locus of points of high rank
 layout: mypub
 selected: true
 pubdate: 2018
-arxiv: 
-doi:
+arxiv: "1703.02829"
+doi: "10.1016/j.laa.2019.11.007"
 authors: >-
   Jarosław Buczyński,
   Kangjin Han,

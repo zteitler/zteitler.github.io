@@ -5,7 +5,7 @@ mathjax: true
 selected: true
 pubdate: 2017
 arxiv: 1701.03089
-doi:
+doi: "10.1007/978-1-4939-7486-3_15"
 authors: >-
   Theodosios Douvropoulos,
   Joachim Jelisiejew,
