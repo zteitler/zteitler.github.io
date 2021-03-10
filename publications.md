@@ -17,8 +17,11 @@
 
 {% if displaydate != prevdisplaydate %} *{{ displaydate }}* {% assign prevdisplaydate = displaydate %} {% else %} &nbsp; {% endif %}
 
-: [{{ numpubs }}] [{{ post.title }}]({% if post.siteurl %}{{ post.siteurl }}{% else %}{{ post.url }}{% endif %})  
-{{ post.excerpt | remove: '<p>' | remove: '</p>' }}
+: [{{ numpubs }}]
+  : {{ post.authors }},
+    [{{ post.title }}]({% if post.siteurl %}{{ post.siteurl }}{% else %}{{ post.url }}{% endif %})
+    {%- if post.journal -%} , {{ post.journal }} {%- endif %}
+    {{ post.excerpt | remove: '<p>' | remove: '</p>' }}
 
 {% assign numpubs = numpubs | minus:1 %}
 {% endfor %}
