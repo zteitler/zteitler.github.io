@@ -23,7 +23,7 @@ Fax: +1-208-426-1356
 
 
 
-## [Teaching](teaching)
+## [*Teaching*](/teaching)
 
 I teach a range of courses,
 mostly proof-based (or "pure math") courses for undergraduate and graduate math majors.
@@ -59,11 +59,12 @@ I wonder if I can add upcoming courses here?
 Or would that be too much info? They are listed on the Teaching page, maybe that's enough.
 {% endcomment %}
 
+### [Previous and upcoming courses](/teaching)
 
 
 
 
-## [Research](research)
+## [*Research*](/research)
 
 My area of research is
 [commutative algebra](https://en.wikipedia.org/wiki/Commutative_algebra)
@@ -101,12 +102,12 @@ and computer experimentation in mathematics.
 
 
 
-## [Advising](advising)
+## [*Advising*](/advising)
 
 Graduate and undergraduate students I have advised.
 
 
-## [TATERS](https://sites.google.com/boisestate.edu/taters/)
+## [*TATERS*](https://sites.google.com/boisestate.edu/taters/)
 
 I am a co-organizer of the [Topics in Algebra, Topology, Etc., Research Seminar: TATERS](https://sites.google.com/boisestate.edu/taters/).  
 See also the [Set Theory Seminar](https://www.boisestate.edu/math/research/seminars/settheory/),
@@ -114,12 +115,12 @@ the [Mathematics Department Colloquium](https://www.boisestate.edu/math/research
 and the [Computing Colloquium](https://www.boisestate.edu/computing/colloquium/).
 
 
-## [Boise Math Circles](https://www.boisestate.edu/math/circles/)
+## [*Boise Math Circles*](https://www.boisestate.edu/math/circles/)
 
 A math community for teachers and for secondary students
 
 
-## [Events](events)
+## [*Events*](/events)
 
 Research workshops and conference special sessions that I have organized, co-organized,
 or been involved in.
@@ -128,7 +129,7 @@ or been involved in.
 <br style="margin-bottom:1ex" />
 
 
-[Weekly schedule](weekly) | [Travel](travel)
+[Weekly schedule](/weekly) | [Travel](/travel)
 
 
 
@@ -140,6 +141,6 @@ or been involved in.
 [BSU Math Senior Theses](https://scholarworks.boisestate.edu/math_undergraduate_theses/) |
 [BSU Math Senior Showcase](https://scholarworks.boisestate.edu/math_senior_showcase/)
 
-[About me](about)
+[About me](/about)
 
-[Links](links)
+[Links](/links)
