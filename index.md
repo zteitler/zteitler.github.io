@@ -40,19 +40,47 @@ and occasionally other classes: differential equations, linear algebra, and so o
 {% elsif currentdate < last_day_of_summer %}
   {% assign currentsemester = "Summer" %}
   {% assign currentshortsemester = currentyear | append:"B" %}
+  {% assign nextshortsemester = currentyear | append:"C" %}
 {% else %}
   {% assign currentsemester = "Fall" %}
   {% assign currentshortsemester = currentyear | append:"C" %}
 {% endif %}
 
-### Current courses, {{ currentsemester }} {{ currentyear }}
-
 {% assign currentcourses = site.courses | where:"shortsemester", currentshortsemester | sort:"coursenumber" %}
 
-{% for course in currentcourses %}
-[{{ course.title }}]({% if course.siteurl %}{{ course.siteurl }}{% else %}{{ course.url }}{% endif %})
-{% if course.courseprefix %}{{ course.courseprefix }} {% else %} Math {% endif %} {{ course.coursenumber }}
-{% endfor %}
+{% if currentcourses.size > 0 %}
+
+### {{ currentsemester }} {{ currentyear }}, current courses
+  
+  {% for course in currentcourses %}
+  [{{ course.title }}]({% if course.siteurl %}{{ course.siteurl }}{% else %}{{ course.url }}{% endif %})
+  {% if course.courseprefix %}{{ course.courseprefix }} {% else %} Math {% endif %} {{ course.coursenumber }}
+  {% endfor %}
+  
+{% else %}
+  
+### {{currentsemester }} {{ currentyear }}, no courses
+  
+{% endif %}
+
+{% if currentsemester == "Summer" %}
+
+  {% assign nextcourses = site.courses | where:"shortsemester", nextshortsemester | sort:"coursenumber" %}
+  
+  {% if nextcourses.size > 0 %}
+  
+### Fall {{ currentyear }}, upcoming courses
+  
+  {% for course in nextcourses %}
+  [{{ course.title }}]({% if course.siteurl %}{{ course.siteurl }}{% else %}{{ course.url }}{% endif %})
+  {% if course.courseprefix %}{{ course.courseprefix }} {% else %} Math {% endif %} {{ course.coursenumber }}
+  {% endfor %}
+  
+  {% endif %}
+
+{% endif %}
+
+
 
 {% comment %}
 I wonder if I can add upcoming courses here?
