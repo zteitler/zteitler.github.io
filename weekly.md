@@ -33,13 +33,14 @@ layout: post
       <td style="border-color:black">9:30</td>
       <td rowspan="1" style="border:none"> </td>
       <td rowspan="1" style="border:none"> </td>
-      <td rowspan="1" style="border:none"> </td>
+      <td rowspan="2" style="border-color:black;background-color:LightGreen">
+        Thesis (MS)
+      </td>
       <td rowspan="1" style="border:none"> </td>
       <td style="border-color:black">9:30</td>
     </tr>
     <tr>
       <td style="border-color:black">10:00</td>
-      <td rowspan="1" style="border:none"> </td>
       <td rowspan="1" style="border:none"> </td>
       <td rowspan="1" style="border:none"> </td>
       <td rowspan="1" style="border:none"> </td>
