@@ -18,6 +18,8 @@ Office: [MB 233A](https://maps.boisestate.edu/?id=715#!m/89068)
 Phone: +1-208-426-1086  
 Fax: +1-208-426-1356  
 
+Pronouns: he/him/his  
+
 
 <div style="clear:both"></div>
 
