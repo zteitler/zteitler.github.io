@@ -105,7 +105,9 @@ layout: post
     </tr>
     <tr>
       <td style="border-color:black">1:30</td>
-      <td rowspan="1" style="border:none"> </td>
+      <td rowspan="2" style="border-color:black;background-color:LightGreen">
+        Thesis (MS)
+      </td>
       <td rowspan="1" style="border:none"> </td>
       <td rowspan="1" style="border:none"> </td>
       <td rowspan="1" style="border:none"> </td>
@@ -113,7 +115,6 @@ layout: post
     </tr>
     <tr>
       <td style="border-color:black">2:00</td>
-      <td rowspan="1" style="border:none"> </td>
       <td rowspan="1" style="border:none"> </td>
       <td rowspan="1" style="border:none"> </td>
       <td rowspan="1" style="border:none"> </td>
