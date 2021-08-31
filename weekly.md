@@ -49,7 +49,9 @@ layout: post
     </tr>
     <tr>
       <td style="border-color:black">10:30</td>
-      <td rowspan="1" style="border:none"> </td>
+      <td rowspan="1" style="border-color:black;background-color:Orange">
+        Chairs
+      </td>
       <td rowspan="1" style="border:none"> </td>
       <td rowspan="3" style="border-color:black;background-color:LightGreen">
         Math 405/505
@@ -97,9 +99,7 @@ layout: post
     </tr>
     <tr>
       <td style="border-color:black">1:00</td>
-      <td rowspan="2" style="border-color:black;background-color:Orange">
-        Chairs
-      </td>
+      <td rowspan="1" style="border:none"> </td>
       <td rowspan="1" style="border:none"> </td>
       <td style="border-color:black">1:00</td>
     </tr>
@@ -108,6 +108,7 @@ layout: post
       <td rowspan="2" style="border-color:black;background-color:LightGreen">
         Thesis (MS)
       </td>
+      <td rowspan="1" style="border:none"> </td>
       <td rowspan="1" style="border:none"> </td>
       <td rowspan="1" style="border:none"> </td>
       <td rowspan="1" style="border:none"> </td>
