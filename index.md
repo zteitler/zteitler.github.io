@@ -3,7 +3,7 @@ layout: page
 mathjax: true
 ---
 
-#### Associate Professor, [Department of Mathematics](https://www.boisestate.edu/math/), [Boise State University](https://www.boisestate.edu/)
+#### Professor, [Department of Mathematics](https://www.boisestate.edu/math/), [Boise State University](https://www.boisestate.edu/)
 
 
 <img style="float:right;margin-left:10px" src="{{ site.baseurl }}/assets/img/me_2012_08_17.png" alt="Zach Teitler" />

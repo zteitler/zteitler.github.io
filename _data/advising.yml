@@ -37,28 +37,33 @@
   header: "Undergraduate senior thesis advising"
   order: 2
   students:
-    - name: "Sarah Hall"
+    - name: "Miranda Schaeffer"
       degree: "B.S. Applied Mathematics, Boise State University"
       year: 2021
       expected: true
       
+    - name: "Sarah Hall"
+      degree: "B.S. Mathematics, Boise State University"
+      year: 2021
+      expected: true
+      thesistitle: "Permutation Statistics"
+      
     - name: "Tyler Ware"
       degree: "B.S. Applied Mathematics, Boise State University"
       year: 2021
-      expected: true
+      thesistitle: "Waring rank's utility in optimizing algorithms involving point evaluations of homogeneous polynomials"
       
     - name: "Bailey Fadden"
       degree: "B.S. Applied Mathematics, Boise State University"
       year: 2020
       thesistitle: Using the Chi-Square Test to Analyze Voter Behavior
       thesisurl: https://scholarworks.boisestate.edu/mss_2020/5/
-      postdegree:
       
     - name: "Kayla Neal"
       degree: "B.S. Mathematics, Boise State University"
       year: 2018
       thesistitle: "The Cayley-Bacharach Theorem"
-      postdegree: "Mathematics M.S. program at Boise State University"
+      postdegree: "Mathematics M.S. program at Boise State University (completed in 2021); Liberty Mutual"
       
     - name: "Amanda Aydelotte"
       degree: "B.S. Mathematics, Boise State University"
