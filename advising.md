@@ -16,6 +16,8 @@ layout: page
 
 ## {{type.header}}
 
+{% if type.intro %}{{ type.intro | markdownify }}{% endif %}
+
 {% for student in students %}
 1.  **{{ student.name -}}**
     <br />

@@ -2,6 +2,10 @@
 - key: graduateadvising
   header: "Graduate advising"
   order: 1
+  intro: >
+    I am available to work with graduate students on master's thesis projects.
+    Please email me if you're looking for a master's thesis advisor.
+  
   students:
     - name: "Max Sullivan"
       degree: "M.S. Mathematics, Boise State University"
@@ -16,7 +20,7 @@
       year: 2016.3
       thesistitle: "The density topology on the reals and other spaces"
       thesisurl: https://scholarworks.boisestate.edu/td/1143/
-      postdegree: Micron
+      postdegree: "Micron"
       
     - name: "Monica Josue Agana"
       degree: "M.S. Mathematics, Boise State University"
@@ -24,7 +28,7 @@
       coadvisor: "Andres Eduardo Caicedo"
       thesistitle: "Classical theory of rearrangements"
       thesisurl: https://scholarworks.boisestate.edu/td/1039/
-      postdegree: Vacasa
+      postdegree: "Vacasa"
       
     - name: "Anna Marie Megale"
       degree: "M.S. Mathematics, Boise State University"
@@ -36,27 +40,33 @@
 - key: seniorthesisadvising
   header: "Undergraduate senior thesis advising"
   order: 2
+  intro: >
+    I am available to work with students on undergraduate senior thesis projects.
+    You can email me if you're looking for a senior thesis advisor,
+    but first, read about
+    [what you can expect if we work together and what project ideas we can work on together](senior_thesis).
+  
   students:
     - name: "Miranda Schaeffer"
       degree: "B.S. Applied Mathematics, Boise State University"
-      year: 2021
+      year: 2021.3
       expected: true
       
     - name: "Sarah Hall"
       degree: "B.S. Mathematics, Boise State University"
-      year: 2021
+      year: 2021.2
       expected: true
       thesistitle: "Permutation Statistics"
       
     - name: "Tyler Ware"
       degree: "B.S. Applied Mathematics, Boise State University"
-      year: 2021
+      year: 2021.1
       thesistitle: "Waring rank's utility in optimizing algorithms involving point evaluations of homogeneous polynomials"
       
     - name: "Bailey Fadden"
       degree: "B.S. Applied Mathematics, Boise State University"
       year: 2020
-      thesistitle: Using the Chi-Square Test to Analyze Voter Behavior
+      thesistitle: "Using the Chi-Square Test to Analyze Voter Behavior"
       thesisurl: https://scholarworks.boisestate.edu/mss_2020/5/
       
     - name: "Kayla Neal"
@@ -76,44 +86,58 @@
       degree: "B.S. Mathematics, Boise State University"
       year: 2017.3
       thesistitle: "Hyperbolic Geometry: History, Models, and Art"
+      postdegree: "Washington Federal"
       
     - name: "Kyle Auble"
       degree: "B.S. Mathematics, Boise State University"
       year: 2017.2
       thesistitle: "From Rings to Graphs: A Different Look at Structure"
+      postdegree: "Belcan"
       
     - name: "Brandon Sams"
       degree: "B.S. Mathematics, Boise State University"
       year: 2017.1
       thesistitle: "Complementary Coffee Cups"
       thesisurl: https://scholarworks.boisestate.edu/math_undergraduate_theses/6/
+      postdegree: "Data Scientist at Traffic Technology Services Inc."
       
     - name: "Stacia Orr"
       degree: "B.S. Mathematics, Boise State University"
       year: 2016
-      thesistitle: Cubik Mathemagic
+      thesistitle: "Cubik Mathemagic"
       
     - name: "Brent El-Bakri"
       degree: "B.S. Mathematics, Boise State University"
       year: 2014
       thesistitle: "A brief encounter with linear codes"
       thesisurl: https://scholarworks.boisestate.edu/math_undergraduate_theses/3/
-      postdegree: Teaching at Bishop Kelly High School
+      postdegree: "Teaching at Bishop Kelly High School"
 
 - key: graduatecommittees
   header: "Graduate committees"
   order: 3
   students:
+    - name: "Sarah Schott"
+      degree: "M.S. Mathematics, Boise State University"
+      year: 2021
+      advisor: "Jens Harlander"
+      thesistitle: "Exploring the Beginnings of Algebraic K-Theory"
+      thesisurl: https://scholarworks.boisestate.edu/td/1798/
+      
     - name: "Milan Zanussi"
       degree: "M.S. Mathematics, Boise State University"
       year: 2021
-      expected: true
       advisor: "Sam Coskey"
+      thesistitle: "Zariski Geometries and Quantum Mechanics"
+      thesisurl: https://scholarworks.boisestate.edu/td/1819/
       
     - name: "Kennedy Courtney"
       degree: "M.S. Mathematics, Boise State University"
       year: 2020
       advisor: "Jens Harlander"
+      thesistitle: "The Directed Forest Complex of Cayley Graphs"
+      thesisurl: https://scholarworks.boisestate.edu/td/1684/
+      postdegree: "Mathematics Instructor at Boise State University"
       
     - name: "Mitchell Scofield"
       degree: "M.S. Mathematics, Boise State University"
