@@ -1,7 +1,8 @@
 ---
-title: "Weekly schedule Spring 2021"
+title: "Weekly schedule Fall 2021"
 layout: post
 ---
+
 
 <table xmlns="http://www.w3.org/1999/xhtml"
   border="1" cellpadding="8" cellspacing="2"
@@ -31,7 +32,9 @@ layout: post
       <td style="border-color:black">9:30</td>
       <td rowspan="1" style="border:none"> </td>
       <td rowspan="1" style="border:none"> </td>
-      <td rowspan="1" style="border:none"> </td>
+      <td rowspan="2" style="border-color:black;background-color:LightGreen">
+        Thesis (MS)
+      </td>
       <td rowspan="1" style="border:none"> </td>
       <td style="border-color:black">9:30</td>
     </tr>
@@ -41,79 +44,80 @@ layout: post
       <td rowspan="1" style="border:none"> </td>
       <td rowspan="1" style="border:none"> </td>
       <td rowspan="1" style="border:none"> </td>
-      <td rowspan="1" style="border:none"> </td>
       <td style="border-color:black">10:00</td>
     </tr>
     <tr>
       <td style="border-color:black">10:30</td>
-      <td rowspan="3" style="border-color:black;background-color:LightGreen">
-        Math 301
-      </td>
-      <td rowspan="3" style="border-color:black;background-color:LightGreen">
-        Math 414/514
-      </td>
-      <td rowspan="3" style="border-color:black;background-color:LightGreen">
-        Math 301
-      </td>
-      <td rowspan="3" style="border-color:black;background-color:LightGreen">
-        Math 414/514
+      <td rowspan="1" style="border-color:black;background-color:Orange">
+        Chairs
       </td>
       <td rowspan="1" style="border:none"> </td>
+      <td rowspan="3" style="border-color:black;background-color:LightGreen">
+        Math 405/505
+      </td>
+      <td rowspan="4" style="border-color:black;background-color:LightGreen">
+        Student drop-in hours
+      </td>
+      <td rowspan="3" style="border-color:black;background-color:LightGreen">
+        Math 405/505
+      </td>
       <td style="border-color:black">10:30</td>
     </tr>
     <tr>
       <td style="border-color:black">11:00</td>
       <td rowspan="1" style="border:none"> </td>
+      <td rowspan="1" style="border:none"> </td>
       <td style="border-color:black">11:00</td>
     </tr>
     <tr>
       <td style="border-color:black">11:30</td>
       <td rowspan="1" style="border:none"> </td>
+      <td rowspan="1" style="border:none"> </td>
       <td style="border-color:black">11:30</td>
     </tr>
     <tr>
       <td style="border-color:black">12:00</td>
+      <td rowspan="3" style="border-color:black;background-color:LightGreen">
+        Math 287
+      </td>
       <td rowspan="1" style="border:none"> </td>
-      <td rowspan="1" style="border:none"> </td>
-      <td rowspan="2" style="border-color:black;background-color:LightGreen">Thesis (TW/SH)</td>
-      <td rowspan="1" style="border:none"> </td>
+      <td rowspan="3" style="border-color:black;background-color:LightGreen">
+        Math 287
+      </td>
       <td rowspan="1" style="border:none"> </td>
       <td style="border-color:black">12:00</td>
     </tr>
     <tr>
       <td style="border-color:black">12:30</td>
       <td rowspan="1" style="border:none"> </td>
-      <td rowspan="1" style="border:none"> </td>
-      <td rowspan="1" style="border:none"> </td>
+      <td rowspan="2" style="border-color:black;background-color:LightGreen">
+        Student appointment hour
+      </td>
       <td rowspan="1" style="border:none"> </td>
       <td style="border-color:black">12:30</td>
     </tr>
     <tr>
       <td style="border-color:black">1:00</td>
       <td rowspan="1" style="border:none"> </td>
-      <td rowspan="2" style="border-color:black;background-color:Orange">
-        Chairs
-      </td>
-      <td rowspan="1" style="border:none"> </td>
-      <td rowspan="1" style="border:none"> </td>
       <td rowspan="1" style="border:none"> </td>
       <td style="border-color:black">1:00</td>
     </tr>
     <tr>
       <td style="border-color:black">1:30</td>
-      <td rowspan="1" style="border:none"> </td>
-      <td rowspan="1" style="border:none"> </td>
-      <td rowspan="1" style="border:none"> </td>
       <td rowspan="2" style="border-color:black;background-color:LightGreen">
-        Math 599
+        Thesis (MS)
       </td>
+      <td rowspan="1" style="border:none"> </td>
+      <td rowspan="1" style="border:none"> </td>
+      <td rowspan="1" style="border:none"> </td>
+      <td rowspan="1" style="border:none"> </td>
       <td style="border-color:black">1:30</td>
     </tr>
     <tr>
       <td style="border-color:black">2:00</td>
       <td rowspan="1" style="border:none"> </td>
       <td rowspan="1" style="border:none"> </td>
-      <td rowspan="2" style="border-color:black;background-color:LightGreen">Thesis (MS)</td>
+      <td rowspan="1" style="border:none"> </td>
       <td rowspan="1" style="border:none"> </td>
       <td style="border-color:black">2:00</td>
     </tr>
@@ -122,12 +126,13 @@ layout: post
       <td rowspan="1" style="border:none"> </td>
       <td rowspan="1" style="border:none"> </td>
       <td rowspan="1" style="border:none"> </td>
-      <td rowspan="1" style="border-color:black;background-color:Gray"> </td>
+      <td rowspan="1" style="border:none"> </td>
+      <td rowspan="1" style="border:none"> </td>
       <td style="border-color:black">2:30</td>
     </tr>
     <tr>
       <td style="border-color:black">3:00</td>
-      <td rowspan="1" style="border:none"> </td>
+      <td rowspan="5" style="border-color:black;background-color:Gray"> </td>
       <td rowspan="1" style="border:none"> </td>
       <td rowspan="1" style="border:none"> </td>
       <td rowspan="2" style="border-color:black;background-color:Orange">
@@ -142,12 +147,10 @@ layout: post
       <td style="border-color:black">3:30</td>
       <td rowspan="1" style="border:none"> </td>
       <td rowspan="1" style="border:none"> </td>
-      <td rowspan="1" style="border:none"> </td>
       <td style="border-color:black">3:30</td>
     </tr>
     <tr>
       <td style="border-color:black">4:00</td>
-      <td rowspan="1" style="border:none"> </td>
       <td rowspan="2" style="border-color:black;background-color:aqua">
         <a href="https://www.boisestate.edu/math/research/colloquium/">Math Dept Colloquium</a>
       </td>
@@ -158,7 +161,6 @@ layout: post
     </tr>
     <tr>
       <td style="border-color:black">4:30</td>
-      <td rowspan="2" style="border-color:black;background-color:Gray"> </td>
       <td rowspan="2" style="border-color:black;background-color:Gray"> </td>
       <td style="border-color:black">4:30</td>
     </tr>

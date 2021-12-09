@@ -1,9 +1,7 @@
 ---
-title: "Weekly schedule"
+title: "Weekly schedule Fall 2020"
 layout: post
 ---
-
-#### Fall 2020
 
 <table xmlns="http://www.w3.org/1999/xhtml" border="1" cellpadding="8" cellspacing="2" style="border-color:black">
   <tbody>

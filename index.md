@@ -179,7 +179,7 @@ or been involved in.
 <br style="margin-bottom:1ex" />
 
 
-[Weekly schedule](/weekly) | [Travel](/travel)
+Weekly schedules. Current: [Fall 2021](/weekly-2021C), upcoming: [Spring 2022](/weekly-2022A) | [Travel](/travel)
 
 
 
