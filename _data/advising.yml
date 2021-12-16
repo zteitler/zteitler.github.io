@@ -51,12 +51,13 @@
       degree: "B.S. Applied Mathematics, Boise State University"
       year: 2021.3
       expected: true
+      postdegree: "Premera Blue Cross"
       
     - name: "Sarah Hall"
       degree: "B.S. Mathematics, Boise State University"
       year: 2021.2
-      expected: true
       thesistitle: "Permutation Statistics"
+      postdegree: "Clearwater Analytics"
       
     - name: "Tyler Ware"
       degree: "B.S. Applied Mathematics, Boise State University"
@@ -68,6 +69,7 @@
       year: 2020
       thesistitle: "Using the Chi-Square Test to Analyze Voter Behavior"
       thesisurl: https://scholarworks.boisestate.edu/mss_2020/5/
+      postdegree: "Sales supervisor, Bogus Basin"
       
     - name: "Kayla Neal"
       degree: "B.S. Mathematics, Boise State University"
