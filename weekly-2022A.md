@@ -55,7 +55,7 @@ layout: post
       </td>
       <td rowspan="1" style="border:none"> </td>
       <td rowspan="3" style="border-color:black;background-color:LightGreen">
-        Math 405/505
+        Math 333
       </td>
       <td style="border-color:black">10:30</td>
     </tr>
