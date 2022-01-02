@@ -24,12 +24,13 @@ layout: post
       </td>
       <td rowspan="1" style="border:none"> </td>
       <td rowspan="1" style="border:none"> </td>
-      <td rowspan="1" style="border:none"> </td>
+      <td rowspan="2" style="border-color:black;background-color:LightSeaGreen">
+        Thesis (MS)
+      </td>
       <td style="border-color:black">9:00</td>
     </tr>
     <tr>
       <td style="border-color:black">9:30</td>
-      <td rowspan="1" style="border:none"> </td>
       <td rowspan="1" style="border:none"> </td>
       <td rowspan="1" style="border:none"> </td>
       <td rowspan="1" style="border:none"> </td>
@@ -49,7 +50,7 @@ layout: post
       <td rowspan="3" style="border-color:black;background-color:LightGreen">
         Math 333
       </td>
-      <td rowspan="3" style="border-color:black;background-color:LightGreen">
+      <td rowspan="3" style="border-color:black;background-color:YellowGreen">
         Student dropin hour
       </td>
       <td rowspan="3" style="border-color:black;background-color:LightGreen">
@@ -103,7 +104,7 @@ layout: post
       <td rowspan="3" style="border-color:black;background-color:LightGreen">
         Math 506
       </td>
-      <td rowspan="3" style="border-color:black;background-color:LightGreen">
+      <td rowspan="3" style="border-color:black;background-color:YellowGreen">
         Student appointment hour
       </td>
       <td rowspan="3" style="border-color:black;background-color:LightGreen">
