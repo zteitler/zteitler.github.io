@@ -26,30 +26,13 @@ Pronouns: he/him/his
 
 
 ## [Teaching](/teaching)
+{:style="color: #ffffff; background-color: #fccab6; font-size: 36pt; padding: 15px;"}
 
 I teach a range of courses,
-mostly proof-based (or "pure math") courses for undergraduate and graduate math majors.
-I also frequently teach multivariable calculus and introduction to proofs,
-and occasionally other classes: differential equations, linear algebra, and so on.
+mostly upper-level proof-based (or "pure math") courses for undergraduate and graduate math majors.
+I also frequently teach introduction to proofs, multivariable calculus, differential equations,
+and occasionally other classes such as linear algebra.
 
-### Student times
-
-I am here to support your learning.
-I encourage you to meet with me when you feel that you need support or assistance.
-
-In Fall 2021 I will be available:
-
-**Student drop-in hours:**
-: Thursdays 10:30am-12:30pm
-
-**Student appointment hour:**
-: Thursdays 12:30pm-1:30pm (email me to set up an appointment within this hour in 15-minute segments)
-
-**Additional appointments:**
-: Email me to set up an appointment on other days or times
-
-Student times will be remote via Zoom
-using my **office zoom link** (listed in Canvas, or email me for the link).
 
 
 {% assign currentyear = "now" | date:"%Y" %}
@@ -72,7 +55,7 @@ using my **office zoom link** (listed in Canvas, or email me for the link).
 
 {% if currentcourses.size > 0 %}
 
-### {{ currentsemester }} {{ currentyear }}, current courses
+### {{ currentsemester }} {{ currentyear }}:
   
   {% for course in currentcourses %}
   [{{ course.title }}]({% if course.siteurl %}{{ course.siteurl }}{% else %}{{ course.url }}{% endif %})
@@ -107,14 +90,15 @@ using my **office zoom link** (listed in Canvas, or email me for the link).
 {% comment %}
 I wonder if I can add upcoming courses here?
 Or would that be too much info? They are listed on the Teaching page, maybe that's enough.
-{% endcomment %}
 
 ### [Previous and upcoming courses](/teaching)
+{% endcomment %}
 
 
 
 
 ## [Research](/research)
+{:style="color: #ffffff; background-color: #fccab6; font-size: 36pt; padding: 15px;"}
 
 My area of research is
 [commutative algebra](https://en.wikipedia.org/wiki/Commutative_algebra)
@@ -153,21 +137,24 @@ and computer experimentation in mathematics.
 
 
 ## [Advising](/advising)
+{:style="color: #ffffff; background-color: #fccab6; font-size: 36pt; padding: 15px;"}
 
 Graduate and undergraduate students I have advised.
 
 
 ## [TATERS](https://sites.google.com/boisestate.edu/taters/)
+{:style="color: #ffffff; background-color: #fccab6; font-size: 36pt; padding: 15px;"}
 
 I am a co-organizer of the [Topics in Algebra, Topology, Etc., Research Seminar: TATERS](https://sites.google.com/boisestate.edu/taters/).  
 See also the [Set Theory Seminar](https://www.boisestate.edu/math/research/seminars/settheory/),
 the [Mathematics Department Colloquium](https://www.boisestate.edu/math/research/colloquium/),
 and the [Computing Colloquium](https://www.boisestate.edu/computing/colloquium/).
 
+---
 
 ## [Boise Math Circles](https://www.boisestate.edu/math/circles/)
 
-A math community for teachers and for secondary students
+A math community for teachers and for secondary students.
 
 
 ## [Events](/events)
