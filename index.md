@@ -25,142 +25,46 @@ Pronouns: he/him/his
 
 
 
-## [Teaching](/teaching)
-{:style="color: #ffffff; background-color: #fccab6; font-size: 36pt; padding: 15px;"}
+**Teaching**
+: I teach a range of courses,
+  mostly upper-level proof-based (or "pure math") courses for undergraduate and graduate math majors.
+  I also frequently teach introduction to proofs, multivariable calculus, differential equations,
+  and occasionally other classes such as linear algebra.  
+  #### Spring 2022:  
+  [Differential Equations with Matrix Theory](/courses/2022A-333) Math 333  
+  [Advanced Algebra](/courses/2022A-506) Math 506  
+  #### [Previous and upcoming courses](/teaching)
 
-I teach a range of courses,
-mostly upper-level proof-based (or "pure math") courses for undergraduate and graduate math majors.
-I also frequently teach introduction to proofs, multivariable calculus, differential equations,
-and occasionally other classes such as linear algebra.
+**Research**
+: [Publications](/research)  
 
-
-
-{% assign currentyear = "now" | date:"%Y" %}
-{% assign last_day_of_spring = currentyear | append:"-05-15" | date:"%s" %}
-{% assign last_day_of_summer = currentyear | append:"-08-15" | date:"%s" %}
-{% assign currentdate = "now" | date:"%s" %}
-{% if currentdate < last_day_of_spring %}
-  {% assign currentsemester = "Spring" %}
-  {% assign currentshortsemester = currentyear | append:"A" %}
-{% elsif currentdate < last_day_of_summer %}
-  {% assign currentsemester = "Summer" %}
-  {% assign currentshortsemester = currentyear | append:"B" %}
-  {% assign nextshortsemester = currentyear | append:"C" %}
-{% else %}
-  {% assign currentsemester = "Fall" %}
-  {% assign currentshortsemester = currentyear | append:"C" %}
-{% endif %}
-
-{% assign currentcourses = site.courses | where:"shortsemester", currentshortsemester | sort:"coursenumber" %}
-
-{% if currentcourses.size > 0 %}
-
-### {{ currentsemester }} {{ currentyear }}:
-  
-  {% for course in currentcourses %}
-  [{{ course.title }}]({% if course.siteurl %}{{ course.siteurl }}{% else %}{{ course.url }}{% endif %})
-  {% if course.courseprefix %}{{ course.courseprefix }} {% else %} Math {% endif %} {{ course.coursenumber }}
-  {% endfor %}
-  
-{% else %}
-  
-### {{currentsemester }} {{ currentyear }}, no courses
-  
-{% endif %}
-
-{% if currentsemester == "Summer" %}
-
-  {% assign nextcourses = site.courses | where:"shortsemester", nextshortsemester | sort:"coursenumber" %}
-  
-  {% if nextcourses.size > 0 %}
-  
-### Fall {{ currentyear }}, upcoming courses
-  
-  {% for course in nextcourses %}
-  [{{ course.title }}]({% if course.siteurl %}{{ course.siteurl }}{% else %}{{ course.url }}{% endif %})
-  {% if course.courseprefix %}{{ course.courseprefix }} {% else %} Math {% endif %} {{ course.coursenumber }}
-  {% endfor %}
-  
-  {% endif %}
-
-{% endif %}
+: My area of research is
+  [commutative algebra](https://en.wikipedia.org/wiki/Commutative_algebra)
+  and [algebraic geometry](https://en.wikipedia.org/wiki/Algebraic_geometry)
+  ([MSC](https://mathscinet.ams.org/mathscinet/msc/msc2020.html) 13 and 14).  
+  I study algebraic geometry with actual polynomials,
+  especially **Waring rank**.
 
 
-
-{% comment %}
-I wonder if I can add upcoming courses here?
-Or would that be too much info? They are listed on the Teaching page, maybe that's enough.
-
-### [Previous and upcoming courses](/teaching)
-{% endcomment %}
+**Advising**
+: [Graduate and undergraduate students I have advised](/advising).
 
 
+**TATERS**
+: I am a co-organizer of the [Topics in Algebra, Topology, Etc., Research Seminar: TATERS](https://sites.google.com/boisestate.edu/taters/).  
+  See also the [Set Theory Seminar](https://www.boisestate.edu/math/research/seminars/settheory/),
+  the [Mathematics Department Colloquium](https://www.boisestate.edu/math/research/colloquium/),
+  and the [Computing Colloquium](https://www.boisestate.edu/computing/colloquium/).
 
+**BMTC**
+: I am a co-organizer of the Boise Math Teachers' Circle,
+  part of the [Boise Math Circles](https://www.boisestate.edu/math/circles/),
+  a math community for teachers and for secondary students.  
+  (Paused due to the pandemic.)
 
-## [Research](/research)
-{:style="color: #ffffff; background-color: #fccab6; font-size: 36pt; padding: 15px;"}
-
-My area of research is
-[commutative algebra](https://en.wikipedia.org/wiki/Commutative_algebra)
-and [algebraic geometry](https://en.wikipedia.org/wiki/Algebraic_geometry)
-([MSC](https://mathscinet.ams.org/mathscinet/msc/msc2020.html) 13 and 14).
-
-I study algebraic geometry with actual polynomials,
-especially **Waring rank**.
-{% comment %}
-I am interested in a range of problems involving commutative algebra and
-algebraic geometry, usually with a combinatorial or computational flavor,
-such as:
-computing rank (especially **Waring rank**), [**secant varieties**](https://en.wikipedia.org/wiki/Secant_variety),
-and [Hilbert functions](https://en.wikipedia.org/wiki/Hilbert_series_and_Hilbert_polynomial);
-arrangements (of [hyperplanes](https://en.wikipedia.org/wiki/Arrangement_of_hyperplanes),
-[lines](https://en.wikipedia.org/wiki/Arrangement_of_lines), points, etc);
-[**multiplier ideals**](https://en.wikipedia.org/wiki/Multiplier_ideal) (computation, applications to commutative algebra);
-and computer experimentation in mathematics.
-{% endcomment %}
-
-### Recent publications
-
-{% assign pubs_sorted = site.publications | sort:"pubdate" | reverse %}
-{% for pub in pubs_sorted limit: 6 %}
-
-[{{ pub.title }}]({% if pub.siteurl %}{{ pub.siteurl }}{% else %}{{ pub.url }}{% endif -%})
-{%- if pub.journal %}, {{ pub.journal }}{% endif %}, {{ pub.pubdate | floor }}
-{{ pub.excerpt | remove: '<p>' | remove: '</p>' | strip }}
-{% comment %}
-<span class="post-meta"><span class="category_name">{{ pub.categories }}</span> posted on {{ pub.date | date: "%b %-d, %Y" }}</span>
-{% endcomment %}
-
-{% endfor %}
-
-
-
-
-## [Advising](/advising)
-{:style="color: #ffffff; background-color: #fccab6; font-size: 36pt; padding: 15px;"}
-
-Graduate and undergraduate students I have advised.
-
-
-## [TATERS](https://sites.google.com/boisestate.edu/taters/)
-{:style="color: #ffffff; background-color: #fccab6; font-size: 36pt; padding: 15px;"}
-
-I am a co-organizer of the [Topics in Algebra, Topology, Etc., Research Seminar: TATERS](https://sites.google.com/boisestate.edu/taters/).  
-See also the [Set Theory Seminar](https://www.boisestate.edu/math/research/seminars/settheory/),
-the [Mathematics Department Colloquium](https://www.boisestate.edu/math/research/colloquium/),
-and the [Computing Colloquium](https://www.boisestate.edu/computing/colloquium/).
-
----
-
-## [Boise Math Circles](https://www.boisestate.edu/math/circles/)
-
-A math community for teachers and for secondary students.
-
-
-## [Events](/events)
-
-Research workshops and conference special sessions that I have organized, co-organized,
-or been involved in.
+**Events**
+: [Research workshops and conference special sessions](/events) that I have organized,
+  co-organized, or been involved in.
 
 
 <br style="margin-bottom:1ex" />
