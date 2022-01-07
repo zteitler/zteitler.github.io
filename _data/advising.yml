@@ -50,7 +50,8 @@
     - name: "Miranda Schaeffer"
       degree: "B.S. Applied Mathematics, Boise State University"
       year: 2021.3
-      expected: true
+      thesistitle: "Partially Ordered Sets"
+      thesisurl: https://drive.google.com/file/d/1q6ToaTdQRcvd8p-NnamJvNsZAwZL8YEA/view?usp=sharing
       postdegree: "Premera Blue Cross"
       
     - name: "Sarah Hall"
