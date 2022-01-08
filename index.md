@@ -70,7 +70,7 @@ Pronouns: he/him/his
 <br style="margin-bottom:1ex" />
 
 
-Weekly schedules. Current: [Spring 2022](/weekly-2022A) | [Travel](/travel)
+Weekly schedule: [Spring 2022](/weekly-2022A) | [Travel](/travel)
 
 
 
