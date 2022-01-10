@@ -22,7 +22,9 @@ layout: post
       <td rowspan="2" style="border-color:black;background-color:Orange">
         PBC
       </td>
-      <td rowspan="1" style="border:none"> </td>
+      <td rowspan="2" style="border-color:black;background-color:LightSeaGreen">
+        Thesis (MS)
+      </td>
       <td rowspan="1" style="border:none"> </td>
       <td rowspan="2" style="border-color:black;background-color:LightSeaGreen">
         Thesis (MS)
@@ -34,7 +36,6 @@ layout: post
       <td rowspan="1" style="border-color:black;background-color:Orange">
         Chairs meeting
       </td>
-      <td rowspan="1" style="border:none"> </td>
       <td rowspan="1" style="border:none"> </td>
       <td style="border-color:black">9:30</td>
     </tr>
