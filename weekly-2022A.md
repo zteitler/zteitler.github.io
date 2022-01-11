@@ -23,7 +23,7 @@ layout: post
         PBC
       </td>
       <td rowspan="2" style="border-color:black;background-color:LightSeaGreen">
-        Thesis (MS)
+        Thesis (AL)
       </td>
       <td rowspan="1" style="border:none"> </td>
       <td rowspan="2" style="border-color:black;background-color:LightSeaGreen">
