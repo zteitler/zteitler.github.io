@@ -114,12 +114,13 @@ layout: post
         Math 506
       </td>
       <td rowspan="1" style="border:none"> </td>
-      <td rowspan="1" style="border:none"> </td>
+      <td rowspan="2" style="border-color:black;background-color:LightSeaGreen">
+        Thesis (AD)
+      </td>
       <td style="border-color:black">1:30</td>
     </tr>
     <tr>
       <td style="border-color:black">2:00</td>
-      <td rowspan="1" style="border:none"> </td>
       <td rowspan="1" style="border:none"> </td>
       <td style="border-color:black">2:00</td>
     </tr>
