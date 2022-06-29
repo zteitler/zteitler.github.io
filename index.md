@@ -30,9 +30,9 @@ Pronouns: he/him/his
   mostly upper-level proof-based (or "pure math") courses for undergraduate and graduate math majors.
   I also frequently teach introduction to proofs, multivariable calculus, differential equations,
   and occasionally other classes such as linear algebra.  
-  #### Spring 2022:  
-  [Differential Equations with Matrix Theory](/courses/2022A-333) Math 333  
-  [Advanced Algebra](/courses/2022A-506) Math 506  
+  #### Fall 2022:  
+  Discrete Mathematics (Math 189)  
+  Foundations of Analysis (Math 314)  
   #### [Previous and upcoming courses](/teaching)
 
 **Research**
