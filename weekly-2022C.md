@@ -153,7 +153,6 @@ layout: post
     </tr>
     <tr>
       <td style="border-color:black">4:30</td>
-      <td rowspan="2" style="border-color:black;background-color:Gray"> </td>
       <td style="border-color:black">4:30</td>
     </tr>
     <tr>
