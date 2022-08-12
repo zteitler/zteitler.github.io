@@ -107,12 +107,13 @@ layout: post
       <td rowspan="3" style="border-color:black;background-color:LightGreen">
         Math 314
       </td>
-      <td rowspan="1" style="border:none"> </td>
+      <td rowspan="2" style="border-color:black;background-color:LightGreen">
+        Math 598
+      </td>
       <td style="border-color:black">1:30</td>
     </tr>
     <tr>
       <td style="border-color:black">2:00</td>
-      <td rowspan="1" style="border:none"> </td>
       <td rowspan="1" style="border:none"> </td>
       <td rowspan="1" style="border:none"> </td>
       <td style="border-color:black">2:00</td>
