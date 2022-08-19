@@ -29,20 +29,19 @@ title: Teaching
 I am here to support your learning.
 I encourage you to meet with me when you feel that you need support or assistance.
 
-In Spring 2022 I will be available:
+In Fall 2022 I will be available:
 
 **Student drop-in time:**
-: Tuesdays 10:30am-11:45am
+: Tuesdays 9:30am-11:25am
 
 **Student appointment time:**
-: Tuesdays 1:30pm-2:45pm
+: Tuesdays 11:30am-12:25pm
 : Make an appointment by emailing me or using appointment link within Canvas
 
 **Additional appointments:**
 : Email me to set up an appointment on other days or times
 
-Student times will be remote via Zoom
-using my **office zoom link** (listed in Canvas, or email me for the link).
+Student times will be in-person in my office, or by Zoom if students request.
 
 ---
 
