@@ -33,6 +33,7 @@ Pronouns: he/him/his
   #### Fall 2022:  
   Discrete Mathematics (Math 189)  
   Foundations of Analysis (Math 314)  
+  Graduate Seminar I: Introduction and Research (Math 598)  
   #### [Previous and upcoming courses](/teaching)
 
 **Research**
@@ -70,7 +71,7 @@ Pronouns: he/him/his
 <br style="margin-bottom:1ex" />
 
 
-Weekly schedule: [Spring 2022](/weekly-2022A) | [Travel](/travel)
+Weekly schedule: [Fall 2022](/weekly-2022C) | [Travel](/travel)
 
 
 
