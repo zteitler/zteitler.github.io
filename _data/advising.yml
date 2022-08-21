@@ -10,8 +10,7 @@
     - name: "Max Sullivan"
       degree: "M.S. Mathematics, Boise State University"
       year: 2022
-      expected: true
-      thesistitle:
+      thesistitle: "Waring Rank and Apolarity of Some Symmetric Polynomials"
       thesisurl:
       postdegree:
       
@@ -47,6 +46,11 @@
     [what you can expect if we work together and what project ideas we can work on together](senior_thesis).
   
   students:
+    - name: "Amanda Lopez"
+      degree: "B.S. Mathematics, Boise State University"
+      year: 2022.1
+      thesistitle: "Significant Cryptological Events Through WWII"
+      
     - name: "Miranda Schaeffer"
       degree: "B.S. Applied Mathematics, Boise State University"
       year: 2021.3
