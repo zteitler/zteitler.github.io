@@ -81,8 +81,9 @@ layout: post
     </tr>
     <tr>
       <td style="border-color:black">12:30</td>
-      <td rowspan="1" style="border:none"> </td>
-      <td rowspan="1" style="border:none"> </td>
+      <td rowspan="2" style="border-color:black;background-color:LightGreen">
+        Math 401 (MD)
+      </td>
       <td rowspan="1" style="border:none"> </td>
       <td rowspan="2" style="border-color:black;background-color:LightGreen">
         Math 401 (CE)
@@ -93,7 +94,6 @@ layout: post
     </tr>
     <tr>
       <td style="border-color:black">1:00</td>
-      <td rowspan="1" style="border:none"> </td>
       <td rowspan="1" style="border:none"> </td>
       <td rowspan="1" style="border:none"> </td>
       <td rowspan="1" style="border:none"> </td>
