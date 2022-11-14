@@ -118,5 +118,9 @@ Here are some project ideas that I can suggest:
 
 2.  Billiard trajectories
 
+3.  Percolation on unusual tilings
+
+4.  Algebraic properties of graphs
+
 (more to come)
 

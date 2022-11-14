@@ -46,6 +46,16 @@
     [what you can expect if we work together and what project ideas we can work on together](senior_thesis).
   
   students:
+    - name: "Camryn Edens"
+      degree: "B.S. Applied Mathematics, Boise State University"
+      year: 2022.3
+      thesistitle: "Statistical Analysis of Homefield Advantage in Boise State Football"
+      
+    - name: "Mariah Davis"
+      degree: "B.S. Applied Mathematics, Boise State University"
+      year: 2022.2
+      thesistitle: "Statistical Analysis of Seasonal and Secular Trends in Readership of Different Genres of Literature"
+    
     - name: "Amanda Lopez"
       degree: "B.S. Mathematics, Boise State University"
       year: 2022.1
