@@ -1,7 +1,7 @@
 ---
 title: "Weekly schedule"
 layout: post
-current: "2022C"
+current: "2023A"
 ---
 
 <meta http-equiv="refresh" content="0; URL=/weekly-{{ page.current }}/" />
