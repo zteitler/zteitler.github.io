@@ -4,11 +4,11 @@ layout: mypub
 selected: true
 pubdate: 2020.3
 arxiv: "2004.06158"
-doi: 
+doi: 10.1216/jca.2022.14.415
 authors: Garritt Johns and Zach Teitler
-journal: J. Comm. Alg.
-volume: 
-issue:
-pagenos:
+journal: J. Commut. Algebra
+volume: 14
+issue: 3
+pagenos: 415-425
 abstract:
 ---
