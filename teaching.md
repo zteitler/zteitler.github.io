@@ -24,24 +24,20 @@ title: Teaching
 {% capture newLine %}
 {% endcapture %}
 
-### Student times
+### Office hours
 
 I am here to support your learning.
 I encourage you to meet with me when you feel that you need support or assistance.
 
-In Spring 2023 I will be available:
+In Fall 2023 I will be available:
 
-**Student drop-in time:**
-: Mondays 11:00am-12:50pm
-
-**Student appointment time:**
-: Mondays 1:00pm-1:50pm
-: Make an appointment by emailing me
+**Office hours:**
+: Mondays 11:00am-1:50pm
 
 **Additional appointments:**
 : Email me to set up an appointment on other days or times
 
-Student times will be in-person in my office, or by Zoom if students request.
+Office hours will be in-person in my office, or on Zoom if requested.
 
 ---
 

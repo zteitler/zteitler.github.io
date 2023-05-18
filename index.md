@@ -30,10 +30,11 @@ Pronouns: he/him/his
   mostly upper-level proof-based (or "pure math") courses for undergraduate and graduate math majors.
   I also frequently teach introduction to proofs, multivariable calculus, differential equations,
   and occasionally other classes such as linear algebra.  
-  #### Spring 2023:  
-  Introduction to Linear Algebra (Math 301)  
-  Introduction to Combinatorics (Math 387)  
-  Graduate Seminar II: Professional Preparation (Math 599)  
+  
+  #### Fall 2023:  
+  Introduction to Abstract Algebra and Number Theory (Math 305)  
+  Number Theory (Math 404/504)  
+  
   #### [Previous and upcoming courses](/teaching)
 
 **Research**
@@ -71,7 +72,7 @@ Pronouns: he/him/his
 <br style="margin-bottom:1ex" />
 
 
-Weekly schedule: [Spring 2023](/weekly-2023A) | [Travel](/travel)
+Weekly schedule: [Fall 2023](/weekly-2023C) | [Travel](/travel)
 
 
 
