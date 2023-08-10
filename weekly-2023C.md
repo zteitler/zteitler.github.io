@@ -46,7 +46,9 @@ layout: post
     <tr>
       <td style="border-color:black">10:30</td>
       <td rowspan="1" style="border:none"> </td>
-      <td rowspan="1" style="border:none"> </td>
+      <td rowspan="2" style="border-color:black;background-color:LightGreen">
+        Math 596 (JM)
+      </td>
       <td rowspan="3" style="border-color:black;background-color:LightGreen">
         Math 404/504
       </td>
