@@ -75,14 +75,15 @@ layout: post
     <tr>
       <td style="border-color:black">12:00</td>
       <td rowspan="1" style="border:none"> </td>
-      <td rowspan="1" style="border:none"> </td>
+      <td rowspan="2" style="border-color:black;background-color:LightGreen">
+        Math 401 (SD)
+      </td>
       <td rowspan="1" style="border:none"> </td>
       <td rowspan="1" style="border:none"> </td>
       <td style="border-color:black">12:00</td>
     </tr>
     <tr>
       <td style="border-color:black">12:30</td>
-      <td rowspan="1" style="border:none"> </td>
       <td rowspan="1" style="border:none"> </td>
       <td rowspan="1" style="border:none"> </td>
       <td rowspan="1" style="border:none"> </td>
