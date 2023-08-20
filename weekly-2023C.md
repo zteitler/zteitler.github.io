@@ -38,14 +38,15 @@ layout: post
     </tr>
     <tr>
       <td style="border-color:black">10:00</td>
-      <td rowspan="1" style="border:none"> </td>
+      <td rowspan="2" style="border-color:black;background-color:LightGreen">
+        Math 401 (ZC)
+      </td>
       <td rowspan="1" style="border:none"> </td>
       <td rowspan="1" style="border:none"> </td>
       <td style="border-color:black">10:00</td>
     </tr>
     <tr>
       <td style="border-color:black">10:30</td>
-      <td rowspan="1" style="border:none"> </td>
       <td rowspan="2" style="border-color:black;background-color:LightGreen">
         Math 596 (JM)
       </td>
