@@ -100,7 +100,9 @@ layout: post
     </tr>
     <tr>
       <td style="border-color:black">1:30</td>
-      <td rowspan="1" style="border:none"> </td>
+      <td rowspan="3" style="border-color:black;background-color:aqua">
+        SPUDS
+      </td>
       <td rowspan="1" style="border:none"> </td>
       <td rowspan="1" style="border:none"> </td>
       <td rowspan="1" style="border:none"> </td>
@@ -112,12 +114,10 @@ layout: post
       <td rowspan="1" style="border:none"> </td>
       <td rowspan="1" style="border:none"> </td>
       <td rowspan="1" style="border:none"> </td>
-      <td rowspan="1" style="border:none"> </td>
       <td style="border-color:black">2:00</td>
     </tr>
     <tr>
       <td style="border-color:black">2:30</td>
-      <td rowspan="1" style="border:none"> </td>
       <td rowspan="1" style="border:none"> </td>
       <td rowspan="1" style="border:none"> </td>
       <td rowspan="1" style="border:none"> </td>
