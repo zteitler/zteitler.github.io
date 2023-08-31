@@ -16,7 +16,6 @@ Boise, ID 83725-1555, USA
 <zteitler@boisestate.edu>  
 Office: [MB 233A](https://maps.boisestate.edu/?id=715#!m/89068)  
 Phone: +1-208-426-1086  
-Fax: +1-208-426-1356  
 
 Pronouns: he/him/his  
 
@@ -80,11 +79,11 @@ Weekly schedule: [Fall 2023](/weekly-2023C) | [Travel](/travel)
 
 [BSU Academic Calendars](https://www.boisestate.edu/registrar/boise-state-academic-calendars/)
 
-[BSU Math Master's Theses](https://scholarworks.boisestate.edu/math_gradproj/) |
+[BSU Math Master's Theses](https://scholarworks.boisestate.edu/math_gradproj/)  
 BSU Math Undergraduate Senior Theses: 
 [2014-2019](https://scholarworks.boisestate.edu/math_undergraduate_theses/),
 [2020](https://scholarworks.boisestate.edu/math_senior_showcase/),
-[2019-2022](https://drive.google.com/drive/folders/1u0z4HSP70SFZ8CA6vtIOkGvW7hDi6NxW)
+[2019-2022](https://drive.google.com/drive/folders/1u0z4HSP70SFZ8CA6vtIOkGvW7hDi6NxW)  
 
 [About me](/about)
 
