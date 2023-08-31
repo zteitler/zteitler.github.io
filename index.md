@@ -81,8 +81,10 @@ Weekly schedule: [Fall 2023](/weekly-2023C) | [Travel](/travel)
 [BSU Academic Calendars](https://www.boisestate.edu/registrar/boise-state-academic-calendars/)
 
 [BSU Math Master's Theses](https://scholarworks.boisestate.edu/math_gradproj/) |
-[BSU Math Senior Theses](https://scholarworks.boisestate.edu/math_undergraduate_theses/) |
-[BSU Math Senior Showcase](https://scholarworks.boisestate.edu/math_senior_showcase/)
+BSU Math Undergraduate Senior Theses: 
+[2014-2019](https://scholarworks.boisestate.edu/math_undergraduate_theses/),
+[2020](https://scholarworks.boisestate.edu/math_senior_showcase/),
+[2019-2022](https://drive.google.com/drive/folders/1u0z4HSP70SFZ8CA6vtIOkGvW7hDi6NxW)
 
 [About me](/about)
 
