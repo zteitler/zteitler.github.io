@@ -1,6 +1,7 @@
 ---
 title: "Undergraduate Senior Thesis Advising: Expectations and Projects"
 layout: page
+mathjax: true
 ---
 
 # Working together on a senior thesis
@@ -112,15 +113,135 @@ e.g., [Chalkdust Magazine](https://chalkdustmagazine.com) which is written by st
 or other sources that I can suggest.
 If you see anything there that interests you, it could be a starting point for a senior thesis.
 
-Here are some project ideas that I can suggest:
+Here are some topics and project ideas that I can suggest:
 
-1.  Möbius functions
+1.  **Partially ordered sets (posets)**
+	
+	The _height_ of a poset is the maximum length of a chain, a subset $x_1 < x_2 < \dotsb < x_n$;
+	the height of an element is the maximum length of a chain ending at that element.
+	The _width_ of a poset is the maximum size of an antichain, a subset in which no two elements are comparable.
+	A poset has the _Sperner property_ if the largest size antichain is given by the set
+	of elements at some fixed height.
+	What posets have the Sperner property?
+	
+	Some of my favorite posets are given by sets of monomials like $\{1,x,y,x^2,xy,y^2,x^3,x^2y,y^3\}$,
+	ordered by divisibility.
+	I would like to learn more about Sperner property, and other properties, of algebraic posets like these.
+	
+	Other interesting posets are given by sets of integers such as $\{1,2,3,\dotsc,12\}$,
+	again ordered by divisibility.
+	What happens if we take $k$ consecutive integers starting from $n$,
+	and then take a sort of limit as $n$ goes to infinity?
+	
+	One very interesting thing that I would like to learn more about posets
+	is Möbius functions. Perhaps you might have learned about the Möbius function
+	in a number theory class. There is a nice generalization to posets.
+	Say $\mu_{k,n}$ is the Möbius function for $k$ consecutive integers starting at $n$.
+	Can we find the limit of $\mu_{k,n}(n+j)$ as $n$ goes to infinity?
+	
+	Projects on these topics will include some reading and learning about combinatorics and posets
+	(and maybe number theory); some exploration of working out different examples,
+	which might be a combination of both working out some examples by pencil and paper,
+	and also computing examples on a computer; looking for patterns, and maybe even
+	coming up with a conjecture. And maybe even proving it!
 
-2.  Billiard trajectories
+2.  **Billiard trajectories**
+	
+	Imagine a ball rolling around inside a polygon and bouncing off the sides.
+	What kinds of trajectories are possible?
+	Can we set up a polygon to make the trajectory be a perfect five-pointed star?
+	How about a capital letter L?
+	How about a capital letter K or X, or if we can't exactly get those, then how close can we get?
+	
+	Taking it a step further, what if the billiard ball is flying around in three dimensions,
+	inside a 3-D polyhedron?
+	Can we make the path be a trefoil knot? Can we set it up so that two billiard balls
+	will bounce around along linked loops (a Hopf link)?
+	
+	There are some papers about these problems (actually, there are a _lot_ of papers
+	about the 2-D version) so this project will involve picking one or two papers to read
+	and try to explain; and if possible, setting up some computer models and producing some
+	animations.
 
-3.  Percolation on unusual tilings
+3.  **Percolation on unusual tilings**
+	
+	Imagine pouring syrup on a waffle. When each little waffle square gets filled,
+	the syrup pours out into the neighboring squares; after a while they fill up too,
+	and the syrup spreads further.
+	The "limit" of the syrup shape is roughly a circle.
+	
+	Now what if the waffle squares get replaced with a different shape,
+	such as the [Penrose tiling](https://en.wikipedia.org/wiki/Penrose_tiling)
+	or the brand new discovery of the [hat tile](https://en.wikipedia.org/wiki/Einstein_problem),
+	or [pentagonal tilings](https://en.wikipedia.org/wiki/Pentagonal_tiling),
+	or lots of other interesting things?
+	
+	Besides syrup, this topic ties in with how fluids, contaminants, or other things
+	percolate through a porous medium such as soil.
+	Or, it could be energy spreading out from a point.
+	Mathematically, this topic usually falls under labels like abelian sandpile model
+	or chip firing.
+	
+	This project would mostly involve setting up a computer model to run examples.
+	It should produce some really neat images and animations!
+	This is a topic where I don't really know what to expect mathematically:
+	what will be the "limit" shape? Will we discover any interesting patterns or trends?
+	Well, I don't know what they will be, but I'm sure that lots of interesting things
+	will pop out.
 
-4.  Algebraic properties of graphs
+4.  **Algebraic properties of graphs**
+	
+	I would like to learn more about algebraic properties of graphs such as the
+	eigenvalues of the graph's adjacency matrix and the graph Laplacian
+	(basically the adjacency matrix, with the vertex degrees along the diagonal).
+	This combines graph theory, combinatorics, and linear algebra.
+	It can be approached both theoretically (reading, pencil and paper, proofs)
+	as well as computationally (computing examples).
+	
+	It would be interesting to learn about applications of graph eigenvalues,
+	as well as to work out examples for various types of graphs.
+	
+	Because the Laplacian shows up in the heat equation and in the wave equation,
+	eigenvalues of the graph Laplacian are related to flow and vibrations along the graph.
+	(Among other things, this relates to the abelian sandpile model and chip firing.)
+	I don't know a lot about this but I would love to learn more.
+	
+	It's also related to Markov chain models on the graph. So, this topic could be taken
+	in a statistics/probability direction.
 
-(more to come)
+5. **Topology and number theory**
+	
+	Let $X$ be the $k$ consecutive integers starting from $n$.
+	Take the collection of subsets of $X$ that have a common divisor bigger than $1$.
+	This is a simplicial complex.
+	What is its homology? How does the homology change as $k$ and $n$ change?
+	Is there a "limit" as $k$ or $n$ goes to infinity?
+	
+	To work on this you would need to know some topology.
+	A computer could be used to try examples.
+	If it's even possible to make a conjecture,
+	then trying to answer it would involve number theory.
+
+
+6. **Poset of nonvanishing minors of a matrix**
+	
+	If you can answer [this question on MathOverflow](https://mathoverflow.net/q/288872/88133)
+	or even come up with a single good idea, it will almost certainly be a publishable research paper,
+	not to mention a guaranteed accepted answer on MathOverflow (karma points!).
+	
+	Let $M$ be a matrix. A minor of $M$ is a square submatrix, e.g., the $2 \times 2$
+	submatrix given by rows $1$ and $3$, columns $5$ and $8$ --- the rows and columns don't
+	have to be consecutive.
+	Let $P$ be the set of minors of $M$ with nonzero determinant.
+	This gives a poset (partially ordered set).
+	What are the properties of this poset?
+	For example, can the width of the poset be related to any linear algebraic property of $M$?
+
+
+
+
+
+
+
+
 

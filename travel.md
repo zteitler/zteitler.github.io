@@ -3,6 +3,13 @@ title: "Travel"
 layout: post
 ---
 
+**Fall 2023**
+: *October 3-5*
+	: AMS Central Sectional in Omaha
+	
+	*November 12-14*
+	: NMSU Algebra Seminar
+
 **Spring 2021**
 : *May 1-2*
     : AMS Western Sectional in San Francisco (virtual)
