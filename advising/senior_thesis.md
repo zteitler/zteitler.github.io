@@ -237,6 +237,35 @@ Here are some topics and project ideas that I can suggest:
 	What are the properties of this poset?
 	For example, can the width of the poset be related to any linear algebraic property of $M$?
 
+7. **Explorations in Number Theory**
+  
+  There are many theorems in number theory that would be interesting to explore.
+  For example, building from Lagrange's theorem that every positive integer can be written
+  as a sum of four or fewer squares, we could investigate: how many triangular
+  numbers does it take to write every positive integer?
+  How about pentagonal numbers?
+  
+  There's a theorem by Euler relating pentagonal numbers, partitions,
+  and generating functions. I would like to learn more about this.
+  
+  We could study statistical properties: for example, what's the average
+  number of triangular numbers needed to write a positive integer;
+  what's the average number of ways to write a positive integer as a
+  sum of triangular numbers?
+  
+  The normal definition of squares  can be changed. Normally we go from
+  one square number to the next one by increasing both of the factors
+  that get multiplied, going from $xx$ to $(x+1)(x+1)$. We can randomize
+  this: when our current number is $xy$, we can pick the next number
+  randomly as $(x+2)y$ or $(x+1)(y+1)$ or $x(y+2)$.
+  How would Lagrange's four-squares theorem work for one of these
+  "pseudo-square" sequences?
+  This project would give opportunities for computational exploration,
+  by simulating a lot of different random samples.
+  
+  There's a famous result that the infinite sum of the $1/n^2$ gives
+  $\pi^2/6$.
+  What if we did this with a "pseudo-square" sequence?
 
 
 

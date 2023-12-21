@@ -30,9 +30,9 @@ Pronouns: he/him/his
   I also frequently teach introduction to proofs, multivariable calculus, differential equations,
   and occasionally other classes such as linear algebra.  
   
-  #### Fall 2023:  
-  Introduction to Abstract Algebra and Number Theory (Math 305)  
-  Number Theory (Math 404/504)  
+  #### Spring 2024:  
+  Discrete Mathematics (Math 189)  
+  Advanced Number Theory (Math 507)  
   
   #### [Previous and upcoming courses](/teaching)
 
@@ -71,7 +71,7 @@ Pronouns: he/him/his
 <br style="margin-bottom:1ex" />
 
 
-Weekly schedule: [Fall 2023](/weekly-2023C) | [Travel](/travel)
+Weekly schedule: [Spring 2024](/weekly-2024A) | [Travel](/travel)
 
 
 
@@ -83,7 +83,8 @@ Weekly schedule: [Fall 2023](/weekly-2023C) | [Travel](/travel)
 BSU Math Undergraduate Senior Theses: 
 [2014-2019](https://scholarworks.boisestate.edu/math_undergraduate_theses/),
 [2020](https://scholarworks.boisestate.edu/math_senior_showcase/),
-[2019-2022](https://drive.google.com/drive/folders/1u0z4HSP70SFZ8CA6vtIOkGvW7hDi6NxW)  
+[2019-2022](https://drive.google.com/drive/folders/1u0z4HSP70SFZ8CA6vtIOkGvW7hDi6NxW),
+[2022-2023](https://drive.google.com/drive/folders/1X0mSmkYW6FrE5VWHYTUPSJDAM38WYFB6)  
 
 [About me](/about)
 

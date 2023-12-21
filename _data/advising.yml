@@ -46,15 +46,27 @@
     [what you can expect if we work together and what project ideas we can work on together](senior_thesis).
   
   students:
+    - name: "Zachary Camargo"
+      degree: "B.S. Chemistry and B.S. Mathematics, Boise State University"
+      year: 2024.1
+      thesistitle: "Using Generating Functions to Prove an Identity of Partitions"
+    
+    - name: "Sam Deters"
+      degree: "B.S. Mathematics, Boise State University"
+      year: 2023.1
+      thesistitle: "The Mathematical Foundations of Molecular Symmetry"
+    
     - name: "Camryn Edens"
       degree: "B.S. Applied Mathematics, Boise State University"
       year: 2022.3
       thesistitle: "Home Field Advantage, Myth or Fact?"
+      thesisurl: https://drive.google.com/file/d/1hW4eTtozSaUEKPvvB3I6Pkq9HpnMuH3h/view?usp=sharing
       
     - name: "Mariah Davis"
       degree: "B.S. Applied Mathematics, Boise State University"
       year: 2022.2
       thesistitle: "Reading Trends of Seattle Residents"
+      thesisurl: https://drive.google.com/file/d/1zLzlmKkHBtrUqux00JEEZ4_9wiqTIzrk/view?usp=sharing
     
     - name: "Amanda Lopez"
       degree: "B.S. Mathematics, Boise State University"
