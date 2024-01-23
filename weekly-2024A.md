@@ -47,7 +47,9 @@ layout: post
     </tr>
     <tr>
       <td style="border-color:black">10:30</td>
-      <td rowspan="1" style="border:none"> </td>
+      <td rowspan="2" style="border-color:black;background-color:LightGreen">
+      	Math 593 (JP)
+      </td>
       <td rowspan="3" style="border-color:black;background-color:LightGreen">
         Math 507
       </td>
@@ -59,7 +61,6 @@ layout: post
     </tr>
     <tr>
       <td style="border-color:black">11:00</td>
-      <td rowspan="1" style="border:none"> </td>
       <td rowspan="1" style="border:none"> </td>
       <td style="border-color:black">11:00</td>
     </tr>
