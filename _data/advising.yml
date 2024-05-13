@@ -7,6 +7,12 @@
     Please email me if you're looking for a master's thesis advisor.
   
   students:
+    - name: "Jinha Park"
+      year: 2025 (expected)
+    
+    - name: "Warren Hatton"
+      year: 2025 (expected)
+      
     - name: "Max Sullivan"
       degree: "M.S. Mathematics, Boise State University"
       year: 2022
@@ -46,6 +52,12 @@
     [what you can expect if we work together and what project ideas we can work on together](senior_thesis).
   
   students:
+    - name: "Andrew Davey"
+      degree: "B.S. Mathematics, Boise State University"
+      year: 2024.2
+      thesistitle: "A Machine Learning Model for Classification and Novelty Detection using Logistic Regression"
+      postdegree: "Natural Intelligence AI"
+      
     - name: "Zachary Camargo"
       degree: "B.S. Chemistry and B.S. Mathematics, Boise State University"
       year: 2024.1
@@ -55,7 +67,8 @@
       degree: "B.S. Mathematics, Boise State University"
       year: 2023.1
       thesistitle: "Using Generating Functions to Prove an Identity of Partitions"
-    
+      thesisurl: https://drive.google.com/file/d/1FkQH1Vhz8nrOn_vO8VCSq12be4o8Qn09/view?usp=sharing
+      
     - name: "Camryn Edens"
       degree: "B.S. Applied Mathematics, Boise State University"
       year: 2022.3
