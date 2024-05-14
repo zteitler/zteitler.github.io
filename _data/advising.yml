@@ -8,10 +8,12 @@
   
   students:
     - name: "Jinha Park"
-      year: "2025 (expected)"
+      year: 2025.2
+      expected: true
     
     - name: "Warren Hatton"
-      year: "2025 (expected)"
+      year: 2025.1
+      expected: true
       
     - name: "Max Sullivan"
       degree: "M.S. Mathematics, Boise State University"
