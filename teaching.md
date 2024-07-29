@@ -32,7 +32,8 @@ I encourage you to meet with me when you feel that you need support or assistanc
 In Fall 2024 I will be available:
 
 **Student Time:**
-: Tuesdays 10:30am-12:30pm
+: Mondays 10:30am-11:45am
+: Tuesdays 10:30am-11:45am
 
 **Additional appointments:**
 : Email me to set up an appointment on other days or times
