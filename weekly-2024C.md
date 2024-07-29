@@ -47,7 +47,9 @@ layout: post
     <tr>
       <td style="border-color:black">10:30</td>
       <td rowspan="1" style="border:none"> </td>
-      <td rowspan="1" style="border:none"> </td>
+      <td rowspan="4" style="border-color:black;background-color:DarkGreen">
+        Student Time
+      </td>
       <td rowspan="1" style="border:none"> </td>
       <td rowspan="1" style="border:none"> </td>
       <td rowspan="1" style="border:none"> </td>
@@ -59,12 +61,10 @@ layout: post
       <td rowspan="1" style="border:none"> </td>
       <td rowspan="1" style="border:none"> </td>
       <td rowspan="1" style="border:none"> </td>
-      <td rowspan="1" style="border:none"> </td>
       <td style="border-color:black">11:00</td>
     </tr>
     <tr>
       <td style="border-color:black">11:30</td>
-      <td rowspan="1" style="border:none"> </td>
       <td rowspan="1" style="border:none"> </td>
       <td rowspan="1" style="border:none"> </td>
       <td rowspan="1" style="border:none"> </td>
@@ -76,13 +76,12 @@ layout: post
       <td rowspan="3" style="border-color:black;background-color:LightGreen">
         Math 175
       </td>
-      <td rowspan="1" style="border:none"> </td>
       <td rowspan="3" style="border-color:black;background-color:LightGreen">
-        Math 189
+        Math 175
       </td>
       <td rowspan="1" style="border:none"> </td>
       <td rowspan="3" style="border-color:black;background-color:LightGreen">
-        Math 189
+        Math 175
       </td>
       <td style="border-color:black">12:00</td>
     </tr>

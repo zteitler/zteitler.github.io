@@ -29,10 +29,10 @@ title: Teaching
 I am here to support your learning.
 I encourage you to meet with me when you feel that you need support or assistance.
 
-In Spring 2024 I will be available:
+In Fall 2024 I will be available:
 
-**Office hours:**
-: Tuesdays 10:00am-1:00pm
+**Student Time:**
+: Tuesdays 10:30am-12:30pm
 
 **Additional appointments:**
 : Email me to set up an appointment on other days or times
