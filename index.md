@@ -30,9 +30,9 @@ Pronouns: he/him/his
   I also frequently teach introduction to proofs, multivariable calculus, differential equations,
   and occasionally other classes such as linear algebra.  
   
-  #### Spring 2024:  
-  Discrete Mathematics (Math 189)  
-  Advanced Number Theory (Math 507)  
+  #### Fall 2024:  
+  Calculus II (Math 175)  
+  Introduction to Abstract Algebra and Number Theory (Math 305)  
   
   #### [Previous and upcoming courses](/teaching)
 
@@ -71,7 +71,7 @@ Pronouns: he/him/his
 <br style="margin-bottom:1ex" />
 
 
-Weekly schedule: [Spring 2024](/weekly-2024A) | [Travel](/travel)
+Weekly schedule: [Fall 2024](/weekly-2024C) | [Travel](/travel)
 
 
 
