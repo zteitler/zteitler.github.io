@@ -19,9 +19,7 @@ layout: post
     <tr>
       <td style="border-color:black">9:00</td>
       <td rowspan="1" style="border:none"> </td>
-      <td rowspan="2" style="border-color:black;background-color:Orange">
-        PBC
-      </td>
+      <td rowspan="1" style="border:none"> </td>
       <td rowspan="3" style="border-color:black;background-color:LightGreen">
         Math 305
       </td>
@@ -33,6 +31,7 @@ layout: post
     </tr>
     <tr>
       <td style="border-color:black">9:30</td>
+      <td rowspan="1" style="border:none"> </td>
       <td rowspan="1" style="border:none"> </td>
       <td rowspan="1" style="border:none"> </td>
       <td style="border-color:black">9:30</td>
@@ -104,14 +103,15 @@ layout: post
       <td rowspan="3" style="border-color:black;background-color:aqua">
         SPUDS
       </td>
-      <td rowspan="1" style="border:none"> </td>
+      <td rowspan="2" style="border-color:black;background-color:Orange">
+        PBC
+      </td>
       <td rowspan="1" style="border:none"> </td>
       <td rowspan="1" style="border:none"> </td>
       <td style="border-color:black">1:30</td>
     </tr>
     <tr>
       <td style="border-color:black">2:00</td>
-      <td rowspan="1" style="border:none"> </td>
       <td rowspan="1" style="border:none"> </td>
       <td rowspan="1" style="border:none"> </td>
       <td rowspan="1" style="border:none"> </td>
