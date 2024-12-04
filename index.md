@@ -15,7 +15,7 @@ Boise, ID 83725-1555, USA
 
 <zteitler@boisestate.edu>  
 Office: [MB 233A](https://maps.boisestate.edu/?id=715#!m/89068)  
-Phone: +1-208-426-1086  
+Phone: +1-208-426-1172  
 
 Pronouns: he/him/his  
 
