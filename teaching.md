@@ -24,6 +24,7 @@ title: Teaching
 {% capture newLine %}
 {% endcapture %}
 
+{% comment %}
 ### Office hours
 
 I am here to support your learning.
@@ -41,6 +42,8 @@ In Fall 2024 I will be available:
 Office hours will be in-person in my office, or on Zoom if requested.
 
 ---
+{% endcomment %}
+
 
 ### Current semester ({{ currentsemester }} {{ currentyear }}):
 

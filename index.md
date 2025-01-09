@@ -30,9 +30,9 @@ Pronouns: he/him/his
   I also frequently teach introduction to proofs, multivariable calculus, differential equations,
   and occasionally other classes such as linear algebra.  
   
-  #### Fall 2024:  
-  Calculus II (Math 175)  
-  Introduction to Abstract Algebra and Number Theory (Math 305)  
+  #### Spring 2025:  
+  Mathematical Proofs and Methods (Math 287)  
+  Real Analysis (Math 414/514)  
   
   #### [Previous and upcoming courses](/teaching)
 
@@ -57,11 +57,6 @@ Pronouns: he/him/his
   the [Mathematics Department Colloquium](https://www.boisestate.edu/math/research/colloquium/),
   and the [Computing Colloquium](https://www.boisestate.edu/computing/colloquium/).
 
-**BMTC**
-: I am a co-organizer of the Boise Math Teachers' Circle,
-  part of the [Boise Math Circles](https://www.boisestate.edu/math/circles/),
-  a math community for teachers and for secondary students.  
-  (Paused due to the pandemic.)
 
 **Events**
 : [Research workshops and conference special sessions](/events) that I have organized,
@@ -71,7 +66,7 @@ Pronouns: he/him/his
 <br style="margin-bottom:1ex" />
 
 
-Weekly schedule: [Fall 2024](/weekly-2024C) | [Travel](/travel)
+Weekly schedule: [Spring 2025](/weekly-2025A) | [Travel](/travel)
 
 
 
