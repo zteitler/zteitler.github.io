@@ -37,7 +37,9 @@ layout: post
     </tr>
     <tr>
       <td style="border-color:black">10:00</td>
-      <td rowspan="1" style="border:none"> </td>
+      <td rowspan="2" style="border-color:black;background-color:LightSeaGreen">
+        Thesis (LL)
+      </td>
       <td rowspan="1" style="border:none"> </td>
       <td rowspan="1" style="border:none"> </td>
       <td rowspan="1" style="border:none"> </td>
@@ -46,7 +48,6 @@ layout: post
     </tr>
     <tr>
       <td style="border-color:black">10:30</td>
-      <td rowspan="1" style="border:none"> </td>
       <td rowspan="3" style="border-color:black;background-color:LightGreen">
         Math 287
       </td>
@@ -61,15 +62,16 @@ layout: post
     </tr>
     <tr>
       <td style="border-color:black">11:00</td>
-      <td rowspan="1" style="border:none"> </td>
-      <td rowspan="1" style="border:none"> </td>
+      <td rowspan="2" style="border-color:black;background-color:LightSeaGreen">
+        Thesis (JP)
+      </td>
+      <td rowspan="2" style="border-color:black;background-color:LightSeaGreen">
+        Thesis (RR)
+      </td>
       <td style="border-color:black">11:00</td>
     </tr>
     <tr>
       <td style="border-color:black">11:30</td>
-      <td rowspan="1" style="border:none"> </td>
-      <td rowspan="1" style="border:none"> </td>
-      <td rowspan="1" style="border:none"> </td>
       <td style="border-color:black">11:30</td>
     </tr>
     <tr>
@@ -105,7 +107,9 @@ layout: post
       <td rowspan="3" style="border-color:black;background-color:LightGreen">
         Math 414/514
       </td>
-      <td rowspan="1" style="border:none"> </td>
+      <td rowspan="2" style="border-color:black;background-color:LightSeaGreen">
+        Thesis (WH)
+      </td>
       <td rowspan="3" style="border-color:black;background-color:LightGreen">
         Math 414/514
       </td>
@@ -117,7 +121,6 @@ layout: post
       <td rowspan="2" style="border-color:black;background-color:YellowGreen">
         Student Time
       </td>
-      <td rowspan="1" style="border:none"> </td>
       <td rowspan="1" style="border:none"> </td>
       <td style="border-color:black">2:00</td>
     </tr>
