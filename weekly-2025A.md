@@ -41,9 +41,7 @@ layout: post
       <td rowspan="1" style="border:none"> </td>
       <td rowspan="1" style="border:none"> </td>
       <td rowspan="1" style="border:none"> </td>
-      <td rowspan="4" style="border-color:black;background-color:YellowGreen">
-        Student Time
-      </td>
+      <td rowspan="1" style="border:none"> </td>
       <td style="border-color:black">10:00</td>
     </tr>
     <tr>
@@ -56,6 +54,9 @@ layout: post
       <td rowspan="3" style="border-color:black;background-color:LightGreen">
         Math 287
       </td>
+      <td rowspan="2" style="border-color:black;background-color:YellowGreen">
+        Student Time
+      </td>
       <td style="border-color:black">10:30</td>
     </tr>
     <tr>
@@ -66,6 +67,7 @@ layout: post
     </tr>
     <tr>
       <td style="border-color:black">11:30</td>
+      <td rowspan="1" style="border:none"> </td>
       <td rowspan="1" style="border:none"> </td>
       <td rowspan="1" style="border:none"> </td>
       <td style="border-color:black">11:30</td>
@@ -128,7 +130,9 @@ layout: post
     <tr>
       <td style="border-color:black">3:00</td>
       <td rowspan="1" style="border:none"> </td>
-      <td rowspan="1" style="border:none"> </td>
+      <td rowspan="2" style="border-color:black;background-color:LightSeaGreen">
+        Thesis (LG)
+      </td>
       <td rowspan="5" style="border-color:black;background-color:Gray"> </td>
       <td rowspan="2" style="border-color:black;background-color:Orange">
         Math Dept Faculty Meeting
@@ -140,7 +144,6 @@ layout: post
     </tr>
     <tr>
       <td style="border-color:black">3:30</td>
-      <td rowspan="1" style="border:none"> </td>
       <td rowspan="1" style="border:none"> </td>
       <td style="border-color:black">3:30</td>
     </tr>
