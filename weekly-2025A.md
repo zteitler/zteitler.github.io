@@ -22,14 +22,15 @@ layout: post
       <td rowspan="2" style="border-color:black;background-color:Orange">
         PBC
       </td>
-      <td rowspan="1" style="border:none"> </td>
+      <td rowspan="2" style="border-color:black;background-color:LightSeaGreen">
+        Thesis (JP)
+      </td>
       <td rowspan="1" style="border:none"> </td>
       <td rowspan="1" style="border:none"> </td>
       <td style="border-color:black">9:00</td>
     </tr>
     <tr>
       <td style="border-color:black">9:30</td>
-      <td rowspan="1" style="border:none"> </td>
       <td rowspan="1" style="border:none"> </td>
       <td rowspan="1" style="border:none"> </td>
       <td rowspan="1" style="border:none"> </td>
@@ -62,9 +63,7 @@ layout: post
     </tr>
     <tr>
       <td style="border-color:black">11:00</td>
-      <td rowspan="2" style="border-color:black;background-color:LightSeaGreen">
-        Thesis (JP)
-      </td>
+      <td rowspan="1" style="border:none"> </td>
       <td rowspan="2" style="border-color:black;background-color:LightSeaGreen">
         Thesis (RR)
       </td>
@@ -72,6 +71,8 @@ layout: post
     </tr>
     <tr>
       <td style="border-color:black">11:30</td>
+      <td rowspan="1" style="border:none"> </td>
+      <td rowspan="1" style="border:none"> </td>
       <td style="border-color:black">11:30</td>
     </tr>
     <tr>
@@ -137,7 +138,7 @@ layout: post
         Thesis (LG)
       </td>
       <td rowspan="5" style="border-color:black;background-color:Gray"> </td>
-      <td rowspan="2" style="border-color:black;background-color:Orange">
+      <td rowspan="3" style="border-color:black;background-color:Orange">
         Math Dept Faculty Meeting
       </td>
       <td rowspan="2" style="border-color:black;background-color:aqua">
@@ -157,11 +158,11 @@ layout: post
         <a href="https://www.boisestate.edu/math/research/colloquium/">Math Dept Colloquium</a>
       </td>
       <td rowspan="3" style="border-color:black;background-color:Gray"> </td>
-      <td rowspan="3" style="border-color:black;background-color:Gray"> </td>
       <td style="border-color:black">4:00</td>
     </tr>
     <tr>
       <td style="border-color:black">4:30</td>
+      <td rowspan="2" style="border-color:black;background-color:Gray"> </td>
       <td style="border-color:black">4:30</td>
     </tr>
     <tr>
