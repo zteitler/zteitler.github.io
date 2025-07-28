@@ -115,157 +115,143 @@ If you see anything there that interests you, it could be a starting point for a
 
 Here are some topics and project ideas that I can suggest:
 
-1.  **Partially ordered sets (posets)**
-	
-	The _height_ of a poset is the maximum length of a chain, a subset $x_1 < x_2 < \dotsb < x_n$;
-	the height of an element is the maximum length of a chain ending at that element.
-	The _width_ of a poset is the maximum size of an antichain, a subset in which no two elements are comparable.
-	A poset has the _Sperner property_ if the largest size antichain is given by the set
-	of elements at some fixed height.
-	What posets have the Sperner property?
-	
-	Some of my favorite posets are given by sets of monomials like $\{1,x,y,x^2,xy,y^2,x^3,x^2y,y^3\}$,
-	ordered by divisibility.
-	I would like to learn more about Sperner property, and other properties, of algebraic posets like these.
-	
-	Other interesting posets are given by sets of integers such as $\{1,2,3,\dotsc,12\}$,
-	again ordered by divisibility.
-	What happens if we take $k$ consecutive integers starting from $n$,
-	and then take a sort of limit as $n$ goes to infinity?
-	
-	One very interesting thing that I would like to learn more about posets
-	is Möbius functions. Perhaps you might have learned about the Möbius function
-	in a number theory class. There is a nice generalization to posets.
-	Say $\mu_{k,n}$ is the Möbius function for $k$ consecutive integers starting at $n$.
-	Can we find the limit of $\mu_{k,n}(n+j)$ as $n$ goes to infinity?
-	
-	Projects on these topics will include some reading and learning about combinatorics and posets
-	(and maybe number theory); some exploration of working out different examples,
-	which might be a combination of both working out some examples by pencil and paper,
-	and also computing examples on a computer; looking for patterns, and maybe even
-	coming up with a conjecture. And maybe even proving it!
 
-2.  **Billiard trajectories**
-	
-	Imagine a ball rolling around inside a polygon and bouncing off the sides.
-	What kinds of trajectories are possible?
-	Can we set up a polygon to make the trajectory be a perfect five-pointed star?
-	How about a capital letter L?
-	How about a capital letter K or X, or if we can't exactly get those, then how close can we get?
-	
-	Taking it a step further, what if the billiard ball is flying around in three dimensions,
-	inside a 3-D polyhedron?
-	Can we make the path be a trefoil knot? Can we set it up so that two billiard balls
-	will bounce around along linked loops (a Hopf link)?
-	
-	There are some papers about these problems (actually, there are a _lot_ of papers
-	about the 2-D version) so this project will involve picking one or two papers to read
-	and try to explain; and if possible, setting up some computer models and producing some
-	animations.
-
-3.  **Percolation on unusual tilings**
-	
-	Imagine pouring syrup on a waffle. When each little waffle square gets filled,
-	the syrup pours out into the neighboring squares; after a while they fill up too,
-	and the syrup spreads further.
-	The "limit" of the syrup shape is roughly a circle.
-	
-	Now what if the waffle squares get replaced with a different shape,
-	such as the [Penrose tiling](https://en.wikipedia.org/wiki/Penrose_tiling)
-	or the brand new discovery of the [hat tile](https://en.wikipedia.org/wiki/Einstein_problem),
-	or [pentagonal tilings](https://en.wikipedia.org/wiki/Pentagonal_tiling),
-	or lots of other interesting things?
-	
-	Besides syrup, this topic ties in with how fluids, contaminants, or other things
-	percolate through a porous medium such as soil.
-	Or, it could be energy spreading out from a point.
-	Mathematically, this topic usually falls under labels like abelian sandpile model
-	or chip firing.
-	
-	This project would mostly involve setting up a computer model to run examples.
-	It should produce some really neat images and animations!
-	This is a topic where I don't really know what to expect mathematically:
-	what will be the "limit" shape? Will we discover any interesting patterns or trends?
-	Well, I don't know what they will be, but I'm sure that lots of interesting things
-	will pop out.
-
-4.  **Algebraic properties of graphs**
-	
-	I would like to learn more about algebraic properties of graphs such as the
-	eigenvalues of the graph's adjacency matrix and the graph Laplacian
-	(basically the adjacency matrix, with the vertex degrees along the diagonal).
-	This combines graph theory, combinatorics, and linear algebra.
-	It can be approached both theoretically (reading, pencil and paper, proofs)
-	as well as computationally (computing examples).
-	
-	It would be interesting to learn about applications of graph eigenvalues,
-	as well as to work out examples for various types of graphs.
-	
-	Because the Laplacian shows up in the heat equation and in the wave equation,
-	eigenvalues of the graph Laplacian are related to flow and vibrations along the graph.
-	(Among other things, this relates to the abelian sandpile model and chip firing.)
-	I don't know a lot about this but I would love to learn more.
-	
-	It's also related to Markov chain models on the graph. So, this topic could be taken
-	in a statistics/probability direction.
-
-5. **Topology and number theory**
+1. **Topology and number theory**
 	
 	Let $X$ be the $k$ consecutive integers starting from $n$.
 	Take the collection of subsets of $X$ that have a common divisor bigger than $1$.
 	This is a simplicial complex.
-	What is its homology? How does the homology change as $k$ and $n$ change?
-	Is there a "limit" as $k$ or $n$ goes to infinity?
+	You will study the homology and cohomology of this simplicial complex,
+	in the limit as $n$ and $k$ go to infinity,
+	as well as other related simplicial complexes defined in terms of
+	similar number theoretic ideas.
 	
-	To work on this you would need to know some topology.
-	A computer could be used to try examples.
-	If it's even possible to make a conjecture,
-	then trying to answer it would involve number theory.
+	This is related to *persistent homology* and *topological data analysis*.
+  This project involves some computer programming (in Python or your language of choice),
+  gathering data and identifying patterns, and proving.
 
 
-6. **Poset of nonvanishing minors of a matrix**
-	
-	If you can answer [this question on MathOverflow](https://mathoverflow.net/q/288872/88133)
-	or even come up with a single good idea, it will almost certainly be a publishable research paper,
-	not to mention a guaranteed accepted answer on MathOverflow (karma points!).
-	
-	Let $M$ be a matrix. A minor of $M$ is a square submatrix, e.g., the $2 \times 2$
-	submatrix given by rows $1$ and $3$, columns $5$ and $8$ --- the rows and columns don't
-	have to be consecutive.
-	Let $P$ be the set of minors of $M$ with nonzero determinant.
-	This gives a poset (partially ordered set).
-	What are the properties of this poset?
-	For example, can the width of the poset be related to any linear algebraic property of $M$?
 
-7. **Explorations in Number Theory**
+2. **Changepoint detection in book readership data**
   
-  There are many theorems in number theory that would be interesting to explore.
-  For example, building from Lagrange's theorem that every positive integer can be written
-  as a sum of four or fewer squares, we could investigate: how many triangular
-  numbers does it take to write every positive integer?
-  How about pentagonal numbers?
+  You will gather data from the Seattle Public Library's open database
+  and perform a statistical changepoint analysis to find reasons
+  why book readership rates change over time.
+  This project will give you experience in gathering and analyzing data,
+  and statistics for time series.
   
-  There's a theorem by Euler relating pentagonal numbers, partitions,
-  and generating functions. I would like to learn more about this.
+  Besides library data, other Seattle city government data is available,
+  and it can be studied too.
+
+
+
+3. **Explorations in Number Theory**
   
-  We could study statistical properties: for example, what's the average
-  number of triangular numbers needed to write a positive integer;
-  what's the average number of ways to write a positive integer as a
-  sum of triangular numbers?
+  Number theory topics including:
+    
+  1.  Every positive number can be written as a sum of four squares. How many triangular numbers are needed?
+      
+      This leads into research projects such as: How many numbers in a given range can be
+      represented by adding 2, 3, or a limited number of triangular numbers?
+      You will study these questions and explore further: for example, use pentagonal numbers
+      or pyramidal numbers instead of triangular numbers;
+      statistical analysis of sums of random triangular numbers.
   
-  The normal definition of squares  can be changed. Normally we go from
-  one square number to the next one by increasing both of the factors
-  that get multiplied, going from $xx$ to $(x+1)(x+1)$. We can randomize
-  this: when our current number is $xy$, we can pick the next number
-  randomly as $(x+2)y$ or $(x+1)(y+1)$ or $x(y+2)$.
-  How would Lagrange's four-squares theorem work for one of these
-  "pseudo-square" sequences?
-  This project would give opportunities for computational exploration,
-  by simulating a lot of different random samples.
+  2.  Euler's pentagonal number theorem relates partitions, pentagonal numbers, and generating functions.
+      You will learn about this amazing theorem that connects number theory and combinatorics.
+      
+      Then you will explore research questions in advanced topics such as
+      two-dimensional partitions (called plane partitions).
   
-  There's a famous result that the infinite sum of the $1/n^2$ gives
-  $\pi^2/6$.
-  What if we did this with a "pseudo-square" sequence?
+  3.  Benford's law is a statistical observation about the leading digits of certain sequences
+      of rapidly growing real numbers.
+      It is a statement about the fractional part of the logarithm of the sequence.
+      In this project you will study the generalization to Gaussian integers,
+      including studying the *argument* (angle) of a sequence of Gaussian integers.
+      
+      This has not been studied before.
+      You will be conducting original research on a new topic.
+      
+      This project is related to tropical geometry and amoeba geometry.
+      (Tropical geometry corresponds to the logarithm of the magnitude
+      as in the "classical" Benford's law, while the amoeba corresponds
+      to the argument.)
+
+
+4. **Tensor eigenvectors**
+  
+  Tensors are essential for machine learning and AI. In this project you will
+  research eigenvectors of tensors, focussing on symmetric tensors.
+  This project connects topics of linear algebra, algebraic geometry,
+  calculus, and optimization,
+  using a combination of tools of computation and theory.
+  
+
+
+5. **Detailed data analysis of research articles**
+  
+  You will develop a new tool to gather and analyze data on research articles
+  in a new level of detail.
+  Current methods only look at the importance of research articles or books.
+  You will develop a tool that breaks down which parts of the articles or books
+  are important.
+  Which chapters, sections, or statements get cited most by other researchers?
+  
+  This project will use data gathering and analysis, AI, and statistics.
+  It will result in a tool that can be used by researchers.
+
+
+
+6. **Gaussian integer valued polynomials**
+
+  A polynomial $p(x)$ with integer coefficients always has an integer value
+  when the input $x$ is an integer; that is called being integer valued.
+  But a polynomial can be integer valued even if it does not have
+  integer coefficients. For example $p(x) = \frac{1}{2}x(x-1)$
+  is integer valued because for any integer $x$, $p(x)$ is an integer.
+  
+  In this project you will study polynomials with Gaussian integer
+  values but not necessarily Gaussian integer coefficients.
+  Once that is solved, you will study Eisenstein numbers
+  and other rings of integers of number fields.
+  
+  
+  
+
+
+7.  **Positive polynomials in modular arithmetic**
+  
+  In modular arithmetic a number is called positive if it is a quadratic residue.
+      
+  1.  Which polynomials have positive values at all positive inputs?
+      
+  2.  The quadrant problem is to write the positive quadrant $\{(x,y) \in \mathbb{R}^2 : x > 0, y > 0\}$
+      as the image of a polynomial map.
+      It was surprisingly hard to solve.
+      
+      In this project you will study the quadrant problem in modular arithmetic.
+      The positive quadrant in $(\mathbb{Z}/p\mathbb{Z})^2$
+      is the set of $(x,y)$ such that both $x$ and $y$ are positive,
+      i.e., nonzero quadratic residues.
+      The project will study whether it is possible to write a polynomial
+      map that outputs this set.
+      
+      (It would be easy to say $F(a,b) = (a^2,b^2)$, except that this
+      will output points where $x=0$ or $y=0$, if $a=0$ or $b=0$.
+      The challenge is to not output any zeros.)
+      
+      Other shapes besides quadrants can also be studied, for example
+      the complement of a quadrant, or the intersection of a quadrant
+      with a flipped and shifted quadrant (a "rectangle").
+      
+  3.  The same questions in Gaussian integers instead of modular arithmetic.
+  
+  In any of these versions of the project, you will get serious experience
+  with a real research problem in number theory, with connections to
+  abstract algebra.
+
+
+
 
 
 
