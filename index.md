@@ -66,7 +66,7 @@ Pronouns: he/him/his
 <br style="margin-bottom:1ex" />
 
 
-Weekly schedule: [Fall 2025](/weekly-2025C) | [Travel](/travel)
+Weekly schedule: [Spring 2026](/weekly-2026A) | [Travel](/travel)
 
 
 
