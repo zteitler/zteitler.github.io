@@ -30,9 +30,9 @@ Pronouns: he/him/his
   I also frequently teach introduction to proofs, multivariable calculus, differential equations,
   and occasionally other classes such as linear algebra.  
   
-  #### Spring 2025:  
-  Mathematical Proofs and Methods (Math 287)  
-  Real Analysis (Math 414/514)  
+  #### Spring 2026:  
+  Introduction to Abstract Algebra and Number Theory (Math 305)  
+  Advanced Algebra (Math 506)  
   
   #### [Previous and upcoming courses](/teaching)
 
