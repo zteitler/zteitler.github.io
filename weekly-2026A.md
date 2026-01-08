@@ -73,7 +73,9 @@ layout: post
     </tr>
     <tr>
       <td style="border-color:black">12:00</td>
-      <td rowspan="1" style="border:none"> </td>
+      <td rowspan="2" style="border-color:black;background-color:LightGreen">
+        Math 401 (CD)
+      </td>
       <td rowspan="1" style="border:none"> </td>
       <td rowspan="1" style="border:none"> </td>
       <td rowspan="1" style="border:none"> </td>
@@ -82,7 +84,6 @@ layout: post
     </tr>
     <tr>
       <td style="border-color:black">12:30</td>
-      <td rowspan="1" style="border:none"> </td>
       <td rowspan="1" style="border:none"> </td>
       <td rowspan="1" style="border:none"> </td>
       <td rowspan="1" style="border:none"> </td>
@@ -132,10 +133,10 @@ layout: post
       <td rowspan="3" style="border-color:black;background-color:Orange">
         Math Dept Faculty Meeting
       </td>
+      <td rowspan="1" style="border:none"> </td>
       <td rowspan="2" style="border-color:black;background-color:aqua">
         <a href="https://sites.google.com/boisestate.edu/TATERS">TATERS</a>
       </td>
-      <td rowspan="1" style="border:none"> </td>
       <td style="border-color:black">3:00</td>
     </tr>
     <tr>
