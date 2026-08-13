@@ -51,7 +51,7 @@ layout: post
         Math 401 (EL)
       </td>
       <td rowspan="2" style="border-color:black;background-color:LightGreen">
-        Math 401 (AS)
+        Math 593 (AS)
       </td>
       <td rowspan="1" style="border:none"> </td>
       <td rowspan="4" style="border-color:black;background-color:Orange">
