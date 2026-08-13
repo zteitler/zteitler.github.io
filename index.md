@@ -30,9 +30,9 @@ Pronouns: he/him/his
   I also frequently teach introduction to proofs, multivariable calculus, differential equations,
   and occasionally other classes such as linear algebra.  
   
-  #### Spring 2026:  
+  #### Fall 2026:  
   Introduction to Abstract Algebra and Number Theory (Math 305)  
-  Advanced Algebra (Math 506)  
+  Linear Algebra (Math 403/503)  
   
   #### [Previous and upcoming courses](/teaching)
 
@@ -66,7 +66,7 @@ Pronouns: he/him/his
 <br style="margin-bottom:1ex" />
 
 
-Weekly schedule: [Spring 2026](/weekly-2026A) | [Travel](/travel)
+Weekly schedule: [Fall 2026](/weekly-2026C) | [Travel](/travel)
 
 
 
