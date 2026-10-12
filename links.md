@@ -22,3 +22,7 @@ layout: post
 + [Math Major Skills & Characteristics](http://home.sandiego.edu/~dhoffoss/careers/skills.html)
 + [Transferable Skills](https://warwick.ac.uk/fac/sci/maths/undergrad/ughandbook/general/overview/transferableskills)
 + [Why Study Math?](https://math.nyu.edu/dynamic/undergrad/overview/why-study-math/)
+
+## For Students
+
++ [Learning Framework: Effective Strategies for College Success](https://oercommons.org/courseware/8434)
