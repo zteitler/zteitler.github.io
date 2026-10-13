@@ -23,6 +23,17 @@ layout: post
 + [Transferable Skills](https://warwick.ac.uk/fac/sci/maths/undergrad/ughandbook/general/overview/transferableskills)
 + [Why Study Math?](https://math.nyu.edu/dynamic/undergrad/overview/why-study-math/)
 
+## Graduate School
+
++ [Choosing a Graduate School Path that Fits You](https://www.ams.org/learning-careers/students/pre-grad)
+
 ## For Students
 
 + [Learning Framework: Effective Strategies for College Success](https://oercommons.org/courseware/8434)
+
+
+## Ethics
+
++ [Mathematizing in Times of Trouble](https://www.siam.org/publications/siam-news/articles/mathematizing-in-times-of-trouble/) (Dennis Müller and Maurice Chiodo, April 1 2026, SIAM News)
++ [Data Ethics and Mathematicians](https://www.siam.org/publications/siam-news/articles/data-ethics-and-mathematicians/) (Mason A. Porter, October 1, 2026, SIAM News)
+
